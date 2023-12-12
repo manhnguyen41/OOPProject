@@ -1,0 +1,20 @@
+
+{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¶Ãß¨øÿÿÿÿ8Æƒ¿ÛÅ1
+W	java:S125"<This block of commented-out lines of code should be removed.(èíÒ58îž¯àÅ1
+K
+java:S1128".Remove this unused import 'models.Collection'.(¶­¨É8îž¯àÅ1
+P
+java:S1128"3Remove this unused import 'org.openqa.selenium.By'.(ÿŠÞ›8îž¯àÅ1
+]
+java:S1128";Remove this unused import 'org.openqa.selenium.WebElement'.(‰ïµ”þÿÿÿÿ8ïž¯àÅ1
+p
+java:S1128"NRemove this unused import 'org.openqa.selenium.support.ui.ExpectedConditions'.(û€Èéúÿÿÿÿ8ïž¯àÅ1
+f
+java:S1128"IRemove this unused import 'org.openqa.selenium.support.ui.WebDriverWait'.(¥÷ó8ïž¯àÅ1
+R
+java:S1128	"0Remove this unused import 'java.io.IOException'.(ªº»Úýÿÿÿÿ8ïž¯àÅ1
+Q
+java:S1128
+"/Remove this unused import 'java.time.Duration'.(ëá¯‰üÿÿÿÿ8ïž¯àÅ1
+M
+java:S1128"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ8ïž¯àÅ1

@@ -1,0 +1,16 @@
+
+r	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ğîİ‰ùÿÿÿÿ8Ø›×ÊÅ1
+r	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ğîİ‰ùÿÿÿÿ8Ø›×ÊÅ1
+{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¶Ãß¨øÿÿÿÿ8Ù›×ÊÅ1
+j
+java:S2095+"HUse try-with-resources or close this "FileWriter" in a "finally" clause.(å§Ó¥üÿÿÿÿ8¿ŒÌÅ1
+p	java:S116"TRename this field "PAGE_URLs" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(½ô˜•8Ú›×ÊÅ1
+u	java:S116"YRename this field "JSON_FILE_PATH" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(€®Áî8Ú›×ÊÅ1
+o
+java:S3008"MRename this field "ID" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(˜•±üÿÿÿÿÿ8Ú›×ÊÅ1
+[
+java:S5993"9Change the visibility of this constructor to "protected".(ğîİ‰ùÿÿÿÿ8§¹ËËÅ1
+W
+java:S1128":Remove this unused import 'org.openqa.selenium.WebDriver'.(ñšÿÀ8ëÚÚÅ1
+`
+java:S1128"DRemove this unused import 'org.openqa.selenium.chrome.ChromeDriver'.(†È8ëÚÚÅ1

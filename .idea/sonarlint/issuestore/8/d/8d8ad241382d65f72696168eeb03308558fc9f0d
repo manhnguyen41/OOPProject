@@ -1,0 +1,15 @@
+
+M
+java:S1128"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ8„‘ıÊÅ1
+E
+java:S1068"(Remove this unused "name" private field.(Ë¥¼8…‘ıÊÅ1
+L
+java:S1068"*Remove this unused "volume" private field.(Ã»„òûÿÿÿÿ8…‘ıÊÅ1
+L
+java:S1068	"*Remove this unused "change" private field.(¸œ´Áşÿÿÿÿ8…‘ıÊÅ1
+K
+java:S1068".Remove this unused "floorPrice" private field.(Ë‰Ó8…‘ıÊÅ1
+G
+java:S1068"*Remove this unused "owners" private field.(›ĞÌñ8†èËÅ1
+F
+java:S1068")Remove this unused "items" private field.(†ÇõÁ8ûËÅ1
