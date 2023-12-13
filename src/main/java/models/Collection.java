@@ -1,7 +1,5 @@
 package models;
 
-import java.util.List;
-
 public class Collection {
     private String name;
     private String volume;
@@ -24,5 +22,21 @@ public class Collection {
         this.floorPrice = floorPrice;
         this.owners = owners;
         this.items = items;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    @Override
+    public String toString() {
+        return "Collection{" +
+                "name='" + name + '\'' +
+                ", volume='" + volume + '\'' +
+                ", change='" + change + '\'' +
+                ", floorPrice='" + floorPrice + '\'' +
+                ", owners='" + owners + '\'' +
+                ", items='" + items + '\'' +
+                '}';
     }
 }

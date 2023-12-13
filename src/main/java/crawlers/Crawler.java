@@ -1,4 +1,4 @@
-package dataCrawler.crawler;
+package crawlers;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;

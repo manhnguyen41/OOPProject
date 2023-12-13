@@ -1,0 +1,7 @@
+
+r	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(­Ç³Úøÿÿÿÿ8…ÜŒ’Æ1
+r	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(­Ç³Úøÿÿÿÿ8…ÜŒ’Æ1
+k
+java:S2259!"IA "NullPointerException" could be thrown; "collections" is nullable here.(—å¾æûÿÿÿÿ8ÉâØ’Æ1
+p
+java:S3008"SRename this field "BASE_URL" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(òƒ§Ù8•ÜŒ’Æ1

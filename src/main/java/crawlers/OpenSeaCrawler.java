@@ -1,4 +1,4 @@
-package dataCrawler.crawler;
+package crawlers;
 
 import models.Collection;
 import org.openqa.selenium.By;
