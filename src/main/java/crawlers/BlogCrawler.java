@@ -13,9 +13,7 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.lang.reflect.Type;
 import java.time.Duration;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import java.util.*;
 
 public class BlogCrawler extends Crawler<Blog> {
     private static String BASE_URL = "https://www.nft-stats.com/search?query=";
@@ -28,14 +26,26 @@ public class BlogCrawler extends Crawler<Blog> {
     public static void main(String[] args) throws IOException {
         // Get list collection from Json file
         List<Collection> collections = readCollectionsFromJson();
-            
-        // make url request
-        String[] urls = new String[collections.size()];
-        for (int i = 0; i < collections.size(); i++) {
-            // base url + collection name
-            urls[i] = BASE_URL + collections.get(i).getName().replace(" ", "+");
+
+        // Use Set to filter Collections with unique names
+        Set<String> uniqueNames = new HashSet<>();
+        List<Collection> uniqueCollections = new ArrayList<>();
+
+        for (Collection collection : collections) {
+            if (uniqueNames.add(collection.getName())) {
+                uniqueCollections.add(collection);
+            }
         }
-        // Remove null elements from the array
+
+        // make url request
+        String[] urls = new String[uniqueCollections.size()];
+        for (int i = 0; i < uniqueCollections.size(); i++) {
+            System.out.println(uniqueCollections.get(i).getName());
+            // base url + collection name
+            urls[i] = BASE_URL + uniqueCollections.get(i).getName().replace(" ", "+");
+        }
+
+        // Remove null elements from the urls array
         List<String> nonNullUrlsList = new ArrayList<>();
         for (String url : urls) {
             if (url != null) {
@@ -68,9 +78,9 @@ public class BlogCrawler extends Crawler<Blog> {
     public void crawlData() {
         for (String PAGE_URL : PAGE_URLs) {
             driver.get(PAGE_URL);
-            Duration timeout = Duration.ofSeconds(100);
-            WebDriverWait wait = driver.createWebDriverWait(timeout);
-            wait.until(ExpectedConditions.presenceOfElementLocated(By.className("card-body")));
+//            Duration timeout = Duration.ofSeconds(100);
+//            WebDriverWait wait = driver.createWebDriverWait(timeout);
+//            wait.until(ExpectedConditions.presenceOfElementLocated(By.className("card-body")));
             List<WebElement> webElements = driver.findElements(By.className("card-body"));
             for (int i = 0; i < webElements.size(); i++) {
                 String[] webElementContents = webElements.get(i).getText().split("\n");
@@ -87,10 +97,6 @@ public class BlogCrawler extends Crawler<Blog> {
 
                 objects.add(new Blog(title, info, imgSrc, description, link));
             }
-
-
         }
-
-
     }
 }

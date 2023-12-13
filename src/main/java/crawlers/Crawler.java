@@ -4,10 +4,13 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import services.*;
 
 import java.io.FileWriter;
 import java.io.IOException;
+import java.time.Duration;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -43,6 +46,14 @@ public abstract class Crawler<T> {
         FileWriter writer = new FileWriter(JSON_FILE_PATH);
         writer.write(json);
         writer.close();
+    }
+
+    public void waitForPresenceOfEl(String[] cssOfEls) {
+        Duration timeout = Duration.ofSeconds(10);
+        WebDriverWait wait = driver.createWebDriverWait(timeout);
+        for (String cssOfEl : cssOfEls) {
+            wait.until(ExpectedConditions.presenceOfElementLocated(By.className(cssOfEl)));
+        }
     }
 
     public abstract void crawlData();

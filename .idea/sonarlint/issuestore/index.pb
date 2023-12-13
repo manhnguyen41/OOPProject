@@ -1,8 +1,6 @@
 
 9
 	README.md,8/e/8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
-^
-.src/main/java/dataCrawler/crawler/Crawler.java,7/b/7bfc6cb29f9cbe6f3ad5b3c2dcb4800dac8e78a2
 _
 /src/main/java/dataHandle/entity/Collection.java,3/c/3ce90f7a914445dd49b31ea01449b55eb145f7b9
 7
@@ -11,26 +9,16 @@ X
 (src/main/java/services/IJsonHandler.java,b/6/b6cf9e0848914cc69f51cc65ce05d780578cfe41
 `
 0src/main/java/services/ChromeDriverSelenium.java,4/4/4417918a75c3d135da3785cbc54e071d9eb5b040
-D
-data/BinanceNFT.json,e/0/e0083ddd8f8d21c6f0d3277c5bb02527c505d3db
 T
 $src/main/java/models/Collection.java,8/d/8d8ad241382d65f72696168eeb03308558fc9f0d
 ]
 -src/main/java/services/WebDriverSelenium.java,5/4/54816cc0a7302d9bdd99f212c34f384b033039a9
-e
-5src/main/java/dataCrawler/crawler/OpenSeaCrawler.java,c/6/c6de9298dbeae8d8bafaa21e667fa2f53002dfd1
 A
 data/OpenSea.json,f/0/f042791b193bf91c79e53c28d198376ab140c170
 V
 &src/main/java/services/IWebDriver.java,0/f/0fd65bffe1efca7d3dc7802bd6446296ae931dac
-h
-8src/main/java/dataCrawler/crawler/CollectionCrawler.java,8/f/8f831f576b1434db74b7584727262b1546fc40d3
 D
 data/Collection.json,7/f/7fa86a266f9d31226d31e1bf5ec569dd316add6e
-b
-2src/main/java/dataCrawler/crawler/BlogCrawler.java,f/b/fb7e2dd99378682f24cdc914c758466f8515a791
-Y
-)src/main/java/dataHandle/entity/Blog.java,d/c/dcf9d8ab038769f2e65f69ded7d4955a7aff4950
 ]
 -src/main/java/crawlers/CollectionCrawler.java,a/1/a12840e4d89c7042f5aa8de65ee4738fca052db3
 W

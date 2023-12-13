@@ -28,15 +28,15 @@ public class Collection {
         return name;
     }
 
-    @Override
-    public String toString() {
-        return "Collection{" +
-                "name='" + name + '\'' +
-                ", volume='" + volume + '\'' +
-                ", change='" + change + '\'' +
-                ", floorPrice='" + floorPrice + '\'' +
-                ", owners='" + owners + '\'' +
-                ", items='" + items + '\'' +
-                '}';
-    }
+//    @Override
+//    public String toString() {
+//        return "Collection{" +
+//                "name='" + name + '\'' +
+//                ", volume='" + volume + '\'' +
+//                ", change='" + change + '\'' +
+//                ", floorPrice='" + floorPrice + '\'' +
+//                ", owners='" + owners + '\'' +
+//                ", items='" + items + '\'' +
+//                '}';
+//    }
 }
