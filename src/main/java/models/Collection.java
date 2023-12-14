@@ -27,16 +27,4 @@ public class Collection {
     public String getName() {
         return name;
     }
-
-//    @Override
-//    public String toString() {
-//        return "Collection{" +
-//                "name='" + name + '\'' +
-//                ", volume='" + volume + '\'' +
-//                ", change='" + change + '\'' +
-//                ", floorPrice='" + floorPrice + '\'' +
-//                ", owners='" + owners + '\'' +
-//                ", items='" + items + '\'' +
-//                '}';
-//    }
 }
