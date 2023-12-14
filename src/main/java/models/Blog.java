@@ -2,19 +2,17 @@ package models;
 
 public class Blog {
     private String title;
-    private String info;
-    private String img;
     private String description;
     private String link;
+    private String collection;
 
     public Blog() {
     }
 
-    public Blog(String title, String info, String img, String description, String link) {
+    public Blog(String title, String description, String link, String collection) {
         this.title = title;
-        this.info = info;
-        this.img = img;
         this.description = description;
         this.link = link;
+        this.collection = collection;
     }
 }

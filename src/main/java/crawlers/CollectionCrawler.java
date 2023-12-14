@@ -42,7 +42,7 @@ public class CollectionCrawler extends Crawler<Collection> {
                     String[] filteredContents = Arrays.stream(webElementContents)
                             .filter(element -> !element.contains("%"))
                             .toArray(String[]::new);
-//                    System.out.println(Arrays.toString(filteredContents));
+                    System.out.println(Arrays.toString(filteredContents));
                     String name = i < 3 ? filteredContents[0] : filteredContents[1];
                     String volume = i < 3 ? filteredContents[1] : filteredContents[2];
                     String change = i < 3 ? filteredContents[2] : filteredContents[3];

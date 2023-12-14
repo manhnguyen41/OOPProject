@@ -6,36 +6,25 @@ import models.Blog;
 import models.Collection;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.io.FileReader;
 import java.io.IOException;
 import java.lang.reflect.Type;
-import java.time.Duration;
 import java.util.*;
 
 public class BlogCrawler extends Crawler<Blog> {
     private static String BASE_URL = "https://www.nft-stats.com/search?query=";
     private static final String JSON_PATH = "data/Blog.json";
+    // Get list collection from Json file
+    private static List<Collection> collections = readCollectionsFromJson();
+
 
     public BlogCrawler(String json_file_path, String... page_urls) {
         super(json_file_path, page_urls);
     }
 
     public static void main(String[] args) throws IOException {
-        // Get list collection from Json file
-        List<Collection> collections = readCollectionsFromJson();
 
-        // Use Set to filter Collections with unique names
-        Set<String> uniqueNames = new HashSet<>();
-        List<Collection> uniqueCollections = new ArrayList<>();
-
-        for (Collection collection : collections) {
-            if (uniqueNames.add(collection.getName())) {
-                uniqueCollections.add(collection);
-            }
-        }
 
         // make url request
         String[] urls = new String[uniqueCollections.size()];
@@ -71,6 +60,16 @@ public class BlogCrawler extends Crawler<Blog> {
             e.printStackTrace();
         }
 
+        // Use Set to filter Collections with unique names
+        Set<String> uniqueNames = new HashSet<>();
+        List<Collection> uniqueCollections = new ArrayList<>();
+
+        for (Collection collection : collections) {
+            if (uniqueNames.add(collection.getName())) {
+                uniqueCollections.add(collection);
+            }
+        }
+
         return collectionList;
     }
 
@@ -78,21 +77,18 @@ public class BlogCrawler extends Crawler<Blog> {
     public void crawlData() {
         for (String PAGE_URL : PAGE_URLs) {
             driver.get(PAGE_URL);
-//            Duration timeout = Duration.ofSeconds(100);
-//            WebDriverWait wait = driver.createWebDriverWait(timeout);
-//            wait.until(ExpectedConditions.presenceOfElementLocated(By.className("card-body")));
             List<WebElement> webElements = driver.findElements(By.className("card-body"));
-            for (int i = 0; i < webElements.size(); i++) {
-                String[] webElementContents = webElements.get(i).getText().split("\n");
+            for (WebElement webElement : webElements) {
+                String[] webElementContents = webElement.getText().split("\n");
                 String title = webElementContents[0];
                 String info = webElementContents[1];
                 String[] descriptionArray = Arrays.copyOfRange(webElementContents, 2, webElementContents.length);
                 String description = String.join(" ", descriptionArray);
 
-                WebElement linkElement = webElements.get(i).findElement(By.tagName("a"));
+                WebElement linkElement = webElement.findElement(By.tagName("a"));
                 String link = linkElement.getAttribute("href");
 
-                WebElement imgElement = webElements.get(i).findElement(By.tagName("img"));
+                WebElement imgElement = webElement.findElement(By.tagName("img"));
                 String imgSrc = imgElement.getAttribute("src");
 
                 objects.add(new Blog(title, info, imgSrc, description, link));
