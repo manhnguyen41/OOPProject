@@ -8,6 +8,7 @@ import services.*;
 
 import java.io.FileWriter;
 import java.io.IOException;
+import java.io.UnsupportedEncodingException;
 import java.time.Duration;
 import java.util.ArrayList;
 import java.util.Collections;
@@ -54,5 +55,5 @@ public abstract class Crawler<T> {
         }
     }
 
-    public abstract void crawlData();
+    public abstract void crawlData() throws UnsupportedEncodingException;
 }

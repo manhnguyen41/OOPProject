@@ -7,10 +7,13 @@ import com.google.gson.JsonParser;
 import models.RedditPost;
 
 import java.io.IOException;
+import java.io.UnsupportedEncodingException;
 import java.net.URI;
+import java.net.URLDecoder;
 import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
+import java.nio.charset.StandardCharsets;
 import java.time.Instant;
 import java.time.ZoneId;
 import java.time.format.DateTimeFormatter;
@@ -88,7 +91,6 @@ public class PostCrawler extends Crawler<RedditPost> {
 
     @Override
     public void crawlData() {
-        int indexForKeyWord = 0;
         for (String PAGE_URL : PAGE_URLs) {
             System.out.println(PAGE_URL);
             // Send an HTTP request to fetch JSON response
@@ -115,13 +117,25 @@ public class PostCrawler extends Crawler<RedditPost> {
                         .atZone(ZoneId.of("UTC"))
                         .toLocalDateTime()
                         .format(DateTimeFormatter.ISO_LOCAL_DATE_TIME);
-                String keyword = keyWords[indexForKeyWord];
-                if (indexForKeyWord == keyword.length()) {
-                    indexForKeyWord = 0;
-                } else {
-                    indexForKeyWord++;
+
+                // Extract url to get keyword and timeFrames
+                String[] params = PAGE_URL.split("[?&]");
+                String keyWord = null;
+                String timeFrame = null;
+                for (String param : params) {
+                    String[] keyValue = param.split("=");
+                    if (keyValue.length == 2) {
+                        String key = keyValue[0];
+                        String value = keyValue[1];
+
+                        if ("t".equals(key)) {
+                            keyWord = value;
+                        } else if ("q".equals(key)) {
+                            timeFrame = URLDecoder.decode(value, StandardCharsets.UTF_8);
+                        }
+                    }
                 }
-                objects.add(new RedditPost(title, author, link, sumContent, ups, downs, numComments, created, keyword));
+                objects.add(new RedditPost(title, author, link, sumContent, ups, downs, numComments, created, timeFrame, keyWord));
             }
         }
     }

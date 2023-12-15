@@ -10,8 +10,12 @@ public class RedditPost {
     private int numComments;
     private String created;
     private String keyword;
+    private String timeFrame;
 
-    public RedditPost(String title, String author, String link, String sumContent, int ups, int downs, int numComments, String created, String keyword) {
+    public RedditPost() {
+    }
+
+    public RedditPost(String title, String author, String link, String sumContent, int ups, int downs, int numComments, String created, String keyword, String timeFrame) {
         this.title = title;
         this.author = author;
         this.link = link;
@@ -21,6 +25,7 @@ public class RedditPost {
         this.numComments = numComments;
         this.created = created;
         this.keyword = keyword;
+        this.timeFrame = timeFrame;
     }
 }
 

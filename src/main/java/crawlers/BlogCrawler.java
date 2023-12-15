@@ -67,7 +67,6 @@ public class BlogCrawler extends Crawler<Blog> {
     public void crawlData() {
         for (int i = 0; i < PAGE_URLs.size(); i++) {
             driver.get(PAGE_URLs.get(i));
-            waitForPresenceOfEl(new String[]{"card-body"});
             List<WebElement> webElements = driver.findElements(By.className("card-body"));
             for (WebElement webElement : webElements) {
                 String[] webElementContents = webElement.getText().split("\n");
