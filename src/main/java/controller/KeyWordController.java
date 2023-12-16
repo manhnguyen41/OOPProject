@@ -28,13 +28,41 @@ class KeyWordComparatorByReactInDayDecreasing implements Comparator<KeyWord> {
     }
 }
 
+class KeyWordComparatorByReactInDayIncreasing implements Comparator<KeyWord> {
+    private int timeFrame;
+
+    public KeyWordComparatorByReactInDayIncreasing(String timeFrame) {
+        super();
+        if (timeFrame.equals("day")) {
+            this.timeFrame = 0;
+        } else if (timeFrame.equals("month")) {
+            this.timeFrame = 1;
+        } else {
+            this.timeFrame = 2;
+        }
+    }
+
+    @Override
+    public int compare(KeyWord keyWord1, KeyWord keyWord2) {
+        return keyWord1.getReact()[0] - keyWord2.getReact()[0];
+    }
+}
+
 public class KeyWordController {
     public static final Comparator<KeyWord> COMPARE_BY_REACT_IN_DAY_DECREASING =
             new KeyWordComparatorByReactInDayDecreasing("day");
 
-    // Static method to sort keyword by react in day
+    // Static method to sort keyword by react in day decrease
     public static void sortKeyWordByReactInDayDecreasing(List<KeyWord> listKeyWord) {
         listKeyWord.sort(COMPARE_BY_REACT_IN_DAY_DECREASING);
+    }
+
+    public static final Comparator<KeyWord> COMPARE_BY_REACT_IN_DAY_INCREASING=
+            new KeyWordComparatorByReactInDayIncreasing("day");
+
+    // Static method to sort keyword by react in day increase
+    public static void sortKeyWordByReactInDayIncreasing(List<KeyWord> listKeyWord) {
+        listKeyWord.sort(COMPARE_BY_REACT_IN_DAY_INCREASING);
     }
 
     // Static method to get sum of react of a list of reddit post by day

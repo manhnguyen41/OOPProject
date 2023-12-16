@@ -12,22 +12,34 @@ import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
 
-class RedditPostComparator implements Comparator<RedditPost>{
-    public RedditPostComparator() {
-        super();
-    }
+class RedditPostComparatorASC implements Comparator<RedditPost>{
+    @Override
     public int compare(RedditPost post1, RedditPost post2){
         return post1.getReact() - post2.getReact();
     }
 }
 
+class RedditPostComparatorDES implements Comparator<RedditPost>{
+    @Override
+    public int compare(RedditPost post1, RedditPost post2){
+        return post2.getReact() - post1.getReact();
+    }
+}
+
 public class RedditPostController {
 
-    public static final Comparator<RedditPost> COMPARE_REDDITPOST_BY_REACT =
-            new RedditPostComparator();
+    public static final Comparator<RedditPost> COMPARE_REDDITPOST_BY_REACT_ASC =
+            new RedditPostComparatorASC();
+    //sort by react ascending
+    public static void sortByPostReactASC(List<RedditPost> listPost){
+        listPost.sort(COMPARE_REDDITPOST_BY_REACT_ASC);
+    }
 
-    public static void sortByPostReact(List<RedditPost> listPost){
-        listPost.sort(COMPARE_REDDITPOST_BY_REACT);
+    public static final Comparator<RedditPost> COMPARE_REDDITPOST_BY_REACT_DES =
+            new RedditPostComparatorDES();
+    //sort by react descending
+    public static void sortByPostReactDES(List<RedditPost> listPost){
+        listPost.sort(COMPARE_REDDITPOST_BY_REACT_DES);
     }
     // Static method to get list of RedditPost by keyword
     public static List<RedditPost> getRedditPostByKeyWord(List<RedditPost> listRedditPost, String keyWord){
