@@ -5,9 +5,38 @@ import models.RedditPost;
 import org.apache.commons.lang3.EnumUtils;
 
 import java.security.Key;
+import java.util.Comparator;
 import java.util.List;
 
+class KeyWordComparatorByReactInDayDecreasing implements Comparator<KeyWord> {
+    private int timeFrame;
+
+    public KeyWordComparatorByReactInDayDecreasing(String timeFrame) {
+        super();
+        if (timeFrame.equals("day")) {
+            this.timeFrame = 0;
+        } else if (timeFrame.equals("month")) {
+            this.timeFrame = 1;
+        } else {
+            this.timeFrame = 2;
+        }
+    }
+
+    @Override
+    public int compare(KeyWord keyWord1, KeyWord keyWord2) {
+        return keyWord2.getReact()[0] - keyWord1.getReact()[0];
+    }
+}
+
 public class KeyWordController {
+    public static final Comparator<KeyWord> COMPARE_BY_REACT_IN_DAY_DECREASING =
+            new KeyWordComparatorByReactInDayDecreasing("day");
+
+    // Static method to sort keyword by react in day
+    public static void sortKeyWordByReactInDayDecreasing(List<KeyWord> listKeyWord) {
+        listKeyWord.sort(COMPARE_BY_REACT_IN_DAY_DECREASING);
+    }
+
     // Static method to get sum of react of a list of reddit post by day
     public static int getSumReactByDay(List<RedditPost> listRedditPost,
                                        String keyWord) {
