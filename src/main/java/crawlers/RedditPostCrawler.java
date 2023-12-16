@@ -7,7 +7,6 @@ import com.google.gson.JsonParser;
 import models.RedditPost;
 
 import java.io.IOException;
-import java.io.UnsupportedEncodingException;
 import java.net.URI;
 import java.net.URLDecoder;
 import java.net.http.HttpClient;
@@ -18,8 +17,8 @@ import java.time.Instant;
 import java.time.ZoneId;
 import java.time.format.DateTimeFormatter;
 
-public class PostCrawler extends Crawler<RedditPost> {
-    private static final String JSON_PATH = "data/Post.json";
+public class RedditPostCrawler extends Crawler<RedditPost> {
+    private static final String JSON_PATH = "data/RedditPost.json";
     private static final String[] keyWords = {"NFTs",
             "Blockchain",
             "Digital Collectibles",
@@ -41,13 +40,13 @@ public class PostCrawler extends Crawler<RedditPost> {
             "Immutable Ledger",
             "Tokenized Assets"};
 
-    public PostCrawler(String json_file_path, String... page_urls) {
+    public RedditPostCrawler(String json_file_path, String... page_urls) {
         super(json_file_path, page_urls);
     }
 
     public static void main(String[] args) throws IOException {
         String[] urls = makeUrls();
-        PostCrawler postCrawler = new PostCrawler(JSON_PATH, urls);
+        RedditPostCrawler postCrawler = new RedditPostCrawler(JSON_PATH, urls);
         postCrawler.run();
     }
 
