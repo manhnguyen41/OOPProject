@@ -136,4 +136,14 @@ public class CollectionController {
         }
         return filteredListCollection;
     }
+    //Get collection by name
+    public static void getCollectionByName(List<Collection> collectionList, String name){
+        for(Collection collection: collectionList){
+            if(collection.getName().equals(name)){
+                System.out.println("NFT: " + collection.getName() + " " + collection.getVolume() +
+                        " " + collection.getChange() + " " + collection.getVolume() + " " + collection.getFloorPrice() + " " + collection.getOwners() + " "
+                        + collection.getOwners());
+            }
+        }
+    }
 }
