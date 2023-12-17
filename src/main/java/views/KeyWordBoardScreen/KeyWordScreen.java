@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
-package views;
+package views.KeyWordBoardScreen;
 
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
@@ -12,20 +12,14 @@ package views;
 
 import connector.KeyWordConnector;
 import connector.RedditPostConnector;
-import controller.CollectionController;
 import controller.KeyWordController;
 import controller.RedditPostController;
-import models.Collection;
 import models.KeyWord;
 import models.RedditPost;
+import views.CollectionBoardScreen.CollectionScreen;
+import views.Home;
 
-import java.awt.Desktop;
-import java.io.File;
-import java.io.FileOutputStream;
-import java.sql.*;
 import java.util.List;
-import javax.swing.JFileChooser;
-import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 
 
@@ -330,7 +324,9 @@ public class KeyWordScreen extends javax.swing.JFrame {
 
     private void lbTrangChuMouseClicked(java.awt.event.MouseEvent evt) {
         // TODO add your handling code here:
-
+        Home newScreen = new Home();
+        newScreen.setVisible(true);
+        this.dispose();
     }
 
     private void lbCollectionMouseClicked(java.awt.event.MouseEvent evt) {

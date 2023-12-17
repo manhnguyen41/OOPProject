@@ -2,13 +2,16 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
-package views;
+package views.CollectionBoardScreen;
 
 //import com.sun.jdi.connect.spi.Connection;
 
 import connector.CollectionConnector;
 import controller.CollectionController;
 import models.Collection;
+import views.Home;
+import views.KeyWordBoardScreen.KeyWordScreen;
+import views.KeyWordBoardScreen.RedditPostLogScreen;
 
 import javax.swing.table.DefaultTableModel;
 import java.util.List;
@@ -48,11 +51,10 @@ public class CollectionScreen extends javax.swing.JFrame {
         btnTim = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
         tCollection = new javax.swing.JTable();
-        btnTrinhBanGhi = new javax.swing.JButton();
         tfTim = new javax.swing.JTextField();
         btnSapXep = new javax.swing.JButton();
-        cbTangDan = new javax.swing.JComboBox<>();
-        cbByVolume = new javax.swing.JComboBox<>();
+        cbAscendingDescending = new javax.swing.JComboBox<>();
+        cbTheo = new javax.swing.JComboBox<>();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -115,7 +117,7 @@ public class CollectionScreen extends javax.swing.JFrame {
                                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                         .addComponent(lbKeyWord)
                                         .addComponent(lbCollection))
-                                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                .addContainerGap(66, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
                 jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -126,8 +128,6 @@ public class CollectionScreen extends javax.swing.JFrame {
                                 .addComponent(lbCollection)
                                 .addGap(18, 18, 18)
                                 .addComponent(lbKeyWord)
-                                .addGap(18, 18, 18)
-                                .addGap(18, 18, 18)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                 .addComponent(lbThoat)
                                 .addGap(33, 33, 33))
@@ -154,12 +154,12 @@ public class CollectionScreen extends javax.swing.JFrame {
         });
 
         tCollection.setForeground(new java.awt.Color(0, 102, 102));
-        tCollection.setModel(new DefaultTableModel(
+        tCollection.setModel(new javax.swing.table.DefaultTableModel(
                 new Object [][] {
 
                 },
                 new String [] {
-                        "Name", "Floor price", "Volume", "Change", "Owners", "Items"
+                        "Name", "Volume", "Change", "Floor price", "Owners", "Items"
                 }
         ) {
             boolean[] canEdit = new boolean [] {
@@ -182,20 +182,6 @@ public class CollectionScreen extends javax.swing.JFrame {
         });
         jScrollPane1.setViewportView(tCollection);
 
-        btnTrinhBanGhi.setBackground(new java.awt.Color(0, 51, 51));
-        btnTrinhBanGhi.setForeground(new java.awt.Color(255, 255, 255));
-        btnTrinhBanGhi.setText("Trình bản ghi");
-        btnTrinhBanGhi.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                btnTrinhBanGhiMouseClicked(evt);
-            }
-        });
-        btnTrinhBanGhi.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnTrinhBanGhiActionPerformed(evt);
-            }
-        });
-
         tfTim.setForeground(new java.awt.Color(0, 102, 102));
         tfTim.setText("Nhập thông tin");
         tfTim.setDisabledTextColor(new java.awt.Color(204, 204, 204));
@@ -203,7 +189,7 @@ public class CollectionScreen extends javax.swing.JFrame {
 
         btnSapXep.setBackground(new java.awt.Color(0, 51, 51));
         btnSapXep.setForeground(new java.awt.Color(255, 255, 255));
-        btnSapXep.setText("Sắp xếp");
+        btnSapXep.setText("Sắp xếp theo");
         btnSapXep.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 btnSapXepMouseClicked(evt);
@@ -215,9 +201,9 @@ public class CollectionScreen extends javax.swing.JFrame {
             }
         });
 
-        cbTangDan.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Tăng dần", "Giảm dần", " " }));
+        cbAscendingDescending.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Ascending floor price", "Descending floor price", "Ascending volume", "Descending volume", " " }));
 
-        cbByVolume.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "By volume", "By floor price", " " }));
+        cbTheo.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Theo 1 giờ", "Theo 6 giờ", "Theo 1 ngày", "Theo 7 ngày", "Theo 1 tháng", "Tất cả", " ", " ", " " }));
 
         javax.swing.GroupLayout nhanKhauPanelLayout = new javax.swing.GroupLayout(nhanKhauPanel);
         nhanKhauPanel.setLayout(nhanKhauPanelLayout);
@@ -232,15 +218,13 @@ public class CollectionScreen extends javax.swing.JFrame {
                                                 .addContainerGap())
                                         .addComponent(jScrollPane1)
                                         .addGroup(nhanKhauPanelLayout.createSequentialGroup()
-                                                .addGap(42, 42, 42)
-                                                .addComponent(btnTrinhBanGhi, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                .addGap(53, 53, 53)
+                                                .addGap(30, 30, 30)
                                                 .addComponent(btnSapXep, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
                                                 .addGap(18, 18, 18)
-                                                .addComponent(cbTangDan, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addComponent(cbTheo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                                 .addGap(18, 18, 18)
-                                                .addComponent(cbByVolume, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 129, Short.MAX_VALUE)
+                                                .addComponent(cbAscendingDescending, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 236, Short.MAX_VALUE)
                                                 .addComponent(btnTim, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
                                                 .addGap(18, 18, 18)
                                                 .addComponent(tfTim, javax.swing.GroupLayout.PREFERRED_SIZE, 165, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -253,13 +237,14 @@ public class CollectionScreen extends javax.swing.JFrame {
                                 .addGap(20, 20, 20)
                                 .addComponent(jLabel6)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 43, Short.MAX_VALUE)
-                                .addGroup(nhanKhauPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                        .addComponent(btnTrinhBanGhi)
-                                        .addComponent(tfTim, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addComponent(btnTim)
-                                        .addComponent(btnSapXep)
-                                        .addComponent(cbTangDan, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addComponent(cbByVolume, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGroup(nhanKhauPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addGroup(nhanKhauPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                                .addComponent(btnSapXep)
+                                                .addComponent(cbAscendingDescending, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addGroup(nhanKhauPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                                .addComponent(tfTim, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addComponent(btnTim)
+                                                .addComponent(cbTheo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                                 .addGap(18, 18, 18)
                                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 488, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addContainerGap())
@@ -277,7 +262,7 @@ public class CollectionScreen extends javax.swing.JFrame {
         );
 
         pack();
-    }// </editor-fold>
+    }
 
     private void btnTrinhBanGhiActionPerformed(java.awt.event.ActionEvent evt) {
         // TODO add your handling code here:
@@ -289,7 +274,12 @@ public class CollectionScreen extends javax.swing.JFrame {
     }
 
     private void tCollectionMouseClicked(java.awt.event.MouseEvent evt) {
-
+        DefaultTableModel model = (DefaultTableModel)tCollection.getModel();
+        int indexRow = tCollection.getSelectedRow();
+        nameOfCollection = String.valueOf(model.getValueAt(indexRow, 0).toString());
+//        System.out.println(this.key);
+        BlogLogScreen blogLogScreen = new BlogLogScreen(nameOfCollection);
+        blogLogScreen.setVisible(true);
     }
 
     private void btnTimActionPerformed(java.awt.event.ActionEvent evt) {
@@ -299,21 +289,17 @@ public class CollectionScreen extends javax.swing.JFrame {
     private void btnTimMouseClicked(java.awt.event.MouseEvent evt) {
 //       TODO add your handling code here:
         // backend search và trả về một list of collection
-
+        Collection collection = CollectionController.getCollectionByName(currentCollectionList, tfTim.getText());
         // update currentCollectionList
-//        currentCollectionList = newCollectionList;
 
         // display currentCollectionList
-        CollectionController.sortCollectionByVolumeASC(currentCollectionList);
         DefaultTableModel defaultTableModel = (DefaultTableModel) tCollection.getModel();
         defaultTableModel.getDataVector().removeAllElements();
         defaultTableModel.fireTableDataChanged();
-        for(Collection collection: currentCollectionList){
-            String data[] = {collection.getName(), collection.getFloorPrice(), collection.getVolume(), collection.getChange(), collection.getOwners(), collection.getItems()};
-            defaultTableModel = (DefaultTableModel) tCollection.getModel();
-            defaultTableModel.addRow(data);
-            System.out.println(data[0]);
-        }
+
+        String data[] = {collection.getName(), collection.getVolume(), collection.getChange(), collection.getFloorPrice(), collection.getOwners(), collection.getItems()};
+        defaultTableModel = (DefaultTableModel) tCollection.getModel();
+        defaultTableModel.addRow(data);
     }
 
     // -------------------- BACK TO MAIN FORM ----------------------------
@@ -324,7 +310,9 @@ public class CollectionScreen extends javax.swing.JFrame {
 
     private void lbTrangChuMouseClicked(java.awt.event.MouseEvent evt) {
         // TODO add your handling code here:
-
+        Home newScreen = new Home();
+        newScreen.setVisible(true);
+        this.dispose();
     }
 
     private void lbCollectionMouseClicked(java.awt.event.MouseEvent evt) {
@@ -340,44 +328,7 @@ public class CollectionScreen extends javax.swing.JFrame {
 
     private void btnSapXepMouseClicked(java.awt.event.MouseEvent evt) {
         // TODO add your handling code here:
-        String firstItem = cbTangDan.getSelectedItem().toString();
-        String secondItem = cbByVolume.getSelectedItem().toString();
-        DefaultTableModel defaultTableModel = (DefaultTableModel) tCollection.getModel();
-        defaultTableModel.getDataVector().removeAllElements();
-        defaultTableModel.fireTableDataChanged();
-        if (firstItem.equals("Tăng dần")){
-            if (secondItem.equals("By floor price")) {
-                CollectionController.sortCollectionByFloorPriceASC(currentCollectionList);
-                for(Collection collection: currentCollectionList){
-                    String data[] = {collection.getName(), collection.getFloorPrice(), collection.getVolume(), collection.getChange(), collection.getOwners(), collection.getItems()};
-                    defaultTableModel.addRow(data);
-                    System.out.println(data[1]);
-                }
-            } else if (secondItem.equals("By volume")) {
-                CollectionController.sortCollectionByVolumeASC(currentCollectionList);
-                for(Collection collection: currentCollectionList) {
-                    String data[] = {collection.getName(), collection.getFloorPrice(), collection.getVolume(), collection.getChange(), collection.getOwners(), collection.getItems()};
-                    defaultTableModel.addRow(data);
-                    System.out.println(data[2]);
-                }
-            }
-        } else if (firstItem.equals("Giảm dần")) {
-            if (secondItem.equals("By floor price")) {
-                CollectionController.sortCollectionByFloorPriceDES(currentCollectionList);
-                for(Collection collection: currentCollectionList){
-                    String data[] = {collection.getName(), collection.getFloorPrice(), collection.getVolume(), collection.getChange(), collection.getOwners(), collection.getItems()};
-                    defaultTableModel.addRow(data);
-                    System.out.println(data[1]);
-                }
-            } else if (secondItem.equals("By volume")) {
-                CollectionController.sortCollectionByVolumeDES(currentCollectionList);
-                for(Collection collection: currentCollectionList) {
-                    String data[] = {collection.getName(), collection.getFloorPrice(), collection.getVolume(), collection.getChange(), collection.getOwners(), collection.getItems()};
-                    defaultTableModel.addRow(data);
-                    System.out.println(data[2]);
-                }
-            }
-        }
+        display();
     }
 
     private void btnSapXepActionPerformed(java.awt.event.ActionEvent evt) {
@@ -390,20 +341,52 @@ public class CollectionScreen extends javax.swing.JFrame {
 
     // ------------- DISPLAY PEOPLE ---------------------
     private void display(){
-        this.currentCollectionList = this.collectionList;
-        CollectionController.sortCollectionByVolumeASC(currentCollectionList);
+        String firstItem = cbTheo.getSelectedItem().toString();
+        String secondItem = cbAscendingDescending.getSelectedItem().toString();
+        System.out.println(secondItem);
+        // ------- xử lý input first item -------
+        int index = 0;
+        if (firstItem.equals("Theo 1 giờ")){
+            index = 0;
+        } else if (firstItem.equals("Theo 6 giờ")){
+            index = 1;
+        } else if (firstItem.equals("Theo 1 ngày")) {
+            index = 2;
+        } else if (firstItem.equals("Theo 7 ngày")) {
+            index = 3;
+        } else if (firstItem.equals("Theo 1 tháng")) {
+            index = 4;
+        } else if (firstItem.equals("Tất cả")) {
+            index = 5;
+        }
+        this.currentCollectionList = this.collectionListArray[index];
+        // -----------------------------------
+
+        // -------- xử lý input thứ 2 ---------
+        if (secondItem.equals("Ascending floor price")){
+            CollectionController.sortCollectionByFloorPriceASC(this.currentCollectionList);
+        } else if (secondItem.equals("Descending floor price")){
+            CollectionController.sortCollectionByFloorPriceDES(this.currentCollectionList);
+        } else if (secondItem.equals("Ascending volume")) {
+            CollectionController.sortCollectionByVolumeASC(this.currentCollectionList);
+        } else if (secondItem.equals("Descending volume")) {
+            CollectionController.sortCollectionByVolumeDES(this.currentCollectionList);
+        }
+        // ------------------------------------
+
+        // --------- Display section ----------
         DefaultTableModel defaultTableModel = (DefaultTableModel) tCollection.getModel();
         defaultTableModel.getDataVector().removeAllElements();
         defaultTableModel.fireTableDataChanged();
+
         for(Collection collection: currentCollectionList){
-            String data[] = {collection.getName(), collection.getFloorPrice(), collection.getVolume(), collection.getChange(), collection.getOwners(), collection.getItems()};
-            defaultTableModel = (DefaultTableModel) tCollection.getModel();
+            String data[] = {collection.getName(), collection.getVolume(), collection.getChange(), collection.getFloorPrice(), collection.getOwners(), collection.getItems()};
             defaultTableModel.addRow(data);
-            System.out.println(data[0]);
         }
     }
-
+    private String nameOfCollection = "";
     private static final List<Collection> collectionList = CollectionConnector.readCollectionFromJson("D:\\HUST\\2023.1\\OOP\\OOPProject\\data\\Collection.json");
+    private static final List<Collection> []collectionListArray = CollectionController.getListCollection(collectionList);
     private List<Collection> currentCollectionList;
 
     /**
@@ -444,9 +427,8 @@ public class CollectionScreen extends javax.swing.JFrame {
     // Variables declaration - do not modify
     private javax.swing.JButton btnSapXep;
     private javax.swing.JButton btnTim;
-    private javax.swing.JButton btnTrinhBanGhi;
-    private javax.swing.JComboBox<String> cbByVolume;
-    private javax.swing.JComboBox<String> cbTangDan;
+    private javax.swing.JComboBox<String> cbAscendingDescending;
+    private javax.swing.JComboBox<String> cbTheo;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JScrollPane jScrollPane1;

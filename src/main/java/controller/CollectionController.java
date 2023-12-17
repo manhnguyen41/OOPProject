@@ -3,6 +3,7 @@ package controller;
 import models.Collection;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
@@ -130,20 +131,37 @@ public class CollectionController {
     public static List<Collection> []getListCollection(List<Collection> listCollection) {
         List<Collection> []filteredListCollection = new ArrayList[6];
         for (int i = 0; i < 6; i++) {
+
+            filteredListCollection[i] = new ArrayList<>();
+
             for (int j = i * 100; j < (i + 1) * 100; j++) {
                 filteredListCollection[i].add(listCollection.get(j));
+                if (j == listCollection.size() - 1){
+                    break;
+                }
             }
         }
         return filteredListCollection;
     }
-    //Get collection by name
-    public static void getCollectionByName(List<Collection> collectionList, String name){
+
+    public static Collection getCollectionByName(List<Collection> collectionList, String name){
         for(Collection collection: collectionList){
             if(collection.getName().equals(name)){
-                System.out.println("NFT: " + collection.getName() + " " + collection.getVolume() +
-                        " " + collection.getChange() + " " + collection.getVolume() + " " + collection.getFloorPrice() + " " + collection.getOwners() + " "
-                        + collection.getOwners());
+                return collection;
             }
         }
+        return null;
     }
+
+    //Get collection by name
+//    public static void getCollectionByName(List<Collection> collectionList, String name){
+//        for(Collection collection: collectionList){
+//            if(collection.getName().equals(name)){
+//                System.out.println("NFT: " + collection.getName() + " " + collection.getVolume() +
+//                        " " + collection.getChange() + " " + collection.getVolume() + " " + collection.getFloorPrice() + " " + collection.getOwners() + " "
+//                        + collection.getOwners());
+//            }
+//        }
+//    }
+
 }
