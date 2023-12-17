@@ -1,0 +1,83 @@
+
+E
+java:S1604g"(Make this anonymous inner class a lambda(¨÷™û8ÆĞáÁÇ1
+E
+java:S1604v"(Make this anonymous inner class a lambda(©Ú£Ó8ÆĞáÁÇ1
+K
+java:S1604"(Make this anonymous inner class a lambda(­üÇÿÿÿÿÿ8ÆĞáÁÇ1
+K
+java:S1604á"(Make this anonymous inner class a lambda(¨í¡§úÿÿÿÿ8ÇĞáÁÇ1
+M
+java:S2387×"*"title" is the name of a field in "Frame".(åõò¹ıÿÿÿÿ8…ÑáÁÇ1
+u
+java:S1450é"WRemove the "btnThoat" field and declare it as a local variable in the relevant methods.(İÇõ£8ŠÑáÁÇ1
+z
+java:S1450ê"WRemove the "jLabel10" field and declare it as a local variable in the relevant methods.(¼õò†şÿÿÿÿ8ŠÑáÁÇ1
+z
+java:S1450ë"WRemove the "jLabel11" field and declare it as a local variable in the relevant methods.(‰Ó‚©øÿÿÿÿ8‹ÑáÁÇ1
+u
+java:S1450ì"WRemove the "jLabel12" field and declare it as a local variable in the relevant methods.(¶“¡8‹ÑáÁÇ1
+z
+java:S1450í"WRemove the "jLabel13" field and declare it as a local variable in the relevant methods.(ÑİĞİıÿÿÿÿ8‹ÑáÁÇ1
+z
+java:S1450î"WRemove the "jLabel14" field and declare it as a local variable in the relevant methods.(ÖóœÍıÿÿÿÿ8ŒÑáÁÇ1
+z
+java:S1450ï"WRemove the "jLabel19" field and declare it as a local variable in the relevant methods.(Şù’±ıÿÿÿÿ8ŒÑáÁÇ1
+z
+java:S1450ğ"WRemove the "jLabel21" field and declare it as a local variable in the relevant methods.(Üœäÿûÿÿÿÿ8ŒÑáÁÇ1
+y
+java:S1450ñ"VRemove the "jLabel6" field and declare it as a local variable in the relevant methods.(¸ôÂøÿÿÿÿ8ÑáÁÇ1
+t
+java:S1450ò"VRemove the "jLabel7" field and declare it as a local variable in the relevant methods.(×ê˜Ÿ8ÑáÁÇ1
+t
+java:S1450ó"VRemove the "jLabel8" field and declare it as a local variable in the relevant methods.(å»«¢8ÑáÁÇ1
+y
+java:S1450ô"VRemove the "jLabel9" field and declare it as a local variable in the relevant methods.(Ì’óĞşÿÿÿÿ8ÑáÁÇ1
+y
+java:S1450õ"VRemove the "jPanel2" field and declare it as a local variable in the relevant methods.(õ òçüÿÿÿÿ8ÑáÁÇ1
+~
+java:S1450ö"[Remove the "jScrollPane1" field and declare it as a local variable in the relevant methods.(¤á×ÿÿÿÿÿ8ÑáÁÇ1
+{
+java:S1450÷"XRemove the "taContent" field and declare it as a local variable in the relevant methods.(¤Ë‰‰úÿÿÿÿ8ÑáÁÇ1
+u
+java:S1450ø"WRemove the "tfAuthor" field and declare it as a local variable in the relevant methods.(—üÀ±8ÑáÁÇ1
+v
+java:S1450ù"XRemove the "tfCreated" field and declare it as a local variable in the relevant methods.(ÄÌ©ı8ÑáÁÇ1
+t
+java:S1450ú"VRemove the "tfDowns" field and declare it as a local variable in the relevant methods.(ÙÏÇ†8ÑáÁÇ1
+v
+java:S1450û"XRemove the "tfKeyWord" field and declare it as a local variable in the relevant methods.(› şš8ÑáÁÇ1
+s
+java:S1450ü"URemove the "tfLink" field and declare it as a local variable in the relevant methods.(«µÿ8ÑáÁÇ1
+z
+java:S1450ı"\Remove the "tfNumComments" field and declare it as a local variable in the relevant methods.(Ê¾ïì8ÑáÁÇ1
+}
+java:S1450ş"ZRemove the "tfTimeFrame" field and declare it as a local variable in the relevant methods.(Çù€ùıÿÿÿÿ8ÑáÁÇ1
+r
+java:S1450€"TRemove the "tfUps" field and declare it as a local variable in the relevant methods.(Æì€Õ8‘ÑáÁÇ1
+W
+java:S1161r":Add the "@Override" annotation above this method signature(†ŒË³8ŸÑáÁÇ1
+M
+java:S1172Å"*Remove this unused method parameter "evt".(´šŞ÷ıÿÿÿÿ8¬ÑáÁÇ1
+U
+java:S1135Æ"2Complete the task associated to this TODO comment.(ÜÀ†áûÿÿÿÿ8¬ÑáÁÇ1
+H
+java:S1172É"*Remove this unused method parameter "evt".(¢ü8¬ÑáÁÇ1
+U
+java:S1135Ê"2Complete the task associated to this TODO comment.(ÜÀ†áûÿÿÿÿ8¬ÑáÁÇ1
+H
+java:S1172Í"*Remove this unused method parameter "evt".(ô×ñ¦8­ÑáÁÇ1
+U
+java:S1135Î"2Complete the task associated to this TODO comment.(ÜÀ†áûÿÿÿÿ8­ÑáÁÇ1
+H
+java:S1172Ò"*Remove this unused method parameter "evt".(öºû·8­ÑáÁÇ1
+U
+java:S1135Ó"2Complete the task associated to this TODO comment.(ÜÀ†áûÿÿÿÿ8­ÑáÁÇ1
+M
+java:S1197İ"*Move the array designators [] to the type.(¡şÏÖøÿÿÿÿ8­ÑáÁÇ1
+Q
+java:S1128"4Remove this unused import 'javax.swing.JOptionPane'.(÷‰Îé8«ûáÁÇ1
+b
+java:S1128"@Remove this unused import 'javax.swing.table.DefaultTableModel'.(è†åûÿÿÿÿ8«ûáÁÇ1
+B
+java:S1128"%Remove this unused import 'java.sql'.(´İ…Å8«ûáÁÇ1

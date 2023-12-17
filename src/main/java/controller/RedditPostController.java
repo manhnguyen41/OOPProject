@@ -52,6 +52,16 @@ public class RedditPostController {
         return filteredListRedditPost;
     }
 
+    // ------ SEARCH BY TITLE ------
+    public static RedditPost getRedditPostByTitle(List<RedditPost> listRedditPost, String title){
+        for(RedditPost redditPost: listRedditPost){
+            if(redditPost.getTitle().equals(title)){
+                return redditPost;
+            }
+        }
+        return null;
+    }
+
     // Method to check if post contain the keyword
     public static boolean check(String keyWord, RedditPost redditPost) {
         return redditPost.getTitle().contains(keyWord) || redditPost.getSumContent().contains(keyWord);

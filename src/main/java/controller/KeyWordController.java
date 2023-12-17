@@ -156,13 +156,13 @@ public class KeyWordController {
         return null;
     }
     //get keyword by name
-    public static void getKeyWordByName(List<KeyWord> keyWordList, String name){
-        for(KeyWord keyWord: keyWordList){
-            if(keyWord.getWord().equals(name)){
-                System.out.println("Key Word: " + keyWord.getWord() + " " + keyWord.getReact());
-            }
-        }
-    }
+//    public static void A(List<KeyWord> keyWordList, String name){
+//        for(KeyWord keyWord: keyWordList){
+//            if(keyWord.getWord().equals(name)){
+//                System.out.println("Key Word: " + keyWord.getWord() + " " + keyWord.getReact());
+//            }
+//        }
+//    }
 
 //    public static void printHotKeyWord(){
 //        List<KeyWord> listKeyWord = new ArrayList<>(crateListKeyWord());
