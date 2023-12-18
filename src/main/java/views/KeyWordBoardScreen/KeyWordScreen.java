@@ -359,20 +359,14 @@ public class KeyWordScreen extends javax.swing.JFrame {
         defaultTableModel.fireTableDataChanged();
         if (firstItem.equals("Tăng dần theo ngày")){
             KeyWordController.sortKeyWordByReactInDayIncreasing(currentKeyWordList);
-            for(KeyWord keyWord: currentKeyWordList) {
-                List<RedditPost> redditPostListByKeyWord = RedditPostController.getRedditPostByKeyWord(redditPostList,keyWord.getWord());
-                String data[] = {keyWord.getWord(), String.valueOf(keyWord.getReact()[index]), String.valueOf(redditPostListByKeyWord.size())};
-                defaultTableModel = (DefaultTableModel) tKeyWord.getModel();
-                defaultTableModel.addRow(data);
-            }
         } else if (firstItem.equals("Giảm dần theo ngày")) {
             KeyWordController.sortKeyWordByReactInDayDecreasing(currentKeyWordList);
-            for(KeyWord keyWord: currentKeyWordList) {
-                List<RedditPost> redditPostListByKeyWord = RedditPostController.getRedditPostByKeyWord(redditPostList,keyWord.getWord());
-                String data[] = {keyWord.getWord(), String.valueOf(keyWord.getReact()[index]), String.valueOf(redditPostListByKeyWord.size())};
-                defaultTableModel = (DefaultTableModel) tKeyWord.getModel();
-                defaultTableModel.addRow(data);
-            }
+        }
+        for(KeyWord keyWord: currentKeyWordList) {
+            List<RedditPost> redditPostListByKeyWord = RedditPostController.getRedditPostByKeyWord(redditPostList,keyWord.getWord());
+            String data[] = {keyWord.getWord(), String.valueOf(keyWord.getReact()[index]), String.valueOf(redditPostListByKeyWord.size())};
+            defaultTableModel = (DefaultTableModel) tKeyWord.getModel();
+            defaultTableModel.addRow(data);
         }
     }
 
