@@ -1,0 +1,9 @@
+
+€
+java:S1488o"^Immediately return this expression instead of assigning it to the temporary variable "result".(à½‡¹ÿÿÿÿÿ8”àµÄÇ1
+W
+java:S1118S":Add a private constructor to hide the implicit public one.(â«Ê8·àµÄÇ1
+o	java:S100m"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ô±Òùÿÿÿÿ8¹àµÄÇ1
+Y	java:S125"<This block of commented-out lines of code should be removed.(ÃÅš™8½àµÄÇ1
+T
+java:S1128"2Remove this unused import 'java.util.Collections'.(¢³ïÓşÿÿÿÿ8½àµÄÇ1

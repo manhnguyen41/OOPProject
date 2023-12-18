@@ -1,6 +1,12 @@
 package models;
 
+import java.io.FileReader;
+import java.lang.reflect.Type;
+import java.util.ArrayList;
+import java.util.List;
+
 public class Collection {
+    // Attribute
     private String name;
     private String volume;
 
@@ -12,6 +18,7 @@ public class Collection {
 
     private String items;
 
+    // Constructor
     public Collection() {
     }
 
@@ -24,7 +31,63 @@ public class Collection {
         this.items = items;
     }
 
+    // Method to get list of Blog by Collection
+    public List<Blog> getBlogByCollection(List<Blog> blogList){
+        List<Blog> filteredBlog = new ArrayList<Blog>();
+        for (Blog blog: blogList){
+            if(blog.getCollection().equals(name)){
+                filteredBlog.add(blog);
+            }
+        }
+        return filteredBlog;
+    }
+
+    // Getter and Setter
     public String getName() {
         return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getVolume() {
+        return volume;
+    }
+
+    public void setVolume(String volume) {
+        this.volume = volume;
+    }
+
+    public String getChange() {
+        return change;
+    }
+
+    public void setChange(String change) {
+        this.change = change;
+    }
+
+    public String getFloorPrice() {
+        return floorPrice;
+    }
+
+    public void setFloorPrice(String floorPrice) {
+        this.floorPrice = floorPrice;
+    }
+
+    public String getOwners() {
+        return owners;
+    }
+
+    public void setOwners(String owners) {
+        this.owners = owners;
+    }
+
+    public String getItems() {
+        return items;
+    }
+
+    public void setItems(String items) {
+        this.items = items;
     }
 }
