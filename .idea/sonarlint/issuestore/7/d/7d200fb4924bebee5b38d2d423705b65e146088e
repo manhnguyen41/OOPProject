@@ -1,0 +1,81 @@
+
+k
+java:S1192K"IDefine a constant instead of duplicating this literal "Segoe UI" 3 times.(›Åëªıÿÿÿÿ8âÃŠÂÇ1
+s	java:S117›"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ÿç¢úÿÿÿÿ8âÃŠÂÇ1
+F
+java:S1604‚"(Make this anonymous inner class a lambda(òû¬Ú8ãÃŠÂÇ1
+F
+java:S1604“"(Make this anonymous inner class a lambda(©Ú£Ó8ãÃŠÂÇ1
+K
+java:S1604›"(Make this anonymous inner class a lambda(¨í¡§úÿÿÿÿ8ãÃŠÂÇ1
+~	java:S116£"\Rename this field "PanelSuaXoaHoKhau" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ò´üúÿÿÿÿ8†ÄŠÂÇ1
+ƒ
+java:S1450£"`Remove the "PanelSuaXoaHoKhau" field and declare it as a local variable in the relevant methods.(ò´üúÿÿÿÿ8‰ÄŠÂÇ1
+{
+java:S1450¤"XRemove the "btnSapXep" field and declare it as a local variable in the relevant methods.(îƒ¾øÿÿÿÿ8‰ÄŠÂÇ1
+u
+java:S1450¥"WRemove the "btnThoat" field and declare it as a local variable in the relevant methods.(İÇõ£8‰ÄŠÂÇ1
+
+java:S1450€"mRemove the "currentRedditPostListByKeyWord" field and declare it as a local variable in the relevant methods.(Êºó¼ıÿÿÿÿ8‰ÄŠÂÇ1
+y
+java:S1450§"VRemove the "jLabel1" field and declare it as a local variable in the relevant methods.(°ãÉ¸ÿÿÿÿÿ8ŠÄŠÂÇ1
+y
+java:S1450¨"VRemove the "jLabel2" field and declare it as a local variable in the relevant methods.(™úòˆüÿÿÿÿ8ŠÄŠÂÇ1
+~
+java:S1450©"[Remove the "jScrollPane1" field and declare it as a local variable in the relevant methods.(¤á×ÿÿÿÿÿ8ŠÄŠÂÇ1
+\
+java:S1948ÿ"9Make "redditPostListByKeyWord" transient or serializable.(šÂüÿÿÿÿÿ8ŠÄŠÂÇ1
+c
+java:S1948€"@Make "currentRedditPostListByKeyWord" transient or serializable.(Êºó¼ıÿÿÿÿ8ŠÄŠÂÇ1
+L	java:S106)"+Replace this use of System.out by a logger.(‚‰ğ­ıÿÿÿÿ8ŒÄŠÂÇ1
+L	java:S106*"+Replace this use of System.out by a logger.(­àö›øÿÿÿÿ8ŒÄŠÂÇ1
+W
+java:S1161F":Add the "@Override" annotation above this method signature(†ŒË³8‘ÄŠÂÇ1
+W
+java:S1161i":Add the "@Override" annotation above this method signature(®¸ù8”ÄŠÂÇ1
+W
+java:S1161s":Add the "@Override" annotation above this method signature(†ŒË³8•ÄŠÂÇ1
+W
+java:S1161~":Add the "@Override" annotation above this method signature(†ŒË³8–ÄŠÂÇ1
+X
+java:S1161":Add the "@Override" annotation above this method signature(†ŒË³8—ÄŠÂÇ1
+H
+java:S1172İ"*Remove this unused method parameter "evt".(„ÏŸ»8œÄŠÂÇ1
+^	java:S125á"<This block of commented-out lines of code should be removed.(Ä•€ôıÿÿÿÿ8œÄŠÂÇ1
+M
+java:S1172æ"*Remove this unused method parameter "evt".(ÿï§øıÿÿÿÿ8ÄŠÂÇ1
+U
+java:S1135ç"2Complete the task associated to this TODO comment.(ÜÀ†áûÿÿÿÿ8ÄŠÂÇ1
+M
+java:S1172ë"*Remove this unused method parameter "evt".(·Ìë¬ûÿÿÿÿ8ÄŠÂÇ1
+H
+java:S1172ï"*Remove this unused method parameter "evt".(ô×ñ¦8ÄŠÂÇ1
+U
+java:S1135ğ"2Complete the task associated to this TODO comment.(ÜÀ†áûÿÿÿÿ8ÄŠÂÇ1
+M
+java:S1172ô"*Remove this unused method parameter "evt".(´šŞ÷ıÿÿÿÿ8ÄŠÂÇ1
+U
+java:S1135õ"2Complete the task associated to this TODO comment.(ÜÀ†áûÿÿÿÿ8ÄŠÂÇ1
+k	java:S100ø"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‘‘Š—8ÄŠÂÇ1
+H
+java:S1172ø"*Remove this unused method parameter "evt".(‘‘Š—8ÄŠÂÇ1
+U
+java:S1135ù"2Complete the task associated to this TODO comment.(ÜÀ†áûÿÿÿÿ8ÄŠÂÇ1
+Y	java:S125‰"<This block of commented-out lines of code should be removed.(ÍÒĞ8 ÄŠÂÇ1
+H
+java:S1197"*Move the array designators [] to the type.(öüì—8 ÄŠÂÇ1
+M
+java:S1197—"*Move the array designators [] to the type.(¡şÏÖøÿÿÿÿ8¢ÄŠÂÇ1
+V
+java:S1128"9Remove this unused import 'controller.KeyWordController'.(÷¼‘â8ñÛŠÂÇ1
+H
+java:S1128
+"+Remove this unused import 'models.KeyWord'.(àúñö8ñÛŠÂÇ1
+Q
+java:S1128"4Remove this unused import 'javax.swing.JOptionPane'.(÷‰Îé8ñÛŠÂÇ1
+B
+java:S1128"%Remove this unused import 'java.sql'.(´İ…Å8ñÛŠÂÇ1
+Q
+java:S1128"4Remove this unused import 'java.util.logging.Level'.(…µÛ¶8ñÛŠÂÇ1
+R
+java:S1128"5Remove this unused import 'java.util.logging.Logger'.(ƒ¥óš8ñÛŠÂÇ1

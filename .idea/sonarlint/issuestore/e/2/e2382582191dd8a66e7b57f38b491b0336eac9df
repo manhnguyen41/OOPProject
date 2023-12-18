@@ -1,0 +1,14 @@
+
+a
+java:S1192"FDefine a constant instead of duplicating this literal "month" 3 times.(ìú“šúÿÿÿÿ
+P	java:S125"<This block of commented-out lines of code should be removed.(Ãİ
+P
+java:S11183":Add a private constructor to hide the implicit public one.(Íó£µ
+^	java:S125Ÿ"<This block of commented-out lines of code should be removed.(šæêøÿÿÿÿ8ú£€¿Ç1
+R	java:S125§"<This block of commented-out lines of code should be removed.(ªØ¶Ò
+I
+java:S1128".Remove this unused import 'java.security.Key'.(ŞÃ“úÿÿÿÿ
+C
+java:S1068"-Remove this unused "timeFrame" private field.(ïşŸ
+C
+java:S1068 "-Remove this unused "timeFrame" private field.(ïşŸ
