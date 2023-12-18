@@ -6,6 +6,7 @@ import models.Blog;
 import models.Collection;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import services.GsonHandler;
 
 import java.io.FileReader;
 import java.io.IOException;
@@ -40,15 +41,9 @@ public class BlogCrawler extends Crawler<Blog> {
     }
 
     public static List<Collection> readCollectionsFromJson() {
-        Gson gson = new Gson();
-        List<Collection> collectionList = null;
-        try (FileReader reader = new FileReader("data/Collection.json")) {
-            Type type = new TypeToken<List<Collection>>() {
-            }.getType();
-            collectionList = gson.fromJson(reader, type);
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
+        GsonHandler gsonHandler = new GsonHandler();
+        List<Collection> collectionList = gsonHandler.fromJson("data/Collection.json", new TypeToken<List<Collection>>() {
+        }.getType());
 
         // Use Set to filter Collections with unique names
         Set<String> uniqueNames = new HashSet<>();
