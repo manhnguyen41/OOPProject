@@ -2,6 +2,7 @@ package models;
 
 import java.io.FileReader;
 import java.lang.reflect.Type;
+import java.util.ArrayList;
 import java.util.List;
 
 public class Collection {
@@ -28,6 +29,17 @@ public class Collection {
         this.floorPrice = floorPrice;
         this.owners = owners;
         this.items = items;
+    }
+
+    // Method to get list of Blog by Collection
+    public List<Blog> getBlogByCollection(List<Blog> blogList){
+        List<Blog> filteredBlog = new ArrayList<Blog>();
+        for (Blog blog: blogList){
+            if(blog.getCollection().equals(name)){
+                filteredBlog.add(blog);
+            }
+        }
+        return filteredBlog;
     }
 
     // Getter and Setter

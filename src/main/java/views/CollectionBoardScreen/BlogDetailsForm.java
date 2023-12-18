@@ -5,12 +5,9 @@
 package views.CollectionBoardScreen;
 
 import connector.BlogConnector;
-import controller.BlogController;
+import controller.ListOfBlogs;
 import models.Blog;
 
-import javax.swing.JOptionPane;
-import javax.swing.table.DefaultTableModel;
-import java.sql.*;
 import java.util.List;
 
 
@@ -29,8 +26,8 @@ public class BlogDetailsForm extends javax.swing.JFrame {
     }
     public BlogDetailsForm(String title, String link, String description, String collection) {
         initComponents();
-        List<Blog> blogList = BlogConnector.readBlogsFromJson("D:\\HUST\\2023.1\\OOP\\OOPProject\\data\\Blog.json");
-        Blog blog = BlogController.getIdentifyingBlog(blogList,title,description,link,collection);
+        ListOfBlogs blogList = new ListOfBlogs();
+        Blog blog = blogList.getIdentifyingBlog(title,description,link,collection);
 
         if(blog != null){
             tfCollection.setText(blog.getCollection());

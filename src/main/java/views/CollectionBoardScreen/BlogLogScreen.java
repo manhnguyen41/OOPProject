@@ -5,17 +5,11 @@
 package views.CollectionBoardScreen;
 
 import connector.BlogConnector;
-import connector.CollectionConnector;
-import controller.BlogController;
-import controller.RedditPostController;
+import controller.ListOfBlogs;
 import models.Blog;
 import models.Collection;
-import models.RedditPost;
-import views.KeyWordBoardScreen.RedditPostDetailsForm;
 
-import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
-import java.sql.*;
 import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -37,11 +31,11 @@ public class BlogLogScreen extends javax.swing.JFrame {
         initComponents();
     }
 
-    public BlogLogScreen(String collection) {
+    public BlogLogScreen(Collection collection) {
         initComponents();
         this.collection = collection;
-        this.blogListByCollection = BlogController.getBlogByCollection(blogList, collection);
-        tfCollection.setText(collection);
+        this.blogListByCollection.setBlogList(collection.getBlogByCollection(blogList.getBlogList()));
+        tfCollection.setText(collection.getName());
         display();
     }
     
@@ -198,7 +192,7 @@ public class BlogLogScreen extends javax.swing.JFrame {
         String link = String.valueOf(model.getValueAt(indexRow, 2).toString());
 
 //        System.out.println(this.key);
-        BlogDetailsForm newDetailsForm = new BlogDetailsForm(key, link, description, collection);
+        BlogDetailsForm newDetailsForm = new BlogDetailsForm(key, link, description, collection.getName());
         newDetailsForm.setVisible(true);
     }//GEN-LAST:event_tBlogMouseClicked
 
@@ -223,17 +217,17 @@ public class BlogLogScreen extends javax.swing.JFrame {
         DefaultTableModel defaultTableModel = (DefaultTableModel) tBlog.getModel();
         defaultTableModel.getDataVector().removeAllElements();
         defaultTableModel.fireTableDataChanged();
-        for (Blog blog : currentBlogListByCollection) {
+        for (Blog blog : currentBlogListByCollection.getBlogList()) {
             String data[] = {blog.getTitle(), blog.getDescription(), blog.getLink()};
             defaultTableModel = (DefaultTableModel) tBlog.getModel();
             defaultTableModel.addRow(data);
         }
     }
 
-    private String collection = "";
-    private static final List<Blog> blogList = BlogConnector.readBlogsFromJson("D:\\HUST\\2023.1\\OOP\\OOPProject\\data\\Blog.json");
-    private List<Blog> blogListByCollection;
-    private List<Blog> currentBlogListByCollection;
+    private Collection collection = null;
+    private  final ListOfBlogs blogList = new ListOfBlogs();
+    private ListOfBlogs blogListByCollection = new ListOfBlogs();
+    private ListOfBlogs currentBlogListByCollection;
     /**
      * @param args the command line arguments
      */

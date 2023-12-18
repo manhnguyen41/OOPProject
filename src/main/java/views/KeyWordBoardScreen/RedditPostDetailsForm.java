@@ -5,7 +5,7 @@
 package views.KeyWordBoardScreen;
 
 import connector.RedditPostConnector;
-import controller.RedditPostController;
+import controller.ListOfRedditPosts;
 import models.RedditPost;
 
 import java.util.List;
@@ -28,8 +28,8 @@ public class RedditPostDetailsForm extends javax.swing.JFrame {
     public RedditPostDetailsForm(String title) {
         initComponents();
         this.title = title;
-        List<RedditPost> redditPostList = RedditPostConnector.readRedditPostsFromJson("D:\\HUST\\2023.1\\OOP\\OOPProject\\data\\RedditPost.json");
-        RedditPost redditPost = RedditPostController.getRedditPostByTitle(redditPostList, this.title);
+        ListOfRedditPosts redditPostList = new ListOfRedditPosts();
+        RedditPost redditPost = redditPostList.getRedditPostByTitle(this.title).get(0);
 
         if (redditPost != null) {
             tfTitle.setText(redditPost.getTitle());

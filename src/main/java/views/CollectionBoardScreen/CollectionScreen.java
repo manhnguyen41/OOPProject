@@ -7,11 +7,10 @@ package views.CollectionBoardScreen;
 //import com.sun.jdi.connect.spi.Connection;
 
 import connector.CollectionConnector;
-import controller.CollectionController;
+import controller.ListOfCollections;
 import models.Collection;
 import views.Home;
 import views.KeyWordBoardScreen.KeyWordScreen;
-import views.KeyWordBoardScreen.RedditPostLogScreen;
 
 import javax.swing.table.DefaultTableModel;
 import java.util.List;
@@ -276,9 +275,9 @@ public class CollectionScreen extends javax.swing.JFrame {
     private void tCollectionMouseClicked(java.awt.event.MouseEvent evt) {
         DefaultTableModel model = (DefaultTableModel)tCollection.getModel();
         int indexRow = tCollection.getSelectedRow();
-        nameOfCollection = String.valueOf(model.getValueAt(indexRow, 0).toString());
-//        System.out.println(this.key);
-        BlogLogScreen blogLogScreen = new BlogLogScreen(nameOfCollection);
+        String nameOfCollection = String.valueOf(model.getValueAt(indexRow, 0).toString());
+        Collection collectionSelected = this.collectionList.getCollectionByName(nameOfCollection).get(0);
+        BlogLogScreen blogLogScreen = new BlogLogScreen(collectionSelected);
         blogLogScreen.setVisible(true);
     }
 
@@ -289,7 +288,7 @@ public class CollectionScreen extends javax.swing.JFrame {
     private void btnTimMouseClicked(java.awt.event.MouseEvent evt) {
 //       TODO add your handling code here:
         // backend search và trả về một list of collection
-        Collection collection = CollectionController.getCollectionByName(currentCollectionList, tfTim.getText());
+        List<Collection> collectionListCollectionByName = currentCollectionList.getCollectionByName(tfTim.getText());
         // update currentCollectionList
 
         // display currentCollectionList
@@ -297,9 +296,10 @@ public class CollectionScreen extends javax.swing.JFrame {
         defaultTableModel.getDataVector().removeAllElements();
         defaultTableModel.fireTableDataChanged();
 
-        String data[] = {collection.getName(), collection.getVolume(), collection.getChange(), collection.getFloorPrice(), collection.getOwners(), collection.getItems()};
-        defaultTableModel = (DefaultTableModel) tCollection.getModel();
-        defaultTableModel.addRow(data);
+        for(Collection collection: collectionListCollectionByName){
+            String data[] = {collection.getName(), collection.getVolume(), collection.getChange(), collection.getFloorPrice(), collection.getOwners(), collection.getItems()};
+            defaultTableModel.addRow(data);
+        }
     }
 
     // -------------------- BACK TO MAIN FORM ----------------------------
@@ -359,18 +359,18 @@ public class CollectionScreen extends javax.swing.JFrame {
         } else if (firstItem.equals("Tất cả")) {
             index = 5;
         }
-        this.currentCollectionList = this.collectionListArray[index];
+        this.currentCollectionList.setCollectionList(this.collectionListArray[index]);
         // -----------------------------------
 
         // -------- xử lý input thứ 2 ---------
         if (secondItem.equals("Ascending floor price")){
-            CollectionController.sortCollectionByFloorPriceASC(this.currentCollectionList);
+            this.currentCollectionList.sortCollectionByFloorPriceASC();
         } else if (secondItem.equals("Descending floor price")){
-            CollectionController.sortCollectionByFloorPriceDES(this.currentCollectionList);
+            this.currentCollectionList.sortCollectionByFloorPriceDES();
         } else if (secondItem.equals("Ascending volume")) {
-            CollectionController.sortCollectionByVolumeASC(this.currentCollectionList);
+            this.currentCollectionList.sortCollectionByVolumeASC();
         } else if (secondItem.equals("Descending volume")) {
-            CollectionController.sortCollectionByVolumeDES(this.currentCollectionList);
+            this.currentCollectionList.sortCollectionByVolumeDES();
         }
         // ------------------------------------
 
@@ -379,15 +379,15 @@ public class CollectionScreen extends javax.swing.JFrame {
         defaultTableModel.getDataVector().removeAllElements();
         defaultTableModel.fireTableDataChanged();
 
-        for(Collection collection: currentCollectionList){
+        for(Collection collection: currentCollectionList.getCollectionList()){
             String data[] = {collection.getName(), collection.getVolume(), collection.getChange(), collection.getFloorPrice(), collection.getOwners(), collection.getItems()};
             defaultTableModel.addRow(data);
         }
     }
-    private String nameOfCollection = "";
-    private static final List<Collection> collectionList = CollectionConnector.readCollectionFromJson("D:\\HUST\\2023.1\\OOP\\OOPProject\\data\\Collection.json");
-    private static final List<Collection> []collectionListArray = CollectionController.getListCollection(collectionList);
-    private List<Collection> currentCollectionList;
+    private Collection collection;
+    private final ListOfCollections collectionList = new ListOfCollections();
+    private final List<Collection> []collectionListArray = collectionList.getTop100Collection();
+    private ListOfCollections currentCollectionList;
 
     /**
      * @param args the command line arguments
