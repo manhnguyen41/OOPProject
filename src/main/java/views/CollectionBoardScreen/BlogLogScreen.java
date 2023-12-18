@@ -4,13 +4,11 @@
  */
 package views.CollectionBoardScreen;
 
-import connector.BlogConnector;
-import controller.ListOfBlogs;
+import controller.listController.ListOfBlogs;
 import models.Blog;
 import models.Collection;
 
 import javax.swing.table.DefaultTableModel;
-import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 

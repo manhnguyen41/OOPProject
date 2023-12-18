@@ -2,7 +2,7 @@ package models;
 
 import java.util.List;
 
-import controller.ListOfRedditPosts;
+import controller.listController.ListOfRedditPosts;
 
 public class KeyWord {
     // Attribute

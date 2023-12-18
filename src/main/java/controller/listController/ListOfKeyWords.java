@@ -1,17 +1,16 @@
-package controller;
+package controller.listController;
 
 import connector.KeyWordConnector;
 import models.KeyWord;
-import models.RedditPost;
 
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
 
-class KeyWordComparatorByReactInDayDES implements Comparator<KeyWord> {
+class KeyWordComparatorByReactDES implements Comparator<KeyWord> {
     private int timeFrame;
 
-    public KeyWordComparatorByReactInDayDES(String timeFrame) {
+    public KeyWordComparatorByReactDES(String timeFrame) {
         super();
         if (timeFrame.equals("day")) {
             this.timeFrame = 0;
@@ -28,10 +27,10 @@ class KeyWordComparatorByReactInDayDES implements Comparator<KeyWord> {
     }
 }
 
-class KeyWordComparatorByReactInDayASC implements Comparator<KeyWord> {
+class KeyWordComparatorByReactASC implements Comparator<KeyWord> {
     private int timeFrame;
 
-    public KeyWordComparatorByReactInDayASC(String timeFrame) {
+    public KeyWordComparatorByReactASC(String timeFrame) {
         super();
         if (timeFrame.equals("day")) {
             this.timeFrame = 0;
@@ -52,17 +51,17 @@ public class ListOfKeyWords {
     // Attribute
     private List<KeyWord> keyWordList;
     public static final Comparator<KeyWord> COMPARE_BY_REACT_IN_DAY_DECREASING =
-            new KeyWordComparatorByReactInDayDES("day");
+            new KeyWordComparatorByReactDES("day");
     public static final Comparator<KeyWord> COMPARE_BY_REACT_IN_DAY_INCREASING=
-            new KeyWordComparatorByReactInDayASC("day");
+            new KeyWordComparatorByReactASC("day");
     public static final Comparator<KeyWord> COMPARE_BY_REACT_IN_MONTH_DECREASING =
-            new KeyWordComparatorByReactInDayDES("month");
+            new KeyWordComparatorByReactDES("month");
     public static final Comparator<KeyWord> COMPARE_BY_REACT_IN_MONTH_INCREASING=
-            new KeyWordComparatorByReactInDayASC("month");
+            new KeyWordComparatorByReactASC("month");
     public static final Comparator<KeyWord> COMPARE_BY_REACT_IN_YEAR_DECREASING =
-            new KeyWordComparatorByReactInDayDES("year");
+            new KeyWordComparatorByReactDES("year");
     public static final Comparator<KeyWord> COMPARE_BY_REACT_IN_YEAR_INCREASING=
-            new KeyWordComparatorByReactInDayASC("year");
+            new KeyWordComparatorByReactASC("year");
 
     // Constructor
     public ListOfKeyWords(ListOfRedditPosts redditPostList) {
@@ -103,7 +102,7 @@ public class ListOfKeyWords {
     public List<KeyWord> getKeyWord(String word) {
         List<KeyWord> filteredList = new ArrayList<>();
         for (KeyWord keyWord: keyWordList) {
-            if (keyWord.getWord().equals(word)) {
+            if (keyWord.getWord().contains(word)) {
                 filteredList.add(keyWord);
             }
         }

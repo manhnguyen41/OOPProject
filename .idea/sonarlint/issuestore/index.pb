@@ -42,8 +42,6 @@ V
 0src/main/java/connector/CollectionConnector.java,5\d\5d4ec8a0a776c80be0dfc419d9fe01238dd7b0ef
 b
 2src/main/java/controller/CollectionController.java,f\9\f997faa02acd614ce5a6b3c2574276755dc343d3
-Y
-)src/main/java/views/CollectionScreen.java,f\5\f56f9bcaf3ad393c4ef1681c05297d799176587e
 D
 data/RedditPost.json,0\8\08a22f4be5b113bb7604c615ce7febd95d23d733
 Z
@@ -56,11 +54,19 @@ b
 2src/main/java/controller/RedditPostController.java,0\d\0d17210c235fdc020db8fda65de8906e2edb909e
 M
 src/main/java/views/Main.java,4\5\457e3c82f5dfcf1e67ae99a0b8f82a5c5280e90b
-V
-&src/main/java/views/KeyWordScreen.java,5\d\5dfc7f6a192b2504f9efef28de813da450465b2a
 _
 /src/main/java/controller/KeyWordController.java,e\2\e2382582191dd8a66e7b57f38b491b0336eac9df
-^
-.src/main/java/views/RedditPostDetailsForm.java,4\5\45b7181e8be5060dd4126d8e38069ffcb794f187
-\
-,src/main/java/views/RedditPostLogScreen.java,7\d\7d200fb4924bebee5b38d2d423705b65e146088e
+n
+>src/main/java/views/CollectionBoardScreen/BlogDetailsForm.java,5\3\5358201129acee53a4881e62d6eb44d9184c7b4f
+o
+?src/main/java/views/CollectionBoardScreen/CollectionScreen.java,d\1\d120654b41dfeb3ea076cef47018602607ed6e69
+M
+src/main/java/views/Home.java,0\0\00bf1494fc85e6916b88c49a2370b8209f7c20a6
+q
+Asrc/main/java/views/KeyWordBoardScreen/RedditPostDetailsForm.java,1\2\12bbbe9be6ccc25fc42ceb774df7cfceea8f6156
+o
+?src/main/java/views/KeyWordBoardScreen/RedditPostLogScreen.java,0\e\0e3a7364fec8a93e950f69cef82190a7f7c24492
+l
+<src/main/java/views/CollectionBoardScreen/BlogLogScreen.java,8\5\85416c821d1f98044621ae5947272bb448c23b5b
+i
+9src/main/java/views/KeyWordBoardScreen/KeyWordScreen.java,e\a\ea788ef1f44d88d862ae6eb7091a9d9dc6ce0be9

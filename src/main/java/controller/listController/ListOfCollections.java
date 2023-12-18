@@ -1,23 +1,22 @@
-package controller;
+package controller.listController;
 
 import connector.CollectionConnector;
 import models.Collection;
-import org.checkerframework.checker.units.qual.C;
 import var.GlobalVar;
 
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
 
-//Sort by volume ascending
-class CollectionComparatorByVolumeASC implements Comparator<Collection> {
+//Sort by change ascending
+class CollectionComparatorByChangeASC implements Comparator<Collection> {
     @Override
     public int compare(Collection c1, Collection c2){
-        double volume1 = ListOfCollections.ConvertToDouble(c1.getVolume());
-        double volume2 = ListOfCollections.ConvertToDouble(c2.getVolume());
-        if(volume1 - volume2 > 0){
+        double change1 = ListOfCollections.ConvertToDouble(c1.getChange());
+        double change2 = ListOfCollections.ConvertToDouble(c2.getChange());
+        if(change1 - change2 > 0){
             return 1;
-        } else if (volume2 - volume1 == 0) {
+        } else if (change2 - change1 == 0) {
             return 0;
         }else {
             return -1;
@@ -25,17 +24,49 @@ class CollectionComparatorByVolumeASC implements Comparator<Collection> {
     }
 }
 
-//Sort by volume descending
-class CollectionComparatorByVolumeDES implements Comparator<Collection>{
+//Sort by change descending
+class CollectionComparatorByChangeDES implements Comparator<Collection> {
     @Override
     public int compare(Collection c1, Collection c2){
+        double change1 = ListOfCollections.ConvertToDouble(c1.getChange());
+        double change2 = ListOfCollections.ConvertToDouble(c2.getChange());
+        if(change2 - change1 > 0){
+            return 1;
+        } else if (change2 - change1 == 0) {
+            return 0;
+        }else {
+            return -1;
+        }
+    }
+}
+
+//Sort by volume ascending
+class CollectionComparatorByVolumeASC implements Comparator<Collection> {
+    @Override
+    public int compare(Collection c1, Collection c2) {
         double volume1 = ListOfCollections.ConvertToDouble(c1.getVolume());
         double volume2 = ListOfCollections.ConvertToDouble(c2.getVolume());
-        if(volume2 - volume1 > 0){
+        if (volume1 - volume2 > 0) {
             return 1;
         } else if (volume2 - volume1 == 0) {
             return 0;
-        }else {
+        } else {
+            return -1;
+        }
+    }
+}
+
+//Sort by volume descending
+class CollectionComparatorByVolumeDES implements Comparator<Collection> {
+    @Override
+    public int compare(Collection c1, Collection c2) {
+        double volume1 = ListOfCollections.ConvertToDouble(c1.getVolume());
+        double volume2 = ListOfCollections.ConvertToDouble(c2.getVolume());
+        if (volume2 - volume1 > 0) {
+            return 1;
+        } else if (volume2 - volume1 == 0) {
+            return 0;
+        } else {
             return -1;
         }
     }
@@ -84,6 +115,10 @@ public class ListOfCollections {
             new CollectionComparatorByFloorPriceASC();
     public static final Comparator<Collection> COMPARE_COLLECTION_BY_FLOOR_PRICE_DES = 
             new CollectionComparatorByFloorPriceDES();
+    public static final Comparator<Collection> COMPARE_COLLECTION_BY_CHANGE_ASC =
+            new CollectionComparatorByChangeASC();
+    public static final Comparator<Collection> COMPARE_COLLECTION_BY_CHANGE_DES =
+            new CollectionComparatorByChangeDES();
     
     //Sort by volume ascending
     public void sortCollectionByVolumeASC(){
@@ -105,6 +140,15 @@ public class ListOfCollections {
         collectionList.sort(COMPARE_COLLECTION_BY_FLOOR_PRICE_DES);
     }
 
+    //Sort by change ascending
+    public void sortCollectionByChangeASC(){
+        collectionList.sort(COMPARE_COLLECTION_BY_CHANGE_ASC);
+    }
+
+    //Sort by change descending
+    public void sortCollectionByChangeDES(){
+        collectionList.sort(COMPARE_COLLECTION_BY_CHANGE_DES);
+    }
 
     // Method to get list of top 100 collections
     public List<Collection> []getTop100Collection() {
@@ -124,6 +168,13 @@ public class ListOfCollections {
 
     //Static method to convert String to Double
     public static double ConvertToDouble(String input) {
+        input = input.replace(",", "");
+        if (input.charAt(0) == '-' && input.length() != 2) {
+            return 0 - Double.parseDouble(input.substring(1));
+        }
+        if (input.charAt(0) == '+' && input.length() != 2) {
+            return Double.parseDouble(input.substring(1));
+        }
         if(!Character.isDigit(input.charAt(0))){
             double result = 0;
             return result;
@@ -150,7 +201,7 @@ public class ListOfCollections {
     public List<Collection> getCollectionByName(String name){
         List<Collection> filteredList = new ArrayList<>();
         for(Collection collection: collectionList){
-            if(collection.getName().equals(name)){
+            if(collection.getName().contains(name)){
                 filteredList.add(collection);
             }
         }

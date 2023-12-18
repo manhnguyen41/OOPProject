@@ -4,11 +4,8 @@
  */
 package views.KeyWordBoardScreen;
 
-import connector.RedditPostConnector;
-import controller.ListOfRedditPosts;
+import controller.listController.ListOfRedditPosts;
 import models.RedditPost;
-
-import java.util.List;
 
 
 /**
@@ -29,7 +26,7 @@ public class RedditPostDetailsForm extends javax.swing.JFrame {
         initComponents();
         this.title = title;
         ListOfRedditPosts redditPostList = new ListOfRedditPosts();
-        RedditPost redditPost = redditPostList.getRedditPostByTitle(this.title).getFirst();
+        RedditPost redditPost = redditPostList.getRedditPostByTitle(this.title).get(0);
 
         if (redditPost != null) {
             tfTitle.setText(redditPost.getTitle());
