@@ -49,6 +49,11 @@ public class RedditPost extends Post{
                 "Keyword: " + keyword + "\n\n";
     }
 
+    // Method to check if post contain the keyword
+    public boolean check(String keyWord) {
+        return getTitle().contains(keyWord) || getSumContent().contains(keyWord);
+    }
+
     // Getter and Setter
     public String getAuthor() {
         return author;

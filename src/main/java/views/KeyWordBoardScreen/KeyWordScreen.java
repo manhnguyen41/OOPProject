@@ -12,8 +12,8 @@ package views.KeyWordBoardScreen;
 
 import connector.KeyWordConnector;
 import connector.RedditPostConnector;
-import controller.KeyWordController;
-import controller.RedditPostController;
+import controller.ListOfKeyWords;
+import controller.ListOfRedditPosts;
 import models.KeyWord;
 import models.RedditPost;
 import views.CollectionBoardScreen.CollectionScreen;
@@ -283,8 +283,9 @@ public class KeyWordScreen extends javax.swing.JFrame {
         DefaultTableModel model = (DefaultTableModel)tKeyWord.getModel();
         int indexRow = tKeyWord.getSelectedRow();
         key = String.valueOf(model.getValueAt(indexRow, 0).toString());
+        KeyWord keyWord = keyWordList.getKeyWord(key).getFirst();
 //        System.out.println(this.key);
-        RedditPostLogScreen newLogScreen = new RedditPostLogScreen(key);
+        RedditPostLogScreen newLogScreen = new RedditPostLogScreen(keyWord);
         newLogScreen.setVisible(true);
     }
 
@@ -296,7 +297,7 @@ public class KeyWordScreen extends javax.swing.JFrame {
     private void btnTimMouseClicked(java.awt.event.MouseEvent evt) {
 //       TODO add your handling code here:
         String ten = tfTim.getText();
-        KeyWord keyWord = KeyWordController.getKeyWord(ten, keyWordList);
+        List<KeyWord> keyWords = keyWordList.getKeyWord(ten);
         String firstItem = cbTangDan.getSelectedItem().toString();
         int index = 0;
         if(cbReactBy.getSelectedItem().toString().equals("Reacts by day")) {
@@ -309,10 +310,13 @@ public class KeyWordScreen extends javax.swing.JFrame {
         DefaultTableModel defaultTableModel = (DefaultTableModel) tKeyWord.getModel();
         defaultTableModel.getDataVector().removeAllElements();
         defaultTableModel.fireTableDataChanged();
-        List<RedditPost> redditPostListByKeyWord = RedditPostController.getRedditPostByKeyWord(redditPostList,keyWord.getWord());
-        String data[] = {keyWord.getWord(), String.valueOf(keyWord.getReact()[index]), String.valueOf(redditPostListByKeyWord.size())};
-        defaultTableModel = (DefaultTableModel) tKeyWord.getModel();
-        defaultTableModel.addRow(data);
+
+        for (KeyWord keyWord: keyWords) {
+            List<RedditPost> redditPostListByKeyWord = redditPostList.getRedditPostByKeyWord(keyWord.getWord());
+            String data[] = {keyWord.getWord(), String.valueOf(keyWord.getReact()[index]), String.valueOf(redditPostListByKeyWord.size())};
+            defaultTableModel = (DefaultTableModel) tKeyWord.getModel();
+            defaultTableModel.addRow(data);
+        }
     }
 
     // -------------------- BACK TO MAIN FORM ----------------------------
@@ -358,17 +362,17 @@ public class KeyWordScreen extends javax.swing.JFrame {
         defaultTableModel.getDataVector().removeAllElements();
         defaultTableModel.fireTableDataChanged();
         if (firstItem.equals("Tăng dần theo ngày")){
-            KeyWordController.sortKeyWordByReactInDayIncreasing(currentKeyWordList);
-            for(KeyWord keyWord: currentKeyWordList) {
-                List<RedditPost> redditPostListByKeyWord = RedditPostController.getRedditPostByKeyWord(redditPostList,keyWord.getWord());
+            currentKeyWordList.sortKeyWordByReactInDayIncreasing();
+            for(KeyWord keyWord: currentKeyWordList.getKeyWordList()) {
+                List<RedditPost> redditPostListByKeyWord = redditPostList.getRedditPostByKeyWord(keyWord.getWord());
                 String data[] = {keyWord.getWord(), String.valueOf(keyWord.getReact()[index]), String.valueOf(redditPostListByKeyWord.size())};
                 defaultTableModel = (DefaultTableModel) tKeyWord.getModel();
                 defaultTableModel.addRow(data);
             }
         } else if (firstItem.equals("Giảm dần theo ngày")) {
-            KeyWordController.sortKeyWordByReactInDayDecreasing(currentKeyWordList);
-            for(KeyWord keyWord: currentKeyWordList) {
-                List<RedditPost> redditPostListByKeyWord = RedditPostController.getRedditPostByKeyWord(redditPostList,keyWord.getWord());
+            currentKeyWordList.sortKeyWordByReactInDayDecreasing();
+            for(KeyWord keyWord: currentKeyWordList.getKeyWordList()) {
+                List<RedditPost> redditPostListByKeyWord = redditPostList.getRedditPostByKeyWord(keyWord.getWord());
                 String data[] = {keyWord.getWord(), String.valueOf(keyWord.getReact()[index]), String.valueOf(redditPostListByKeyWord.size())};
                 defaultTableModel = (DefaultTableModel) tKeyWord.getModel();
                 defaultTableModel.addRow(data);
@@ -396,13 +400,13 @@ public class KeyWordScreen extends javax.swing.JFrame {
         } else if(cbReactBy.getSelectedItem().toString().equals("Reacts by year")) {
             index = 2;
         }
-        KeyWordController.sortKeyWordByReactInDayIncreasing(currentKeyWordList);
+        currentKeyWordList.sortKeyWordByReactInDayIncreasing();
         DefaultTableModel defaultTableModel = (DefaultTableModel) tKeyWord.getModel();
         defaultTableModel.getDataVector().removeAllElements();
         defaultTableModel.fireTableDataChanged();
         System.out.println(index);
-        for(KeyWord keyWord: currentKeyWordList){
-            List<RedditPost> redditPostListByKeyWord = RedditPostController.getRedditPostByKeyWord(redditPostList,keyWord.getWord());
+        for(KeyWord keyWord: currentKeyWordList.getKeyWordList()){
+            List<RedditPost> redditPostListByKeyWord = redditPostList.getRedditPostByKeyWord(keyWord.getWord());
             String data[] = {keyWord.getWord(), String.valueOf(keyWord.getReact()[index]), String.valueOf(redditPostListByKeyWord.size())};
             defaultTableModel = (DefaultTableModel) tKeyWord.getModel();
             defaultTableModel.addRow(data);
@@ -410,9 +414,9 @@ public class KeyWordScreen extends javax.swing.JFrame {
         }
     }
 
-    private static final List<RedditPost> redditPostList = RedditPostConnector.readRedditPostsFromJson("D:\\HUST\\2023.1\\OOP\\OOPProject\\data\\RedditPost.json");
-    private static final List<KeyWord> keyWordList = KeyWordConnector.getAllKeyWords(redditPostList);
-    private List<KeyWord> currentKeyWordList;
+    private final ListOfRedditPosts redditPostList = new ListOfRedditPosts();
+    private final ListOfKeyWords keyWordList = new ListOfKeyWords(redditPostList);
+    private ListOfKeyWords currentKeyWordList;
     String key = "";
     /**
      * @param args the command line arguments

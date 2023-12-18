@@ -1,10 +1,8 @@
 package models;
 
-import controller.KeyWordController;
-
-import java.util.ArrayList;
 import java.util.List;
-import models.RedditPost;
+
+import controller.ListOfRedditPosts;
 
 public class KeyWord {
     // Attribute
@@ -17,10 +15,48 @@ public class KeyWord {
     }
 
     // Method to calculate react of a keyword
-    public void calculateReact(List<RedditPost> listRedditPost) {
-        react[0] = KeyWordController.getSumReactByDay(listRedditPost, word);
-        react[1] = KeyWordController.getSumReactByMonth(listRedditPost, word);
-        react[2] = KeyWordController.getSumReactByYear(listRedditPost, word);
+    public void calculateReact(ListOfRedditPosts listRedditPost) {
+        react[0] = getSumReactByDay(listRedditPost);
+        react[1] = getSumReactByMonth(listRedditPost);
+        react[2] = getSumReactByYear(listRedditPost);
+    }
+
+    // Method to get sum of react of a list of reddit post by day
+    public int getSumReactByDay(ListOfRedditPosts listRedditPost) {
+        int sumReact = 0;
+        List<RedditPost> filteredListRedditPost
+                = listRedditPost.getRedditPostByKeyWord(word);
+        for (RedditPost redditPost: filteredListRedditPost) {
+            if (redditPost.getTimeFrame().equals("day")) {
+                sumReact += redditPost.getReact();
+            }
+        }
+        return sumReact;
+    }
+
+    // Method to get sum of react of a list of reddit post by month
+    public int getSumReactByMonth(ListOfRedditPosts listRedditPost) {
+        int sumReact = 0;
+        List<RedditPost> filteredListRedditPost
+                = listRedditPost.getRedditPostByKeyWord(word);
+        for (RedditPost redditPost: filteredListRedditPost) {
+            if (redditPost.getTimeFrame().equals("month")
+                    || redditPost.getTimeFrame().equals("day")) {
+                sumReact += redditPost.getReact();
+            }
+        }
+        return sumReact;
+    }
+
+    // Method to get sum of react of a list of reddit post by year
+    public int getSumReactByYear(ListOfRedditPosts listRedditPost) {
+        int sumReact = 0;
+        List<RedditPost> filteredListRedditPost
+                = listRedditPost.getRedditPostByKeyWord(word);
+        for (RedditPost redditPost: filteredListRedditPost) {
+            sumReact += redditPost.getReact();
+        }
+        return sumReact;
     }
 
     // Getter and Setter

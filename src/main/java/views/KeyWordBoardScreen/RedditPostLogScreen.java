@@ -5,7 +5,8 @@
 package views.KeyWordBoardScreen;
 
 import connector.RedditPostConnector;
-import controller.RedditPostController;
+import controller.ListOfRedditPosts;
+import models.KeyWord;
 import models.RedditPost;
 
 import javax.swing.table.DefaultTableModel;
@@ -28,13 +29,13 @@ public class RedditPostLogScreen extends javax.swing.JFrame {
         initComponents();
     }
 
-    public RedditPostLogScreen(String keyWord) {
+    public RedditPostLogScreen(KeyWord keyWord) {
         initComponents();
         this.keyWord = keyWord;
-        this.redditPostListByKeyWord = RedditPostController.getRedditPostByKeyWord(redditPostList, keyWord);
+        this.redditPostListByKeyWord.setRedditPostList(redditPostList.getRedditPostByKeyWord(keyWord.getWord()));
         System.out.println(this.keyWord);
-        System.out.println(this.redditPostListByKeyWord.size());
-        tfKeyWord.setText(keyWord);
+        System.out.println(this.redditPostListByKeyWord.getRedditPostList().size());
+        tfKeyWord.setText(keyWord.getWord());
         display();
     }
     
@@ -245,23 +246,23 @@ public class RedditPostLogScreen extends javax.swing.JFrame {
     }//GEN-LAST:event_PanelSuaXoaHoKhauMouseClicked
 
     // ---------------------- START TO CODE HERE ---------------------
-    private String keyWord = "***";
-    private static final List<RedditPost> redditPostList = RedditPostConnector.readRedditPostsFromJson("D:\\HUST\\2023.1\\OOP\\OOPProject\\data\\RedditPost.json");
-    private List<RedditPost> redditPostListByKeyWord;
-    private List<RedditPost> currentRedditPostListByKeyWord;
+    private KeyWord keyWord = null;
+    private final ListOfRedditPosts redditPostList = new ListOfRedditPosts();
+    private ListOfRedditPosts redditPostListByKeyWord = new ListOfRedditPosts();
+    private ListOfRedditPosts currentRedditPostListByKeyWord;
     // ----------- display ----------
     private void display() {
         this.currentRedditPostListByKeyWord = redditPostListByKeyWord;
         if(cbTangDan.getSelectedItem().toString().equals("Lượng reacts tăng dần")) {
-            RedditPostController.sortByPostReactASC(currentRedditPostListByKeyWord);
+            currentRedditPostListByKeyWord.sortByPostReactASC();
         } else if (cbTangDan.getSelectedItem().toString().equals("Lượng reacts giảm dần")) {
-            RedditPostController.sortByPostReactDES(currentRedditPostListByKeyWord);
+            currentRedditPostListByKeyWord.sortByPostReactDES();
         }
 //        RedditPostController.sortByPostReactASC(currentRedditPostListByKeyWord);
         DefaultTableModel defaultTableModel = (DefaultTableModel) tRedditPost.getModel();
         defaultTableModel.getDataVector().removeAllElements();
         defaultTableModel.fireTableDataChanged();
-        for (RedditPost redditPost : currentRedditPostListByKeyWord) {
+        for (RedditPost redditPost : currentRedditPostListByKeyWord.getRedditPostList()) {
             String data[] = {redditPost.getTitle(), redditPost.getAuthor(), String.valueOf(redditPost.getUps()), String.valueOf(redditPost.getDowns()), String.valueOf(redditPost.getNumComments()), redditPost.getCreated()};
             defaultTableModel = (DefaultTableModel) tRedditPost.getModel();
             defaultTableModel.addRow(data);
