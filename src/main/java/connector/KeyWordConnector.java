@@ -7,7 +7,7 @@ import models.RedditPost;
 import java.util.ArrayList;
 import java.util.List;
 
-public class KeyWordConnector extends Connector{
+public class KeyWordConnector{
     // Static method to create a list of keywords of a list of reddit posts
     public static List<KeyWord> getAllKeyWords(ListOfRedditPosts listRedditPost) {
         List<String> listKeyWords = new ArrayList<>();
