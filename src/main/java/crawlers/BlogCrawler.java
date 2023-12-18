@@ -2,11 +2,13 @@ package crawlers;
 
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
+import connector.CollectionConnector;
 import models.Blog;
 import models.Collection;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import services.GsonHandler;
+import var.GlobalVar;
 
 import java.io.FileReader;
 import java.io.IOException;
@@ -41,9 +43,7 @@ public class BlogCrawler extends Crawler<Blog> {
     }
 
     public static List<Collection> readCollectionsFromJson() {
-        GsonHandler gsonHandler = new GsonHandler();
-        List<Collection> collectionList = gsonHandler.fromJson("data/Collection.json", new TypeToken<List<Collection>>() {
-        }.getType());
+        List<Collection> collectionList = CollectionConnector.readCollectionFromJson(GlobalVar.path + "/Collection.json");
 
         // Use Set to filter Collections with unique names
         Set<String> uniqueNames = new HashSet<>();
