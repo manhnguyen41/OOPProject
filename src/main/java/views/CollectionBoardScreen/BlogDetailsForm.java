@@ -4,11 +4,8 @@
  */
 package views.CollectionBoardScreen;
 
-import connector.BlogConnector;
-import controller.ListOfBlogs;
+import controller.listController.ListOfBlogs;
 import models.Blog;
-
-import java.util.List;
 
 
 /**

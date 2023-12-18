@@ -4,11 +4,8 @@
  */
 package views.KeyWordBoardScreen;
 
-import connector.RedditPostConnector;
-import controller.ListOfRedditPosts;
+import controller.listController.ListOfRedditPosts;
 import models.RedditPost;
-
-import java.util.List;
 
 
 /**

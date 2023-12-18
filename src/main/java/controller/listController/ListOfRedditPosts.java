@@ -1,4 +1,4 @@
-package controller;
+package controller.listController;
 
 import connector.RedditPostConnector;
 import models.RedditPost;
@@ -60,7 +60,7 @@ public class ListOfRedditPosts {
     public List<RedditPost> getRedditPostByTitle(String title){
         List<RedditPost> filteredList = new ArrayList<>();
         for(RedditPost redditPost: redditPostList){
-            if(redditPost.getTitle().equals(title)){
+            if(redditPost.getTitle().contains(title)){
                 filteredList.add(redditPost);
             }
         }

@@ -4,13 +4,11 @@
  */
 package views.KeyWordBoardScreen;
 
-import connector.RedditPostConnector;
-import controller.ListOfRedditPosts;
+import controller.listController.ListOfRedditPosts;
 import models.KeyWord;
 import models.RedditPost;
 
 import javax.swing.table.DefaultTableModel;
-import java.util.List;
 
 
 /**

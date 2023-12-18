@@ -10,10 +10,8 @@ package views.KeyWordBoardScreen;
  */
 
 
-import connector.KeyWordConnector;
-import connector.RedditPostConnector;
-import controller.ListOfKeyWords;
-import controller.ListOfRedditPosts;
+import controller.listController.ListOfKeyWords;
+import controller.listController.ListOfRedditPosts;
 import models.KeyWord;
 import models.RedditPost;
 import views.CollectionBoardScreen.CollectionScreen;

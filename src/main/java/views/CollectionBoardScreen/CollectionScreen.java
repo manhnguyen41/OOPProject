@@ -6,8 +6,7 @@ package views.CollectionBoardScreen;
 
 //import com.sun.jdi.connect.spi.Connection;
 
-import connector.CollectionConnector;
-import controller.ListOfCollections;
+import controller.listController.ListOfCollections;
 import models.Collection;
 import views.Home;
 import views.KeyWordBoardScreen.KeyWordScreen;
@@ -200,7 +199,7 @@ public class CollectionScreen extends javax.swing.JFrame {
             }
         });
 
-        cbAscendingDescending.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Ascending floor price", "Descending floor price", "Ascending volume", "Descending volume", " " }));
+        cbAscendingDescending.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Ascending floor price", "Descending floor price", "Ascending volume", "Descending volume", "Ascending change", "Descending change", " " }));
 
         cbTheo.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Theo 1 giờ", "Theo 6 giờ", "Theo 1 ngày", "Theo 7 ngày", "Theo 1 tháng", "Tất cả", " ", " ", " " }));
 
@@ -371,6 +370,10 @@ public class CollectionScreen extends javax.swing.JFrame {
             this.currentCollectionList.sortCollectionByVolumeASC();
         } else if (secondItem.equals("Descending volume")) {
             this.currentCollectionList.sortCollectionByVolumeDES();
+        } else if (secondItem.equals("Ascending change")) {
+            this.currentCollectionList.sortCollectionByChangeASC();
+        } else if (secondItem.equals("Descending change")) {
+            this.currentCollectionList.sortCollectionByChangeDES();
         }
         // ------------------------------------
 
@@ -380,7 +383,7 @@ public class CollectionScreen extends javax.swing.JFrame {
         defaultTableModel.fireTableDataChanged();
 
         for(Collection collection: currentCollectionList.getCollectionList()){
-            String data[] = {collection.getName(), collection.getVolume(), collection.getChange(), collection.getFloorPrice(), collection.getOwners(), collection.getItems()};
+            String data[] = {collection.getName(), collection.getVolume(), collection.getChange() + "%", collection.getFloorPrice(), collection.getOwners(), collection.getItems()};
             defaultTableModel.addRow(data);
         }
     }
