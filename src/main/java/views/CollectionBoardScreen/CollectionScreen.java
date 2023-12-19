@@ -4,8 +4,6 @@
  */
 package views.CollectionBoardScreen;
 
-//import com.sun.jdi.connect.spi.Connection;
-
 import controller.listController.ListOfCollections;
 import models.Collection;
 import views.Home;
