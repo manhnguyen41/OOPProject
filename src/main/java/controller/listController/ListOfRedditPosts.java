@@ -1,39 +1,28 @@
 package controller.listController;
 
 import connector.RedditPostConnector;
+import controller.comparatorController.redditPostComparator.RedditPostComparator;
 import models.RedditPost;
-import var.GlobalVar;
 
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
 
-class RedditPostComparatorASC implements Comparator<RedditPost> {
-    @Override
-    public int compare(RedditPost post1, RedditPost post2){
-        return post1.getReact() - post2.getReact();
-    }
-}
-
-class RedditPostComparatorDES implements Comparator<RedditPost>{
-    @Override
-    public int compare(RedditPost post1, RedditPost post2){
-        return post2.getReact() - post1.getReact();
-    }
-}
-
 public class ListOfRedditPosts {
     // Attribute
     private List<RedditPost> redditPostList;
     public static final Comparator<RedditPost> COMPARE_REDDIT_POST_BY_REACT_ASC =
-            new RedditPostComparatorASC();
+            new RedditPostComparator(true);
     public static final Comparator<RedditPost> COMPARE_REDDIT_POST_BY_REACT_DES =
-            new RedditPostComparatorDES();
+            new RedditPostComparator(false);
 
     // Constructor
     public ListOfRedditPosts() {
         redditPostList = RedditPostConnector.readRedditPostsFromJson(
-                GlobalVar.path + "/RedditPost.json");
+                "data/RedditPost.json");
+        for (RedditPost redditPost: redditPostList) {
+            redditPost.calculateReact();
+        }
     }
 
     //Sort by react ascending
@@ -60,7 +49,7 @@ public class ListOfRedditPosts {
     public List<RedditPost> getRedditPostByTitle(String title){
         List<RedditPost> filteredList = new ArrayList<>();
         for(RedditPost redditPost: redditPostList){
-            if(redditPost.getTitle().contains(title)){
+            if(redditPost.getTitle().toLowerCase().contains(title.toLowerCase())){
                 filteredList.add(redditPost);
             }
         }

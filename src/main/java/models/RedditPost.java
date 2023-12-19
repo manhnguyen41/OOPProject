@@ -51,7 +51,8 @@ public class RedditPost extends Post{
 
     // Method to check if post contain the keyword
     public boolean check(String keyWord) {
-        return getTitle().contains(keyWord) || getSumContent().contains(keyWord);
+        return getTitle().toLowerCase().contains(keyWord.toLowerCase())
+                || getSumContent().toLowerCase().contains(keyWord.toLowerCase());
     }
 
     // Getter and Setter

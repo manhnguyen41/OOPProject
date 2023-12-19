@@ -13,7 +13,6 @@ public class Blog extends Post{
         super(title, link);
         this.description = description;
         this.collection = collection;
-        calculateReact();
     }
 
     // Method to calculate react

@@ -4,7 +4,6 @@ import connector.BlogConnector;
 import models.Blog;
 
 import java.util.List;
-import var.GlobalVar;
 
 public class ListOfBlogs {
     // Attribute
@@ -13,7 +12,7 @@ public class ListOfBlogs {
     // Constructor
     public ListOfBlogs() {
         blogList = BlogConnector.readBlogsFromJson(
-                GlobalVar.path + "/Blog.json");
+                "data/Blog.json");
     }
 
     public Blog getIdentifyingBlog(String title, String description, String link, String collection){

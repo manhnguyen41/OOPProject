@@ -296,7 +296,7 @@ public class CollectionScreen extends javax.swing.JFrame {
         defaultTableModel.fireTableDataChanged();
 
         for(Collection collection: collectionListCollectionByName){
-            String data[] = {collection.getName(), collection.getVolume(), collection.getChange(), collection.getFloorPrice(), collection.getOwners(), collection.getItems()};
+            String data[] = {collection.getName(), collection.getVolume(), collection.getChange()+"%", collection.getFloorPrice(), collection.getOwners(), collection.getItems()};
             defaultTableModel.addRow(data);
         }
     }
