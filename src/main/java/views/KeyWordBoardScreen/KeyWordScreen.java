@@ -281,7 +281,7 @@ public class KeyWordScreen extends javax.swing.JFrame {
         DefaultTableModel model = (DefaultTableModel)tKeyWord.getModel();
         int indexRow = tKeyWord.getSelectedRow();
         key = String.valueOf(model.getValueAt(indexRow, 0).toString());
-        KeyWord keyWord = keyWordList.getKeyWord(key).get(0);
+        KeyWord keyWord = keyWordList.search(key).get(0);
 //        System.out.println(this.key);
         RedditPostLogScreen newLogScreen = new RedditPostLogScreen(keyWord);
         newLogScreen.setVisible(true);
@@ -295,7 +295,7 @@ public class KeyWordScreen extends javax.swing.JFrame {
     private void btnTimMouseClicked(java.awt.event.MouseEvent evt) {
 //       TODO add your handling code here:
         String ten = tfTim.getText();
-        List<KeyWord> keyWords = keyWordList.getKeyWord(ten);
+        List<KeyWord> keyWords = keyWordList.search(ten);
         String firstItem = cbTangDan.getSelectedItem().toString();
         int index = 0;
         if(cbReactBy.getSelectedItem().toString().equals("Reacts theo ngày")) {

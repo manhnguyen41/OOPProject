@@ -8,7 +8,7 @@ import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
 
-public class ListOfRedditPosts {
+public class ListOfRedditPosts implements Searchable<RedditPost> {
     // Attribute
     private List<RedditPost> redditPostList;
     public static final Comparator<RedditPost> COMPARE_REDDIT_POST_BY_REACT_ASC =
@@ -46,7 +46,7 @@ public class ListOfRedditPosts {
     }
 
     // ------ SEARCH BY TITLE ------
-    public List<RedditPost> getRedditPostByTitle(String title){
+    public List<RedditPost> search(String title){
         List<RedditPost> filteredList = new ArrayList<>();
         for(RedditPost redditPost: redditPostList){
             if(redditPost.getTitle().toLowerCase().contains(title.toLowerCase())){

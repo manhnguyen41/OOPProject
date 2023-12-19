@@ -29,20 +29,6 @@ public class RedditPost extends Post{
         setReact(ups + downs + numComments);
     }
 
-    // Method to convert to String
-    @Override
-    public String toString(){
-        return "Title: " + getTitle() + "\n" +
-                "Author: " + author + "\n" +
-                "Link: " + getTitle() + "\n" +
-                "Summary content: " + sumContent + "\n" +
-                "Ups: " + ups + "\n" +
-                "Downs: " + downs + "\n" +
-                "NumComments: " + numComments + "\n" +
-                "Created: " + created + "\n" +
-                "Keyword: " + keyword + "\n\n";
-    }
-
     // Method to check if post contain the keyword
     public boolean check(String keyWord) {
         return getTitle().toLowerCase().contains(keyWord.toLowerCase())

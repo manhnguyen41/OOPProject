@@ -24,7 +24,7 @@ public class BlogDetailsForm extends javax.swing.JFrame {
     public BlogDetailsForm(String title, String link, String description, String collection) {
         initComponents();
         ListOfBlogs blogList = new ListOfBlogs();
-        Blog blog = blogList.getIdentifyingBlog(title,description,link,collection);
+        Blog blog = blogList.search(title).get(0);
 
         if(blog != null){
             tfCollection.setText(blog.getCollection());

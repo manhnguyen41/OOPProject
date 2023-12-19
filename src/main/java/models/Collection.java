@@ -7,13 +7,9 @@ public class Collection {
     // Attribute
     private String name;
     private String volume;
-
     private String change;
-
     private String floorPrice;
-
     private String owners;
-
     private String items;
 
     // Constructor

@@ -10,7 +10,7 @@ import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
 
-public class ListOfCollections {
+public class ListOfCollections implements Searchable<Collection> {
     // Attribute
     private List<Collection> collectionList;
     public static final Comparator<Collection> COMPARE_COLLECTION_BY_VOLUME_ASC = 
@@ -114,7 +114,7 @@ public class ListOfCollections {
     }
 
     // Method to search collection by Name
-    public List<Collection> getCollectionByName(String name){
+    public List<Collection> search(String name){
         List<Collection> filteredList = new ArrayList<>();
         for(Collection collection: collectionList){
             if(collection.getName().toLowerCase().contains(name.toLowerCase())){

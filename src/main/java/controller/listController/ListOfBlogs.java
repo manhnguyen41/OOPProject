@@ -3,9 +3,10 @@ package controller.listController;
 import connector.BlogConnector;
 import models.Blog;
 
+import java.util.ArrayList;
 import java.util.List;
 
-public class ListOfBlogs {
+public class ListOfBlogs implements Searchable<Blog>{
     // Attribute
     private List<Blog> blogList;
 
@@ -15,16 +16,15 @@ public class ListOfBlogs {
                 "data/Blog.json");
     }
 
-    public Blog getIdentifyingBlog(String title, String description, String link, String collection){
-        for (Blog blog: blogList){
-            if(blog.getTitle().equals(title)
-                    && blog.getDescription().equals(description)
-                    && blog.getLink().equals(link)
-                    && blog.getCollection().equals(collection) ){
-                return blog;
+    // Method to search blogs by name
+    public List<Blog> search(String title) {
+        List<Blog> filteredList = new ArrayList<>();
+        for(Blog blog: blogList){
+            if(blog.getTitle().equals(title)){
+                filteredList.add(blog);
             }
         }
-        return null;
+        return filteredList;
     }
 
     // Getter and Setter

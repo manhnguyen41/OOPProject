@@ -275,7 +275,7 @@ public class CollectionScreen extends javax.swing.JFrame {
         DefaultTableModel model = (DefaultTableModel)tCollection.getModel();
         int indexRow = tCollection.getSelectedRow();
         String nameOfCollection = String.valueOf(model.getValueAt(indexRow, 0).toString());
-        Collection collectionSelected = this.collectionList.getCollectionByName(nameOfCollection).get(0);
+        Collection collectionSelected = this.collectionList.search(nameOfCollection).get(0);
         BlogLogScreen blogLogScreen = new BlogLogScreen(collectionSelected);
         blogLogScreen.setVisible(true);
     }
@@ -287,7 +287,7 @@ public class CollectionScreen extends javax.swing.JFrame {
     private void btnTimMouseClicked(java.awt.event.MouseEvent evt) {
 //       TODO add your handling code here:
         // backend search và trả về một list of collection
-        List<Collection> collectionListCollectionByName = currentCollectionList.getCollectionByName(tfTim.getText());
+        List<Collection> collectionListCollectionByName = currentCollectionList.search(tfTim.getText());
         // update currentCollectionList
 
         // display currentCollectionList

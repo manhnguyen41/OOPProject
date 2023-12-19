@@ -8,9 +8,9 @@ import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
 
-public class ListOfKeyWords {
+public class ListOfKeyWords implements Searchable<KeyWord> {
     // Attribute
-    private List<KeyWord> keyWordList;
+    private final List<KeyWord> keyWordList;
     public static final Comparator<KeyWord> COMPARE_BY_REACT_IN_DAY_DECREASING =
             new KeyWordComparatorByReact("day", false);
     public static final Comparator<KeyWord> COMPARE_BY_REACT_IN_DAY_INCREASING=
@@ -60,7 +60,7 @@ public class ListOfKeyWords {
     }
 
     // Method to search keyword
-    public List<KeyWord> getKeyWord(String word) {
+    public List<KeyWord> search(String word) {
         List<KeyWord> filteredList = new ArrayList<>();
         for (KeyWord keyWord: keyWordList) {
             if (keyWord.getWord().toLowerCase().contains(word.toLowerCase())) {

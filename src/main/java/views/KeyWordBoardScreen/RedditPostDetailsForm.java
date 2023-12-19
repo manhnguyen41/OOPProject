@@ -26,7 +26,7 @@ public class RedditPostDetailsForm extends javax.swing.JFrame {
         initComponents();
         this.title = title;
         ListOfRedditPosts redditPostList = new ListOfRedditPosts();
-        RedditPost redditPost = redditPostList.getRedditPostByTitle(this.title).get(0);
+        RedditPost redditPost = redditPostList.search(this.title).get(0);
 
         if (redditPost != null) {
             tfTitle.setText(redditPost.getTitle());

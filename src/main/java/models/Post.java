@@ -4,7 +4,6 @@ public abstract class Post {
     // Attribute
     private String title;
     private String link;
-
     private int react;
 
     // Constructor
