@@ -83,14 +83,13 @@ public class ListOfCollections {
     public static double ConvertToDouble(String input) {
         input = input.replace(",", "");
         if (input.charAt(0) == '-' && input.length() != 2) {
-            return 0 - Double.parseDouble(input.substring(1));
+            return 0 - Double.parseDouble(input.substring(1, input.length() - 1));
         }
         if (input.charAt(0) == '+' && input.length() != 2) {
-            return Double.parseDouble(input.substring(1));
+            return Double.parseDouble(input.substring(1, input.length() - 1));
         }
         if(!Character.isDigit(input.charAt(0))){
-            double result = 0;
-            return result;
+            return 0;
         }
 
         int index = 0;

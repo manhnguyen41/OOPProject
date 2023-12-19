@@ -1,7 +1,5 @@
 package models;
 
-import java.io.FileReader;
-import java.lang.reflect.Type;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -33,7 +31,7 @@ public class Collection {
 
     // Method to get list of Blog by Collection
     public List<Blog> getBlogByCollection(List<Blog> blogList){
-        List<Blog> filteredBlog = new ArrayList<Blog>();
+        List<Blog> filteredBlog = new ArrayList<>();
         for (Blog blog: blogList){
             if(blog.getCollection().equals(name)){
                 filteredBlog.add(blog);
@@ -69,10 +67,6 @@ public class Collection {
 
     public String getFloorPrice() {
         return floorPrice;
-    }
-
-    public void setFloorPrice(String floorPrice) {
-        this.floorPrice = floorPrice;
     }
 
     public String getOwners() {

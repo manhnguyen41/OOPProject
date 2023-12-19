@@ -74,8 +74,4 @@ public class ListOfKeyWords {
     public List<KeyWord> getKeyWordList() {
         return keyWordList;
     }
-
-    public void setKeyWordList(List<KeyWord> keyWordList) {
-        this.keyWordList = keyWordList;
-    }
 }

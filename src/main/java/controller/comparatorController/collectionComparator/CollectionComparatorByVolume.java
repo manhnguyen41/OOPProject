@@ -4,8 +4,6 @@ import controller.comparatorController.GeneralComparator;
 import controller.listController.ListOfCollections;
 import models.Collection;
 
-import java.util.Comparator;
-
 //Sort by volume
 public class CollectionComparatorByVolume extends GeneralComparator<Collection> {
     // Constructor

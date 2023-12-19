@@ -1,11 +1,5 @@
 package models;
 
-
-
-import java.io.FileReader;
-import java.lang.reflect.Type;
-import java.util.*;
-import java.util.ArrayList;
 public class RedditPost extends Post{
     // Attribute
     private String author;

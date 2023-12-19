@@ -7,7 +7,7 @@ import controller.listController.ListOfRedditPosts;
 public class KeyWord {
     // Attribute
     private String word;
-    private int[] react = new int[3];
+    private final int[] react = new int[3];
 
     // Constructor
     public KeyWord(String word) {
@@ -70,9 +70,5 @@ public class KeyWord {
 
     public int[] getReact() {
         return react;
-    }
-
-    public void setReact(int[] react) {
-        this.react = react;
     }
 }

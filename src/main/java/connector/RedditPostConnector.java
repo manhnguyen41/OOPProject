@@ -1,7 +1,6 @@
 package connector;
 
 import com.google.gson.reflect.TypeToken;
-import models.Blog;
 import models.RedditPost;
 import services.GsonHandler;
 

@@ -1,17 +1,12 @@
 package crawlers;
 
-import com.google.gson.Gson;
-import com.google.gson.reflect.TypeToken;
 import connector.CollectionConnector;
 import models.Blog;
 import models.Collection;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import services.GsonHandler;
 
-import java.io.FileReader;
 import java.io.IOException;
-import java.lang.reflect.Type;
 import java.util.*;
 
 public class BlogCrawler extends Crawler<Blog> {

@@ -38,7 +38,6 @@ public class CollectionCrawler extends Crawler<Collection> {
 
                 for (int i = 0; i < webElements.size(); i++) {
                     String[] webElementContents = webElements.get(i).getText().split("\n");
-                    // Use filter to remove elements '%'
                     String[] filteredContents = Arrays.stream(webElementContents)
                             .filter(element -> !element.contains("%"))
                             .toArray(String[]::new);
