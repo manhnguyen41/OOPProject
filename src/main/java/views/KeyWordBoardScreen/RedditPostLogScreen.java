@@ -29,8 +29,8 @@ public class RedditPostLogScreen extends javax.swing.JFrame {
         initComponents();
         this.keyWord = keyWord;
         this.redditPostListByKeyWord.setRedditPostList(redditPostList.getRedditPostByKeyWord(keyWord.getWord()));
-        System.out.println(this.keyWord);
-        System.out.println(this.redditPostListByKeyWord.getRedditPostList().size());
+//        System.out.println(this.keyWord);
+//        System.out.println(this.redditPostListByKeyWord.getRedditPostList().size());
         tfKeyWord.setText(keyWord.getWord());
         display();
     }

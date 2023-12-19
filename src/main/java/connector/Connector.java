@@ -7,7 +7,7 @@ import java.io.FileReader;
 import java.lang.reflect.Type;
 import java.util.List;
 
-public class Connector {
+public abstract class Connector {
     public static <T> List<T> readFromJson(String path, Type type) {
         Gson gson = new Gson();
         List<T> list = null;
