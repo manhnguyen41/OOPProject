@@ -4,7 +4,7 @@
  */
 package views.KeyWordBoardScreen;
 
-import models.lists.ListOfRedditPosts;
+import models.ListOfRedditPosts;
 import models.KeyWord;
 import models.RedditPost;
 

@@ -1,7 +1,7 @@
 package views;
 
-import models.lists.ListOfKeyWords;
-import models.lists.ListOfRedditPosts;
+import models.ListOfKeyWords;
+import models.ListOfRedditPosts;
 import models.KeyWord;
 
 public class Main {

@@ -4,7 +4,7 @@
  */
 package views.CollectionBoardScreen;
 
-import models.lists.ListOfBlogs;
+import models.ListOfBlogs;
 import models.Blog;
 
 

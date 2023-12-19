@@ -1,7 +1,6 @@
-package models.lists;
+package models;
 
 import connector.BlogConnector;
-import models.Blog;
 
 import java.util.ArrayList;
 import java.util.List;

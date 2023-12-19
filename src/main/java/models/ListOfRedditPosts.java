@@ -1,8 +1,7 @@
-package models.lists;
+package models;
 
 import connector.RedditPostConnector;
 import controller.comparatorController.redditPostComparator.RedditPostComparator;
-import models.RedditPost;
 
 import java.util.ArrayList;
 import java.util.Comparator;
