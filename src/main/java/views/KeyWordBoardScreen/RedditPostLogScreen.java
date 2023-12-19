@@ -10,13 +10,11 @@ import models.RedditPost;
 
 import javax.swing.table.DefaultTableModel;
 
-
 /**
  *
  * @author Nam
  */
 public class RedditPostLogScreen extends javax.swing.JFrame {
-
     
     String key = "";
 
@@ -46,7 +44,7 @@ public class RedditPostLogScreen extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        PanelSuaXoaHoKhau = new javax.swing.JPanel();
+        redditPostPanel = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         tfKeyWord = new javax.swing.JTextField();
@@ -58,11 +56,11 @@ public class RedditPostLogScreen extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        PanelSuaXoaHoKhau.setBackground(new java.awt.Color(255, 255, 255));
-        PanelSuaXoaHoKhau.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 102, 102), 5));
-        PanelSuaXoaHoKhau.addMouseListener(new java.awt.event.MouseAdapter() {
+        redditPostPanel.setBackground(new java.awt.Color(255, 255, 255));
+        redditPostPanel.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 102, 102), 5));
+        redditPostPanel.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                PanelSuaXoaHoKhauMouseClicked(evt);
+                redditPostPanelMouseClicked(evt);
             }
         });
 
@@ -146,46 +144,46 @@ public class RedditPostLogScreen extends javax.swing.JFrame {
 
         cbTangDan.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Lượng reacts tăng dần", "Lượng reacts giảm dần", " " }));
 
-        javax.swing.GroupLayout PanelSuaXoaHoKhauLayout = new javax.swing.GroupLayout(PanelSuaXoaHoKhau);
-        PanelSuaXoaHoKhau.setLayout(PanelSuaXoaHoKhauLayout);
-        PanelSuaXoaHoKhauLayout.setHorizontalGroup(
-            PanelSuaXoaHoKhauLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        javax.swing.GroupLayout redditPostPanelLayout = new javax.swing.GroupLayout(redditPostPanel);
+        redditPostPanel.setLayout(redditPostPanelLayout);
+        redditPostPanelLayout.setHorizontalGroup(
+            redditPostPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addGroup(PanelSuaXoaHoKhauLayout.createSequentialGroup()
+            .addGroup(redditPostPanelLayout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 1119, Short.MAX_VALUE)
                 .addContainerGap())
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, PanelSuaXoaHoKhauLayout.createSequentialGroup()
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, redditPostPanelLayout.createSequentialGroup()
                 .addContainerGap(999, Short.MAX_VALUE)
                 .addComponent(btnThoat, javax.swing.GroupLayout.PREFERRED_SIZE, 117, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(15, 15, 15))
-            .addGroup(PanelSuaXoaHoKhauLayout.createSequentialGroup()
+            .addGroup(redditPostPanelLayout.createSequentialGroup()
                 .addGap(118, 118, 118)
-                .addGroup(PanelSuaXoaHoKhauLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(PanelSuaXoaHoKhauLayout.createSequentialGroup()
+                .addGroup(redditPostPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(redditPostPanelLayout.createSequentialGroup()
                         .addComponent(jLabel2)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(tfKeyWord, javax.swing.GroupLayout.PREFERRED_SIZE, 787, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(131, 131, 131))
-                    .addGroup(PanelSuaXoaHoKhauLayout.createSequentialGroup()
+                    .addGroup(redditPostPanelLayout.createSequentialGroup()
                         .addComponent(btnSapXep, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
                         .addComponent(cbTangDan, javax.swing.GroupLayout.PREFERRED_SIZE, 203, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
         );
-        PanelSuaXoaHoKhauLayout.setVerticalGroup(
-            PanelSuaXoaHoKhauLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(PanelSuaXoaHoKhauLayout.createSequentialGroup()
+        redditPostPanelLayout.setVerticalGroup(
+            redditPostPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(redditPostPanelLayout.createSequentialGroup()
                 .addGap(11, 11, 11)
                 .addComponent(btnThoat)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel1)
                 .addGap(18, 18, 18)
-                .addGroup(PanelSuaXoaHoKhauLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addGroup(redditPostPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel2)
                     .addComponent(tfKeyWord, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
-                .addGroup(PanelSuaXoaHoKhauLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addGroup(redditPostPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnSapXep)
                     .addComponent(cbTangDan))
                 .addGap(18, 18, 18)
@@ -199,13 +197,13 @@ public class RedditPostLogScreen extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 1141, Short.MAX_VALUE)
             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addComponent(PanelSuaXoaHoKhau, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addComponent(redditPostPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 630, Short.MAX_VALUE)
             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addComponent(PanelSuaXoaHoKhau, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addComponent(redditPostPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         pack();
@@ -239,9 +237,9 @@ public class RedditPostLogScreen extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_btnThoatActionPerformed
 
-    private void PanelSuaXoaHoKhauMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PanelSuaXoaHoKhauMouseClicked
+    private void redditPostPanelMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_redditPostPanelMouseClicked
         // TODO add your handling code here:
-    }//GEN-LAST:event_PanelSuaXoaHoKhauMouseClicked
+    }//GEN-LAST:event_redditPostPanelMouseClicked
 
     // ---------------------- START TO CODE HERE ---------------------
     private KeyWord keyWord = null;
@@ -282,7 +280,7 @@ public class RedditPostLogScreen extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JPanel PanelSuaXoaHoKhau;
+    private javax.swing.JPanel redditPostPanel;
     private javax.swing.JButton btnSapXep;
     private javax.swing.JButton btnThoat;
     private javax.swing.JComboBox<String> cbTangDan;

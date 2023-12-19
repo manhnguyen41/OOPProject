@@ -7,7 +7,6 @@ package views.KeyWordBoardScreen;
 import controller.listController.ListOfRedditPosts;
 import models.RedditPost;
 
-
 /**
  *
  * @author Nam

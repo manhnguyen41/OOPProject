@@ -9,7 +9,6 @@ package views.KeyWordBoardScreen;
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
 
-
 import controller.listController.ListOfKeyWords;
 import controller.listController.ListOfRedditPosts;
 import models.KeyWord;
@@ -19,9 +18,6 @@ import views.Home;
 
 import java.util.List;
 import javax.swing.table.DefaultTableModel;
-
-
-
 
 /**
  *
@@ -46,7 +42,7 @@ public class KeyWordScreen extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">
     private void initComponents() {
 
-        nhanKhauPanel = new javax.swing.JPanel();
+        keyWordPanel = new javax.swing.JPanel();
         jPanel2 = new javax.swing.JPanel();
         lbCollection = new javax.swing.JLabel();
         lbTrangChu = new javax.swing.JLabel();
@@ -63,7 +59,7 @@ public class KeyWordScreen extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        nhanKhauPanel.setBackground(new java.awt.Color(255, 255, 255));
+        keyWordPanel.setBackground(new java.awt.Color(255, 255, 255));
 
         jPanel2.setBackground(new java.awt.Color(0, 102, 102));
 
@@ -210,19 +206,19 @@ public class KeyWordScreen extends javax.swing.JFrame {
 
         cbReactBy.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Reacts theo ngày", "Reacts theo tháng", "Reacts theo năm" }));
 
-        javax.swing.GroupLayout nhanKhauPanelLayout = new javax.swing.GroupLayout(nhanKhauPanel);
-        nhanKhauPanel.setLayout(nhanKhauPanelLayout);
-        nhanKhauPanelLayout.setHorizontalGroup(
-                nhanKhauPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(nhanKhauPanelLayout.createSequentialGroup()
+        javax.swing.GroupLayout keyWordPanelLayout = new javax.swing.GroupLayout(keyWordPanel);
+        keyWordPanel.setLayout(keyWordPanelLayout);
+        keyWordPanelLayout.setHorizontalGroup(
+                keyWordPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(keyWordPanelLayout.createSequentialGroup()
                                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addGroup(nhanKhauPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addGroup(nhanKhauPanelLayout.createSequentialGroup()
+                                .addGroup(keyWordPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addGroup(keyWordPanelLayout.createSequentialGroup()
                                                 .addComponent(jLabel6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                                 .addContainerGap())
                                         .addComponent(jScrollPane1)
-                                        .addGroup(nhanKhauPanelLayout.createSequentialGroup()
+                                        .addGroup(keyWordPanelLayout.createSequentialGroup()
                                                 .addGap(30, 30, 30)
                                                 .addComponent(btnSapXep, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
                                                 .addGap(18, 18, 18)
@@ -235,17 +231,17 @@ public class KeyWordScreen extends javax.swing.JFrame {
                                                 .addComponent(tfTim, javax.swing.GroupLayout.PREFERRED_SIZE, 165, javax.swing.GroupLayout.PREFERRED_SIZE)
                                                 .addGap(44, 44, 44))))
         );
-        nhanKhauPanelLayout.setVerticalGroup(
-                nhanKhauPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        keyWordPanelLayout.setVerticalGroup(
+                keyWordPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                         .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addGroup(nhanKhauPanelLayout.createSequentialGroup()
+                        .addGroup(keyWordPanelLayout.createSequentialGroup()
                                 .addGap(20, 20, 20)
                                 .addComponent(jLabel6)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 43, Short.MAX_VALUE)
-                                .addGroup(nhanKhauPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                .addGroup(keyWordPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                                         .addComponent(tfTim, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addComponent(btnTim)
-                                        .addGroup(nhanKhauPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                        .addGroup(keyWordPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                                                 .addComponent(btnSapXep)
                                                 .addComponent(cbTangDan, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                                         .addComponent(cbReactBy, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -258,11 +254,11 @@ public class KeyWordScreen extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
                 layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(nhanKhauPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(keyWordPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
                 layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(nhanKhauPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(keyWordPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         pack();
@@ -441,7 +437,7 @@ public class KeyWordScreen extends javax.swing.JFrame {
     private javax.swing.JLabel lbKeyWord;
     private javax.swing.JLabel lbThoat;
     private javax.swing.JLabel lbTrangChu;
-    private javax.swing.JPanel nhanKhauPanel;
+    private javax.swing.JPanel keyWordPanel;
     private javax.swing.JTable tKeyWord;
     private javax.swing.JTextField tfTim;
     // End of variables declaration
