@@ -19,9 +19,6 @@ import java.util.List;
  */
 public class CollectionScreen extends javax.swing.JFrame {
 
-    /**
-     * Creates new form NhanKhauMainPage
-     */
     public CollectionScreen() {
         initComponents();
         this.currentCollectionList = this.collectionList;

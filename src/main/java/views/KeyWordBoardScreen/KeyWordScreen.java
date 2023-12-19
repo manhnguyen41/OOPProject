@@ -25,9 +25,6 @@ import javax.swing.table.DefaultTableModel;
  */
 public class KeyWordScreen extends javax.swing.JFrame {
 
-    /**
-     * Creates new form NhanKhauMainPage
-     */
     public KeyWordScreen() {
         initComponents();
         display();
