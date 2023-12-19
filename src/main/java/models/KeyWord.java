@@ -1,8 +1,8 @@
 package models;
 
-import java.util.List;
+import models.lists.ListOfRedditPosts;
 
-import controller.listController.ListOfRedditPosts;
+import java.util.List;
 
 public class KeyWord {
     // Attribute

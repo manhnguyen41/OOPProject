@@ -1,4 +1,4 @@
-package controller.listController;
+package models.lists;
 
 import connector.CollectionConnector;
 import controller.comparatorController.collectionComparator.CollectionComparatorByChange;
@@ -64,53 +64,19 @@ public class ListOfCollections implements Searchable<Collection> {
 
     // Method to get list of top 100 collections
     public List<Collection> []getTop100Collection() {
-        List<Collection> []filteredcollectionList = new ArrayList[6];
-        filteredcollectionList[0] = new ArrayList<>();
+        List<Collection> []filteredCollectionList = new ArrayList[6];
+        filteredCollectionList[0] = new ArrayList<>();
         for (int i = 0; i < collectionList.size() - 500; i++) {
-            filteredcollectionList[0].add(collectionList.get(i));
+            filteredCollectionList[0].add(collectionList.get(i));
         }
         for (int i = 1; i < 6; i++) {
-            filteredcollectionList[i] = new ArrayList<>();
+            filteredCollectionList[i] = new ArrayList<>();
             for (int j = collectionList.size() - 500 + (i - 1) * 100;
                  j < collectionList.size() - 500 + i * 100; j++) {
-                filteredcollectionList[i].add(collectionList.get(j));
+                filteredCollectionList[i].add(collectionList.get(j));
             }
         }
-        return filteredcollectionList;
-    }
-
-    //Static method to convert String to Double
-    public static double ConvertToDouble(String input) {
-        input = input.replace(",", "");
-        if (input.charAt(0) == '-' && input.length() != 2) {
-            return 0 - Double.parseDouble(input.substring(1, input.length() - 1));
-        }
-        if (input.charAt(0) == '+' && input.length() != 2) {
-            return Double.parseDouble(input.substring(1, input.length() - 1));
-        }
-        if(!Character.isDigit(input.charAt(0))){
-            return 0;
-        }
-
-        int index = 0;
-        while (index < input.length()
-                && (Character.isDigit(input.charAt(index)) || (input.charAt(index) == '.' ))) {
-            index++;
-        }
-
-        // Sử dụng substring để lấy phần số từ chuỗi
-        String numericString = input.substring(0, index);
-
-        // Chuyển chuỗi thành kiểu double
-        double result = Double.parseDouble(numericString);
-        if (input.charAt(index) == 'K'){
-            result = result * 1000;
-        }
-
-        if (input.charAt(index) == 'M'){
-            result = result * 1000000;
-        }
-        return result;
+        return filteredCollectionList;
     }
 
     // Method to search collection by Name

@@ -1,4 +1,4 @@
-package controller.listController;
+package models.lists;
 
 import connector.RedditPostConnector;
 import controller.comparatorController.redditPostComparator.RedditPostComparator;

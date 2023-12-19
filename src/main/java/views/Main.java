@@ -1,12 +1,8 @@
 package views;
 
-import controller.listController.ListOfCollections;
-import controller.listController.ListOfKeyWords;
-import controller.listController.ListOfRedditPosts;
-import models.Collection;
+import models.lists.ListOfKeyWords;
+import models.lists.ListOfRedditPosts;
 import models.KeyWord;
-
-import java.util.List;
 
 public class Main {
     public static void main(String[] args) {

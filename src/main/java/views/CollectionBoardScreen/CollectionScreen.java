@@ -6,7 +6,7 @@ package views.CollectionBoardScreen;
 
 //import com.sun.jdi.connect.spi.Connection;
 
-import controller.listController.ListOfCollections;
+import models.lists.ListOfCollections;
 import models.Collection;
 import views.Home;
 import views.KeyWordBoardScreen.KeyWordScreen;

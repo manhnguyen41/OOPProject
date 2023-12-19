@@ -1,4 +1,4 @@
-package controller.listController;
+package models.lists;
 
 import connector.KeyWordConnector;
 import controller.comparatorController.keyWordComparator.KeyWordComparatorByReact;
