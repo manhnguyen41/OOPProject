@@ -4,15 +4,15 @@
 7
 pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
 X
-(src/main/java/services/IJsonHandler.java,b/6/b6cf9e0848914cc69f51cc65ce05d780578cfe41
+(src/main/java/services/IJsonHandler.java,b\6\b6cf9e0848914cc69f51cc65ce05d780578cfe41
 `
 0src/main/java/services/ChromeDriverSelenium.java,4\4\4417918a75c3d135da3785cbc54e071d9eb5b040
 T
 $src/main/java/models/Collection.java,8/d/8d8ad241382d65f72696168eeb03308558fc9f0d
 ]
--src/main/java/services/WebDriverSelenium.java,5/4/54816cc0a7302d9bdd99f212c34f384b033039a9
+-src/main/java/services/WebDriverSelenium.java,5\4\54816cc0a7302d9bdd99f212c34f384b033039a9
 V
-&src/main/java/services/IWebDriver.java,0/f/0fd65bffe1efca7d3dc7802bd6446296ae931dac
+&src/main/java/services/IWebDriver.java,0\f\0fd65bffe1efca7d3dc7802bd6446296ae931dac
 D
 data/Collection.json,7\f\7fa86a266f9d31226d31e1bf5ec569dd316add6e
 ]
@@ -32,16 +32,12 @@ S
 -src/main/java/crawlers/RedditPostCrawler.java,0\a\0a3e7caca08532dc3704b18c3a51acc6bf0b3f08
 Q
 !src/main/java/models/KeyWord.java,7\4\74d044b60c687e972ab651c376917b2013f2510d
-\
-,src/main/java/controller/BlogController.java,b\0\b06032ad05758292d9a9dea68f8ae25310893c05
 ]
 -src/main/java/connector/KeyWordConnector.java,f\6\f6d44c4245c95987f4c73b941b7443fb5d29d637
 V
 &src/main/java/connector/Connector.java,3\b\3b88a8d24f950e1076fe1b7808b63292ddf90839
 `
 0src/main/java/connector/CollectionConnector.java,5\d\5d4ec8a0a776c80be0dfc419d9fe01238dd7b0ef
-b
-2src/main/java/controller/CollectionController.java,f\9\f997faa02acd614ce5a6b3c2574276755dc343d3
 D
 data/RedditPost.json,0\8\08a22f4be5b113bb7604c615ce7febd95d23d733
 Z
@@ -50,12 +46,6 @@ T
 $src/main/java/models/RedditPost.java,0\2\020478f3b752b1d1d258fdde8586b4338a6ee751
 `
 0src/main/java/connector/RedditPostConnector.java,b\1\b1299078f3a3996c1e5f6f8321f26d6e6ead40be
-b
-2src/main/java/controller/RedditPostController.java,0\d\0d17210c235fdc020db8fda65de8906e2edb909e
-M
-src/main/java/views/Main.java,4\5\457e3c82f5dfcf1e67ae99a0b8f82a5c5280e90b
-_
-/src/main/java/controller/KeyWordController.java,e\2\e2382582191dd8a66e7b57f38b491b0336eac9df
 n
 >src/main/java/views/CollectionBoardScreen/BlogDetailsForm.java,5\3\5358201129acee53a4881e62d6eb44d9184c7b4f
 o
@@ -70,3 +60,5 @@ l
 <src/main/java/views/CollectionBoardScreen/BlogLogScreen.java,8\5\85416c821d1f98044621ae5947272bb448c23b5b
 i
 9src/main/java/views/KeyWordBoardScreen/KeyWordScreen.java,e\a\ea788ef1f44d88d862ae6eb7091a9d9dc6ce0be9
+P
+ src/main/java/var/GlobalVar.java,6\2\628523c1ebeb0a047ea9d5bd786227b29530ea24

@@ -56,3 +56,21 @@ c
 java:S2147‹"ECombine this catch with the one at line 265, which has the same body.(ã€ 8ûšÇÇ1
 b
 java:S2147"ECombine this catch with the one at line 267, which has the same body.(ñÎ¯%8ûšÇÇ1
+c
+java:S1128	"FRemove this unused import 'org.checkerframework.checker.units.qual.C'.(ÏıÁÊ8ëûŞÇ1
+J
+java:S1128"-Remove this unused import 'java.awt.Desktop'.(¶¼©ç8ëûŞÇ1
+F
+java:S1128")Remove this unused import 'java.io.File'.(†Ğ¥Å8‘ëûŞÇ1
+Q
+java:S1128"5Remove this unused import 'java.io.FileOutputStream'.(˜«ªg8’ëûŞÇ1
+B
+java:S1128"%Remove this unused import 'java.sql'.(´İ…Å8“ëûŞÇ1
+M
+java:S1128"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ8”ëûŞÇ1
+R
+java:S1128"5Remove this unused import 'javax.swing.JFileChooser'.(õ‡æÂ8”ëûŞÇ1
+Q
+java:S1128"4Remove this unused import 'javax.swing.JOptionPane'.(÷‰Îé8•ëûŞÇ1
+b
+java:S1128"@Remove this unused import 'javax.swing.table.DefaultTableModel'.(è†åûÿÿÿÿ8•ëûŞÇ1

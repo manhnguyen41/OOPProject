@@ -1,75 +1,58 @@
 
 k
-java:S1192K"IDefine a constant instead of duplicating this literal "Segoe UI" 3 times.(›Åëªıÿÿÿÿ8Š¦ÛÆÇ1
-s	java:S117Š"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ÿç¢úÿÿÿÿ8‹¦ÛÆÇ1
-F
-java:S1604„"(Make this anonymous inner class a lambda(©Ú£Ó8‹¦ÛÆÇ1
+java:S1192C"IDefine a constant instead of duplicating this literal "Segoe UI" 3 times.(›Åëªıÿÿÿÿ8ÊìŒßÇ1
+s	java:S117‚"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ÿç¢úÿÿÿÿ8ËìŒßÇ1
+E
+java:S1604|"(Make this anonymous inner class a lambda(©Ú£Ó8ËìŒßÇ1
 K
-java:S1604‰"(Make this anonymous inner class a lambda(¨í¡§úÿÿÿÿ8‹¦ÛÆÇ1
+java:S1604"(Make this anonymous inner class a lambda(¨í¡§úÿÿÿÿ8‹¦ÛÆÇ1
 {	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Õ……ùüÿÿÿÿ8¦ÛÆÇ1
-~	java:S116‘"\Rename this field "PanelSuaXoaHoKhau" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ò´üúÿÿÿÿ8¦¦ÛÆÇ1
+~	java:S116‰"\Rename this field "PanelSuaXoaHoKhau" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ò´üúÿÿÿÿ8¦¦ÛÆÇ1
 ƒ
-java:S1450‘"`Remove the "PanelSuaXoaHoKhau" field and declare it as a local variable in the relevant methods.(ò´üúÿÿÿÿ8©¦ÛÆÇ1
+java:S1450‰"`Remove the "PanelSuaXoaHoKhau" field and declare it as a local variable in the relevant methods.(ò´üúÿÿÿÿ8©¦ÛÆÇ1
 u
-java:S1450’"WRemove the "btnThoat" field and declare it as a local variable in the relevant methods.(İÇõ£8©¦ÛÆÇ1
-
-java:S1450ì"jRemove the "currentBlogListByCollection" field and declare it as a local variable in the relevant methods.(š¾àÚıÿÿÿÿ8©¦ÛÆÇ1
+java:S1450Š"WRemove the "btnThoat" field and declare it as a local variable in the relevant methods.(İÇõ£8©¦ÛÆÇ1
+ˆ
+java:S1450ä"jRemove the "currentBlogListByCollection" field and declare it as a local variable in the relevant methods.(èöÊÁ8©¦ÛÆÇ1
 y
-java:S1450“"VRemove the "jLabel1" field and declare it as a local variable in the relevant methods.(°ãÉ¸ÿÿÿÿÿ8©¦ÛÆÇ1
+java:S1450‹"VRemove the "jLabel1" field and declare it as a local variable in the relevant methods.(°ãÉ¸ÿÿÿÿÿ8©¦ÛÆÇ1
 y
-java:S1450”"VRemove the "jLabel2" field and declare it as a local variable in the relevant methods.(™úòˆüÿÿÿÿ8©¦ÛÆÇ1
+java:S1450Œ"VRemove the "jLabel2" field and declare it as a local variable in the relevant methods.(™úòˆüÿÿÿÿ8©¦ÛÆÇ1
 ~
-java:S1450•"[Remove the "jScrollPane1" field and declare it as a local variable in the relevant methods.(¤á×ÿÿÿÿÿ8©¦ÛÆÇ1
-Y
-java:S1948ë"6Make "blogListByCollection" transient or serializable.(è¤¶Çıÿÿÿÿ8ª¦ÛÆÇ1
-`
-java:S1948ì"=Make "currentBlogListByCollection" transient or serializable.(š¾àÚıÿÿÿÿ8ª¦ÛÆÇ1
+java:S1450"[Remove the "jScrollPane1" field and declare it as a local variable in the relevant methods.(¤á×ÿÿÿÿÿ8©¦ÛÆÇ1
+J
+java:S1948á",Make "collection" transient or serializable.(ïŸÌì8ûìŒßÇ1
 W
-java:S1161F":Add the "@Override" annotation above this method signature(†ŒË³8±¦ÛÆÇ1
+java:S1161>":Add the "@Override" annotation above this method signature(†ŒË³8‡íŒßÇ1
 W
-java:S1161i":Add the "@Override" annotation above this method signature(®¸ù8´¦ÛÆÇ1
+java:S1161a":Add the "@Override" annotation above this method signature(®¸ù8ŒíŒßÇ1
 W
-java:S1161s":Add the "@Override" annotation above this method signature(†ŒË³8´¦ÛÆÇ1
-X
-java:S1161€":Add the "@Override" annotation above this method signature(†ŒË³8¶¦ÛÆÇ1
+java:S1161k":Add the "@Override" annotation above this method signature(†ŒË³8íŒßÇ1
+W
+java:S1161x":Add the "@Override" annotation above this method signature(†ŒË³8‘íŒßÇ1
 M
-java:S1172Á"*Remove this unused method parameter "evt".(íØäúÿÿÿÿ8º¦ÛÆÇ1
-^	java:S125È"<This block of commented-out lines of code should be removed.(Ä•€ôıÿÿÿÿ8»¦ÛÆÇ1
+java:S1172¹"*Remove this unused method parameter "evt".(íØäúÿÿÿÿ8šíŒßÇ1
+^	java:S125À"<This block of commented-out lines of code should be removed.(Ä•€ôıÿÿÿÿ8›íŒßÇ1
 H
-java:S1172Î"*Remove this unused method parameter "evt".(ô×ñ¦8¼¦ÛÆÇ1
+java:S1172Æ"*Remove this unused method parameter "evt".(ô×ñ¦8íŒßÇ1
 U
-java:S1135Ï"2Complete the task associated to this TODO comment.(ÜÀ†áûÿÿÿÿ8¼¦ÛÆÇ1
+java:S1135Ç"2Complete the task associated to this TODO comment.(ÜÀ†áûÿÿÿÿ8ŸíŒßÇ1
 M
-java:S1172Ó"*Remove this unused method parameter "evt".(´šŞ÷ıÿÿÿÿ8¼¦ÛÆÇ1
+java:S1172Ë"*Remove this unused method parameter "evt".(´šŞ÷ıÿÿÿÿ8 íŒßÇ1
 U
-java:S1135Ô"2Complete the task associated to this TODO comment.(ÜÀ†áûÿÿÿÿ8¼¦ÛÆÇ1
-k	java:S100×"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‘‘Š—8¼¦ÛÆÇ1
+java:S1135Ì"2Complete the task associated to this TODO comment.(ÜÀ†áûÿÿÿÿ8 íŒßÇ1
+k	java:S100Ï"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‘‘Š—8¡íŒßÇ1
 H
-java:S1172×"*Remove this unused method parameter "evt".(‘‘Š—8½¦ÛÆÇ1
+java:S1172Ï"*Remove this unused method parameter "evt".(‘‘Š—8¡íŒßÇ1
 U
-java:S1135Ø"2Complete the task associated to this TODO comment.(ÜÀ†áûÿÿÿÿ8½¦ÛÆÇ1
+java:S1135Ğ"2Complete the task associated to this TODO comment.(ÜÀ†áûÿÿÿÿ8¡íŒßÇ1
 H
-java:S1197ã"*Move the array designators [] to the type.(İšìÛ8½¦ÛÆÇ1
+java:S1197Û"*Move the array designators [] to the type.(İšìÛ8£íŒßÇ1
 M
-java:S1197ğ"*Move the array designators [] to the type.(¡şÏÖøÿÿÿÿ8ú¦ÛÆÇ1
+java:S1197è"*Move the array designators [] to the type.(¡şÏÖøÿÿÿÿ8ú¦ÛÆÇ1
 c
-java:S2147ÿ"ECombine this catch with the one at line 253, which has the same body.(¨¦Š½8ú¦ÛÆÇ1
+java:S2147÷"ECombine this catch with the one at line 247, which has the same body.(¨¦Š½8ú¦ÛÆÇ1
 c
-java:S2147"ECombine this catch with the one at line 255, which has the same body.(ã€ 8ú¦ÛÆÇ1
+java:S2147ù"ECombine this catch with the one at line 249, which has the same body.(ã€ 8ú¦ÛÆÇ1
 b
-java:S2147ƒ"ECombine this catch with the one at line 257, which has the same body.(ñÎ¯%8ú¦ÛÆÇ1
-\
-java:S1128":Remove this unused import 'connector.CollectionConnector'.(ÿ¨À©øÿÿÿÿ8ÁŸàÆÇ1
-^
-java:S1128
-"<Remove this unused import 'controller.RedditPostController'.(¶•—Äşÿÿÿÿ8ÁŸàÆÇ1
-K
-java:S1128".Remove this unused import 'models.Collection'.(¶­¨É8ÁŸàÆÇ1
-P
-java:S1128".Remove this unused import 'models.RedditPost'.(Á×’°ÿÿÿÿÿ8ÁŸàÆÇ1
-m
-java:S1128"KRemove this unused import 'views.KeyWordBoardScreen.RedditPostDetailsForm'.(ÌºÍƒùÿÿÿÿ8ÁŸàÆÇ1
-Q
-java:S1128"4Remove this unused import 'javax.swing.JOptionPane'.(÷‰Îé8ÁŸàÆÇ1
-B
-java:S1128"%Remove this unused import 'java.sql'.(´İ…Å8ÁŸàÆÇ1
+java:S2147û"ECombine this catch with the one at line 251, which has the same body.(ñÎ¯%8ú¦ÛÆÇ1

@@ -1,123 +1,125 @@
 
-n
-java:S1192Õ"PDefine a constant instead of duplicating this literal "Reacts by month" 4 times.(ÂğèÙ8ê°éÂÇ1
-f
-java:S1192H"IDefine a constant instead of duplicating this literal "Segoe UI" 5 times.(·×¾8ê°éÂÇ1
-m
-java:S1192Õ"ODefine a constant instead of duplicating this literal "Reacts by year" 4 times.(ÂğèÙ8ê°éÂÇ1
-l
-java:S1192Õ"NDefine a constant instead of duplicating this literal "Reacts by day" 4 times.(ÂğèÙ8ê°éÂÇ1
-F
-java:S1604"(Make this anonymous inner class a lambda(ö³ü«8ë°éÂÇ1
-F
-java:S1604Í"(Make this anonymous inner class a lambda(òû¬Ú8ë°éÂÇ1
-K
-java:S1604¾"(Make this anonymous inner class a lambda(¨í¡§úÿÿÿÿ8ì°éÂÇ1
-{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ıòõİûÿÿÿÿ8¯©ÃÇ1
-{
-java:S1450Æ"XRemove the "btnSapXep" field and declare it as a local variable in the relevant methods.(îƒ¾øÿÿÿÿ8Ì±éÂÇ1
-x
-java:S1450Ç"URemove the "btnTim" field and declare it as a local variable in the relevant methods.(¿™ÿÿÿÿÿ8Ì±éÂÇ1
-y
-java:S1450Ë"VRemove the "jLabel6" field and declare it as a local variable in the relevant methods.(¸ôÂøÿÿÿÿ8Ì±éÂÇ1
-y
-java:S1450Ì"VRemove the "jPanel2" field and declare it as a local variable in the relevant methods.(õ òçüÿÿÿÿ8Í±éÂÇ1
-~
-java:S1450Í"[Remove the "jScrollPane1" field and declare it as a local variable in the relevant methods.(¤á×ÿÿÿÿÿ8Í±éÂÇ1
-y
-java:S1450Î"[Remove the "lbCollection" field and declare it as a local variable in the relevant methods.(¾„÷¨8Í±éÂÇ1
-{
-java:S1450Ï"XRemove the "lbKeyWord" field and declare it as a local variable in the relevant methods.(€¦Ş¸ùÿÿÿÿ8Í±éÂÇ1
 t
-java:S1450Ğ"VRemove the "lbThoat" field and declare it as a local variable in the relevant methods.(º‰ÑÙ8Í±éÂÇ1
+java:S1192Ó"QDefine a constant instead of duplicating this literal "Reacts theo nÄƒm" 3 times.(Ã”ÄÑùÿÿÿÿ8Û¢õßÇ1
+f
+java:S1192F"IDefine a constant instead of duplicating this literal "Segoe UI" 5 times.(·×¾8ÍÄÖßÇ1
+u
+java:S1192Ó"RDefine a constant instead of duplicating this literal "Reacts theo ngÃ y" 3 times.(Ã”ÄÑùÿÿÿÿ8Ê ößÇ1
 v
-java:S1450Ñ"YRemove the "lbTrangChu" field and declare it as a local variable in the relevant methods.(ÜÓÍ`8Î±éÂÇ1
+java:S1192Ó"SDefine a constant instead of duplicating this literal "Reacts theo thÃ¡ng" 3 times.(Ã”ÄÑùÿÿÿÿ8¥ÁößÇ1
+F
+java:S1604›"(Make this anonymous inner class a lambda(ö³ü«8ÎÄÖßÇ1
+F
+java:S1604Ë"(Make this anonymous inner class a lambda(òû¬Ú8ÎÄÖßÇ1
+K
+java:S1604¨"(Make this anonymous inner class a lambda(¨í¡§úÿÿÿÿ8ÎÄÖßÇ1
+{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ıòõİûÿÿÿÿ8ÑÄÖßÇ1
+{
+java:S1450°"XRemove the "btnSapXep" field and declare it as a local variable in the relevant methods.(îƒ¾øÿÿÿÿ8–ÅÖßÇ1
+x
+java:S1450±"URemove the "btnTim" field and declare it as a local variable in the relevant methods.(¿™ÿÿÿÿÿ8—ÅÖßÇ1
+„
+java:S1450‹"aRemove the "currentKeyWordList" field and declare it as a local variable in the relevant methods.(Çº şÿÿÿÿ8ˆ¬ûßÇ1
+y
+java:S1450µ"VRemove the "jLabel6" field and declare it as a local variable in the relevant methods.(¸ôÂøÿÿÿÿ8—ÅÖßÇ1
+y
+java:S1450¶"VRemove the "jPanel2" field and declare it as a local variable in the relevant methods.(õ òçüÿÿÿÿ8—ÅÖßÇ1
+~
+java:S1450·"[Remove the "jScrollPane1" field and declare it as a local variable in the relevant methods.(¤á×ÿÿÿÿÿ8—ÅÖßÇ1
+y
+java:S1450¸"[Remove the "lbCollection" field and declare it as a local variable in the relevant methods.(¾„÷¨8˜ÅÖßÇ1
+{
+java:S1450¹"XRemove the "lbKeyWord" field and declare it as a local variable in the relevant methods.(€¦Ş¸ùÿÿÿÿ8˜ÅÖßÇ1
+t
+java:S1450º"VRemove the "lbThoat" field and declare it as a local variable in the relevant methods.(º‰ÑÙ8˜ÅÖßÇ1
+v
+java:S1450»"YRemove the "lbTrangChu" field and declare it as a local variable in the relevant methods.(ÜÓÍ`8™ÅÖßÇ1
 z
-java:S1450Ò"\Remove the "nhanKhauPanel" field and declare it as a local variable in the relevant methods.(½¨ÜÅ8Î±éÂÇ1
-R
-java:S1948™"4Make "currentKeyWordList" transient or serializable.(ıË©±8Î±éÂÇ1
+java:S1450¼"\Remove the "nhanKhauPanel" field and declare it as a local variable in the relevant methods.(½¨ÜÅ8™ÅÖßÇ1
+S
+java:S1948‰"0Make "redditPostList" transient or serializable.(”ÿûÿÿÿÿ8ƒ«ÑêÇ1
+P
+java:S1948Š"-Make "keyWordList" transient or serializable.(”ÑŒíıÿÿÿÿ8ƒ«ÑêÇ1
 W
-java:S1161L":Add the "@Override" annotation above this method signature(†ŒË³8Ø±éÂÇ1
+java:S1948‹"4Make "currentKeyWordList" transient or serializable.(Çº şÿÿÿÿ8ƒ«ÑêÇ1
 W
-java:S1161W":Add the "@Override" annotation above this method signature(†ŒË³8Ù±éÂÇ1
+java:S1161J":Add the "@Override" annotation above this method signature(†ŒË³8¤ÅÖßÇ1
 W
-java:S1161`":Add the "@Override" annotation above this method signature(†ŒË³8Ú±éÂÇ1
+java:S1161U":Add the "@Override" annotation above this method signature(†ŒË³8¦ÅÖßÇ1
 W
-java:S1161j":Add the "@Override" annotation above this method signature(†ŒË³8Û±éÂÇ1
+java:S1161^":Add the "@Override" annotation above this method signature(†ŒË³8§ÅÖßÇ1
+W
+java:S1161h":Add the "@Override" annotation above this method signature(†ŒË³8¨ÅÖßÇ1
 X
-java:S1161™":Add the "@Override" annotation above this method signature(†ŒË³8ß±éÂÇ1
+java:S1161—":Add the "@Override" annotation above this method signature(†ŒË³8¬ÅÖßÇ1
 X
-java:S1161°":Add the "@Override" annotation above this method signature(®¸ù8á±éÂÇ1
+java:S1161®":Add the "@Override" annotation above this method signature(®¸ù8®ÅÖßÇ1
 X
-java:S1161º":Add the "@Override" annotation above this method signature(†ŒË³8â±éÂÇ1
+java:S1161¸":Add the "@Override" annotation above this method signature(†ŒË³8¯ÅÖßÇ1
 X
-java:S1161É":Add the "@Override" annotation above this method signature(†ŒË³8ä±éÂÇ1
+java:S1161Ç":Add the "@Override" annotation above this method signature(†ŒË³8±ÅÖßÇ1
 M
-java:S1172‘"*Remove this unused method parameter "evt".(³¿°øüÿÿÿÿ8è±éÂÇ1
+java:S1172"*Remove this unused method parameter "evt".(³¿°øüÿÿÿÿ8¶ÅÖßÇ1
 U
-java:S1135’"2Complete the task associated to this TODO comment.(ÜÀ†áûÿÿÿÿ8é±éÂÇ1
+java:S1135"2Complete the task associated to this TODO comment.(ÜÀ†áûÿÿÿÿ8¶ÅÖßÇ1
 H
-java:S1172•"*Remove this unused method parameter "evt".(ÙÄÊ8é±éÂÇ1
+java:S1172“"*Remove this unused method parameter "evt".(ÙÄÊ8¶ÅÖßÇ1
 U
-java:S1135–"2Complete the task associated to this TODO comment.(ÜÀ†áûÿÿÿÿ8é±éÂÇ1
+java:S1135”"2Complete the task associated to this TODO comment.(ÜÀ†áûÿÿÿÿ8·ÅÖßÇ1
 H
-java:S1172š"*Remove this unused method parameter "evt".(¯ã¥è8ê±éÂÇ1
-^	java:S125"<This block of commented-out lines of code should be removed.(Ä•€ôıÿÿÿÿ8ê±éÂÇ1
+java:S1172˜"*Remove this unused method parameter "evt".(¯ã¥è8·ÅÖßÇ1
+^	java:S125"<This block of commented-out lines of code should be removed.(Ä•€ôıÿÿÿÿ8¸ÅÖßÇ1
 H
-java:S1172£"*Remove this unused method parameter "evt".(Ìûëê8ë±éÂÇ1
+java:S1172¢"*Remove this unused method parameter "evt".(Ìûëê8¸ÅÖßÇ1
 U
-java:S1135¤"2Complete the task associated to this TODO comment.(ÜÀ†áûÿÿÿÿ8ë±éÂÇ1
+java:S1135£"2Complete the task associated to this TODO comment.(ÜÀ†áûÿÿÿÿ8¸ÅÖßÇ1
 `
-java:S1854¬"=Remove this useless assignment to local variable "firstItem".(‚ëĞÀøÿÿÿÿ8ë±éÂÇ1
+java:S1854«"=Remove this useless assignment to local variable "firstItem".(‚ëĞÀøÿÿÿÿ8¹ÅÖßÇ1
 H
-java:S1172¨"*Remove this unused method parameter "evt".(ü¾Åå8ì±éÂÇ1
+java:S1172§"*Remove this unused method parameter "evt".(ü¾Åå8¹ÅÖßÇ1
 U
-java:S1135©"2Complete the task associated to this TODO comment.(ÜÀ†áûÿÿÿÿ8ì±éÂÇ1
+java:S1135¨"2Complete the task associated to this TODO comment.(ÜÀ†áûÿÿÿÿ8¹ÅÖßÇ1
 Q
-java:S1481¬".Remove this unused "firstItem" local variable.(‚ëĞÀøÿÿÿÿ8ì±éÂÇ1
+java:S1481«".Remove this unused "firstItem" local variable.(‚ëĞÀøÿÿÿÿ8¹ÅÖßÇ1
 M
-java:S1197¹"*Move the array designators [] to the type.(÷şÅùÿÿÿÿ8í±éÂÇ1
+java:S1197º"*Move the array designators [] to the type.(÷şÅùÿÿÿÿ8»ÅÖßÇ1
 M
-java:S1172¿"*Remove this unused method parameter "evt".(áëÖ’şÿÿÿÿ8î±éÂÇ1
+java:S1172Á"*Remove this unused method parameter "evt".(áëÖ’şÿÿÿÿ8»ÅÖßÇ1
 U
-java:S1135À"2Complete the task associated to this TODO comment.(ÜÀ†áûÿÿÿÿ8î±éÂÇ1
+java:S1135Â"2Complete the task associated to this TODO comment.(ÜÀ†áûÿÿÿÿ8¼ÅÖßÇ1
 H
-java:S1172Å"*Remove this unused method parameter "evt".(úÔŒÚ8ï±éÂÇ1
+java:S1172Ç"*Remove this unused method parameter "evt".(úÔŒÚ8¼ÅÖßÇ1
 U
-java:S1135Æ"2Complete the task associated to this TODO comment.(ÜÀ†áûÿÿÿÿ8ï±éÂÇ1
+java:S1135È"2Complete the task associated to this TODO comment.(ÜÀ†áûÿÿÿÿ8¼ÅÖßÇ1
 M
-java:S1172Ì"*Remove this unused method parameter "evt".(¯—õüÿÿÿÿ8ï±éÂÇ1
+java:S1172Î"*Remove this unused method parameter "evt".(¯—õüÿÿÿÿ8½ÅÖßÇ1
 U
-java:S1135Í"2Complete the task associated to this TODO comment.(ÜÀ†áûÿÿÿÿ8ï±éÂÇ1
+java:S1135Ï"2Complete the task associated to this TODO comment.(ÜÀ†áûÿÿÿÿ8½ÅÖßÇ1
 H
-java:S1172Ó"*Remove this unused method parameter "evt".(š Å†8ğ±éÂÇ1
+java:S1172Õ"*Remove this unused method parameter "evt".(š Å†8¾ÅÖßÇ1
 U
-java:S1135Ô"2Complete the task associated to this TODO comment.(ÜÀ†áûÿÿÿÿ8ğ±éÂÇ1
+java:S1135Ö"2Complete the task associated to this TODO comment.(ÜÀ†áûÿÿÿÿ8¾ÅÖßÇ1
 H
-java:S1172Ø"*Remove this unused method parameter "evt".(¤¸ğÔ8ğ±éÂÇ1
+java:S1172Ú"*Remove this unused method parameter "evt".(¤¸ğÔ8¿ÅÖßÇ1
 U
-java:S1135Ù"2Complete the task associated to this TODO comment.(ÜÀ†áûÿÿÿÿ8ğ±éÂÇ1
-M
-java:S1197ï"*Move the array designators [] to the type.(÷şÅùÿÿÿÿ8ö±éÂÇ1
+java:S1135Û"2Complete the task associated to this TODO comment.(ÜÀ†áûÿÿÿÿ8¿ÅÖßÇ1
 H
-java:S1172õ"*Remove this unused method parameter "evt".(ÙÄ¬ò8ô±éÂÇ1
+java:S1172ß"*Remove this unused method parameter "evt".(ÙÄ¬ò8ÂÅÖßÇ1
 U
-java:S1135ö"2Complete the task associated to this TODO comment.(ÜÀ†áûÿÿÿÿ8ô±éÂÇ1
-M	java:S106"+Replace this use of System.out by a logger.(éĞ«şÿÿÿÿ8ö±éÂÇ1
+java:S1135à"2Complete the task associated to this TODO comment.(ÜÀ†áûÿÿÿÿ8ÃÅÖßÇ1
 M
-java:S1197"*Move the array designators [] to the type.(÷şÅùÿÿÿÿ8×“ïÇÇ1
-Y	java:S125“"<This block of commented-out lines of code should be removed.(îŞ¸ˆ8ö±éÂÇ1
+java:S1197ƒ"*Move the array designators [] to the type.(÷şÅùÿÿÿÿ8ôîÖßÇ1
 M
-java:S1197"*Move the array designators [] to the type.(¡şÏÖøÿÿÿÿ8ø±éÂÇ1
+java:S1197"*Move the array designators [] to the type.(¡şÏÖøÿÿÿÿ8ÆÅÖßÇ1
 c
-java:S2147­"ECombine this catch with the one at line 427, which has the same body.(¨¦Š½8ø±éÂÇ1
+java:S2147Ÿ"ECombine this catch with the one at line 413, which has the same body.(¨¦Š½8ÆÅÖßÇ1
 c
-java:S2147¯"ECombine this catch with the one at line 429, which has the same body.(ã€ 8ø±éÂÇ1
+java:S2147¡"ECombine this catch with the one at line 415, which has the same body.(ã€ 8ÆÅÖßÇ1
 b
-java:S2147±"ECombine this catch with the one at line 431, which has the same body.(ñÎ¯%8ù±éÂÇ1
+java:S2147£"ECombine this catch with the one at line 417, which has the same body.(ñÎ¯%8ÆÅÖßÇ1
 U
-java:S1068È"2Remove this unused "btnTrinhBanGhi" private field.(ç€››ıÿÿÿÿ8ü±éÂÇ1
+java:S1068²"2Remove this unused "btnTrinhBanGhi" private field.(ç€››ıÿÿÿÿ8ÊÅÖßÇ1
 e
-java:S1144‘"BRemove this unused private "btnTrinhBanGhiActionPerformed" method.(³¿°øüÿÿÿÿ8ü±éÂÇ1
+java:S1144"BRemove this unused private "btnTrinhBanGhiActionPerformed" method.(³¿°øüÿÿÿÿ8ÊÅÖßÇ1
 ]
-java:S1144•"?Remove this unused private "btnTrinhBanGhiMouseClicked" method.(ÙÄÊ8ü±éÂÇ1
+java:S1144“"?Remove this unused private "btnTrinhBanGhiMouseClicked" method.(ÙÄÊ8ÊÅÖßÇ1

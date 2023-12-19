@@ -1,69 +1,67 @@
 
 k
-java:S1192F"IDefine a constant instead of duplicating this literal "Segoe UI" 3 times.(›Åëªıÿÿÿÿ8âÃŠÂÇ1
-s	java:S117–"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ÿç¢úÿÿÿÿ8âÃŠÂÇ1
+java:S1192E"IDefine a constant instead of duplicating this literal "Segoe UI" 3 times.(›Åëªıÿÿÿÿ8êèŒßÇ1
+s	java:S117•"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ÿç¢úÿÿÿÿ8îèŒßÇ1
 E
-java:S1604}"(Make this anonymous inner class a lambda(òû¬Ú8ãÃŠÂÇ1
+java:S1604|"(Make this anonymous inner class a lambda(òû¬Ú8ñèŒßÇ1
 F
-java:S1604"(Make this anonymous inner class a lambda(©Ú£Ó8ãÃŠÂÇ1
+java:S1604"(Make this anonymous inner class a lambda(©Ú£Ó8óèŒßÇ1
 K
-java:S1604–"(Make this anonymous inner class a lambda(¨í¡§úÿÿÿÿ8ãÃŠÂÇ1
+java:S1604•"(Make this anonymous inner class a lambda(¨í¡§úÿÿÿÿ8ãÃŠÂÇ1
 {	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ıòõİûÿÿÿÿ8–Œ©ÃÇ1
-~	java:S116"\Rename this field "PanelSuaXoaHoKhau" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ò´üúÿÿÿÿ8†ÄŠÂÇ1
+~	java:S116"\Rename this field "PanelSuaXoaHoKhau" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ò´üúÿÿÿÿ8†ÄŠÂÇ1
 ƒ
-java:S1450"`Remove the "PanelSuaXoaHoKhau" field and declare it as a local variable in the relevant methods.(ò´üúÿÿÿÿ8‰ÄŠÂÇ1
+java:S1450"`Remove the "PanelSuaXoaHoKhau" field and declare it as a local variable in the relevant methods.(ò´üúÿÿÿÿ8‰ÄŠÂÇ1
 {
-java:S1450Ÿ"XRemove the "btnSapXep" field and declare it as a local variable in the relevant methods.(îƒ¾øÿÿÿÿ8‰ÄŠÂÇ1
+java:S1450"XRemove the "btnSapXep" field and declare it as a local variable in the relevant methods.(îƒ¾øÿÿÿÿ8‰ÄŠÂÇ1
 u
-java:S1450 "WRemove the "btnThoat" field and declare it as a local variable in the relevant methods.(İÇõ£8‰ÄŠÂÇ1
-
-java:S1450û"mRemove the "currentRedditPostListByKeyWord" field and declare it as a local variable in the relevant methods.(Êºó¼ıÿÿÿÿ8‰ÄŠÂÇ1
+java:S1450Ÿ"WRemove the "btnThoat" field and declare it as a local variable in the relevant methods.(İÇõ£8‰ÄŠÂÇ1
+‹
+java:S1450ú"mRemove the "currentRedditPostListByKeyWord" field and declare it as a local variable in the relevant methods.(üÄÆ’8ŞêŒßÇ1
 y
-java:S1450¢"VRemove the "jLabel1" field and declare it as a local variable in the relevant methods.(°ãÉ¸ÿÿÿÿÿ8ŠÄŠÂÇ1
+java:S1450¡"VRemove the "jLabel1" field and declare it as a local variable in the relevant methods.(°ãÉ¸ÿÿÿÿÿ8ŠÄŠÂÇ1
 y
-java:S1450£"VRemove the "jLabel2" field and declare it as a local variable in the relevant methods.(™úòˆüÿÿÿÿ8ŠÄŠÂÇ1
+java:S1450¢"VRemove the "jLabel2" field and declare it as a local variable in the relevant methods.(™úòˆüÿÿÿÿ8ŠÄŠÂÇ1
 ~
-java:S1450¤"[Remove the "jScrollPane1" field and declare it as a local variable in the relevant methods.(¤á×ÿÿÿÿÿ8ŠÄŠÂÇ1
-\
-java:S1948ú"9Make "redditPostListByKeyWord" transient or serializable.(šÂüÿÿÿÿÿ8ŠÄŠÂÇ1
-c
-java:S1948û"@Make "currentRedditPostListByKeyWord" transient or serializable.(Êºó¼ıÿÿÿÿ8ŠÄŠÂÇ1
-L	java:S106#"+Replace this use of System.out by a logger.(‚‰ğ­ıÿÿÿÿ8ŒÄŠÂÇ1
-L	java:S106$"+Replace this use of System.out by a logger.(­àö›øÿÿÿÿ8ŒÄŠÂÇ1
+java:S1450£"[Remove the "jScrollPane1" field and declare it as a local variable in the relevant methods.(¤á×ÿÿÿÿÿ8ŠÄŠÂÇ1
+L
+java:S1948÷")Make "keyWord" transient or serializable.(Ïü¬Äûÿÿÿÿ8àêŒßÇ1
+L	java:S106""+Replace this use of System.out by a logger.(‚‰ğ­ıÿÿÿÿ8æêŒßÇ1
+L	java:S106#"+Replace this use of System.out by a logger.(ÙìÎ÷øÿÿÿÿ8çêŒßÇ1
 W
-java:S1161A":Add the "@Override" annotation above this method signature(†ŒË³8‘ÄŠÂÇ1
+java:S1161@":Add the "@Override" annotation above this method signature(†ŒË³8öêŒßÇ1
 W
-java:S1161d":Add the "@Override" annotation above this method signature(®¸ù8”ÄŠÂÇ1
+java:S1161c":Add the "@Override" annotation above this method signature(®¸ù8şêŒßÇ1
 W
-java:S1161n":Add the "@Override" annotation above this method signature(†ŒË³8•ÄŠÂÇ1
+java:S1161m":Add the "@Override" annotation above this method signature(†ŒË³8‚ëŒßÇ1
 W
-java:S1161y":Add the "@Override" annotation above this method signature(†ŒË³8–ÄŠÂÇ1
+java:S1161x":Add the "@Override" annotation above this method signature(†ŒË³8„ëŒßÇ1
 X
-java:S1161Š":Add the "@Override" annotation above this method signature(†ŒË³8—ÄŠÂÇ1
+java:S1161‰":Add the "@Override" annotation above this method signature(†ŒË³8ˆëŒßÇ1
 H
-java:S1172Ø"*Remove this unused method parameter "evt".(„ÏŸ»8œÄŠÂÇ1
-^	java:S125Ü"<This block of commented-out lines of code should be removed.(Ä•€ôıÿÿÿÿ8œÄŠÂÇ1
+java:S1172×"*Remove this unused method parameter "evt".(„ÏŸ»8•ëŒßÇ1
+^	java:S125Û"<This block of commented-out lines of code should be removed.(Ä•€ôıÿÿÿÿ8–ëŒßÇ1
 M
-java:S1172á"*Remove this unused method parameter "evt".(ÿï§øıÿÿÿÿ8ÄŠÂÇ1
+java:S1172à"*Remove this unused method parameter "evt".(ÿï§øıÿÿÿÿ8˜ëŒßÇ1
 U
-java:S1135â"2Complete the task associated to this TODO comment.(ÜÀ†áûÿÿÿÿ8ÄŠÂÇ1
+java:S1135á"2Complete the task associated to this TODO comment.(ÜÀ†áûÿÿÿÿ8˜ëŒßÇ1
 M
-java:S1172æ"*Remove this unused method parameter "evt".(·Ìë¬ûÿÿÿÿ8ÄŠÂÇ1
+java:S1172å"*Remove this unused method parameter "evt".(·Ìë¬ûÿÿÿÿ8™ëŒßÇ1
 H
-java:S1172ê"*Remove this unused method parameter "evt".(ô×ñ¦8ÄŠÂÇ1
+java:S1172é"*Remove this unused method parameter "evt".(ô×ñ¦8šëŒßÇ1
 U
-java:S1135ë"2Complete the task associated to this TODO comment.(ÜÀ†áûÿÿÿÿ8ÄŠÂÇ1
+java:S1135ê"2Complete the task associated to this TODO comment.(ÜÀ†áûÿÿÿÿ8šëŒßÇ1
 M
-java:S1172ï"*Remove this unused method parameter "evt".(´šŞ÷ıÿÿÿÿ8ÄŠÂÇ1
+java:S1172î"*Remove this unused method parameter "evt".(´šŞ÷ıÿÿÿÿ8›ëŒßÇ1
 U
-java:S1135ğ"2Complete the task associated to this TODO comment.(ÜÀ†áûÿÿÿÿ8ÄŠÂÇ1
-k	java:S100ó"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‘‘Š—8ÄŠÂÇ1
+java:S1135ï"2Complete the task associated to this TODO comment.(ÜÀ†áûÿÿÿÿ8›ëŒßÇ1
+k	java:S100ò"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‘‘Š—8œëŒßÇ1
 H
-java:S1172ó"*Remove this unused method parameter "evt".(‘‘Š—8ÄŠÂÇ1
+java:S1172ò"*Remove this unused method parameter "evt".(‘‘Š—8ëŒßÇ1
 U
-java:S1135ô"2Complete the task associated to this TODO comment.(ÜÀ†áûÿÿÿÿ8ÄŠÂÇ1
-Y	java:S125„"<This block of commented-out lines of code should be removed.(ÍÒĞ8 ÄŠÂÇ1
+java:S1135ó"2Complete the task associated to this TODO comment.(ÜÀ†áûÿÿÿÿ8ŸëŒßÇ1
+Y	java:S125ƒ"<This block of commented-out lines of code should be removed.(ÍÒĞ8¢ëŒßÇ1
 H
-java:S1197‰"*Move the array designators [] to the type.(öüì—8 ÄŠÂÇ1
+java:S1197ˆ"*Move the array designators [] to the type.(öüì—8 ÄŠÂÇ1
 M
-java:S1197’"*Move the array designators [] to the type.(¡şÏÖøÿÿÿÿ8¢ÄŠÂÇ1
+java:S1197‘"*Move the array designators [] to the type.(¡şÏÖøÿÿÿÿ8¢ÄŠÂÇ1

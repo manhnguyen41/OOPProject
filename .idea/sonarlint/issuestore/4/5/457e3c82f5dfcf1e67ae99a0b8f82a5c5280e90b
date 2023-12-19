@@ -1,15 +1,0 @@
-
-E	java:S106"+Replace this use of System.out by a logger.(¬ðÄ÷úÿÿÿÿ
-Y
-java:S1128"7Remove this unused import 'connector.KeyWordConnector'.(ÿ°ä¼ùÿÿÿÿ8Ù·õ®Ç1
-W
-java:S1128":Remove this unused import 'connector.RedditPostConnector'.(¶¿…Ü8Ù·õ®Ç1
-V
-java:S1128"9Remove this unused import 'controller.KeyWordController'.(÷¼‘â8Ù·õ®Ç1
-^
-java:S1128"<Remove this unused import 'controller.RedditPostController'.(¶•—Äþÿÿÿÿ8Ù·õ®Ç1
-H
-java:S1128
-"+Remove this unused import 'models.KeyWord'.(àúñö8Ù·õ®Ç1
-P
-java:S1128".Remove this unused import 'models.RedditPost'.(Á×’°ÿÿÿÿÿ8Ú·õ®Ç1
