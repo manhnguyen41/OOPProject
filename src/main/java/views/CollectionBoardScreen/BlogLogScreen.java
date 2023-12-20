@@ -190,7 +190,7 @@ public class BlogLogScreen extends javax.swing.JFrame {
         String link = String.valueOf(model.getValueAt(indexRow, 2).toString());
 
 //        System.out.println(this.key);
-        BlogDetailsForm newDetailsForm = new BlogDetailsForm(key, link, description, collection.getName());
+        BlogDetailsForm newDetailsForm = new BlogDetailsForm(key);
         newDetailsForm.setVisible(true);
     }//GEN-LAST:event_tBlogMouseClicked
 
