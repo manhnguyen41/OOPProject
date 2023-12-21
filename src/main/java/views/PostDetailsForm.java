@@ -14,8 +14,7 @@ import javax.swing.*;
 public abstract class PostDetailsForm extends javax.swing.JFrame {
     private String titlePost;
     private String link;
-
-
+    private String header;
     /**
      * Creates new form Form
      */
@@ -38,7 +37,139 @@ public abstract class PostDetailsForm extends javax.swing.JFrame {
      */
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
-    public abstract void initComponents();// </editor-fold>//GEN-END:initComponents
+    public void initComponents() {
+        initOptionalComponent();
+        panelPostDetailsForm = new javax.swing.JPanel();
+        lbHeader = new javax.swing.JLabel();
+        lbLink = new javax.swing.JLabel();
+        btnThoat = new javax.swing.JButton();
+        lbTitle = new javax.swing.JLabel();
+        tfTitle = new javax.swing.JTextField();
+        tfLink = new javax.swing.JTextField();
+
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        panelPostDetailsForm.setBackground(new java.awt.Color(255, 255, 255));
+
+        lbHeader.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        lbHeader.setForeground(new java.awt.Color(0, 102, 102));
+        lbHeader.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lbHeader.setText(header);
+
+        lbLink.setForeground(new java.awt.Color(0, 102, 102));
+        lbLink.setText("Link");
+
+        btnThoat.setBackground(new java.awt.Color(102, 0, 0));
+        btnThoat.setForeground(new java.awt.Color(255, 255, 255));
+        btnThoat.setText("Thoát");
+        btnThoat.setMargin(new java.awt.Insets(3, 14, 3, 14));
+        btnThoat.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnThoatMouseClicked(evt);
+            }
+        });
+        btnThoat.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnThoatActionPerformed(evt);
+            }
+        });
+
+        lbTitle.setForeground(new java.awt.Color(0, 102, 102));
+        lbTitle.setText("Title");
+
+        tfTitle.setEditable(false);
+        tfTitle.setForeground(new java.awt.Color(0, 102, 102));
+        tfTitle.setCaretColor(new java.awt.Color(0, 102, 102));
+        tfTitle.setDisabledTextColor(new java.awt.Color(0, 102, 102));
+        tfTitle.setMargin(new java.awt.Insets(4, 6, 4, 6));
+        tfTitle.setSelectedTextColor(new java.awt.Color(0, 102, 102));
+        tfTitle.setSelectionColor(new java.awt.Color(0, 102, 102));
+
+        tfLink.setEditable(false);
+        tfLink.setForeground(new java.awt.Color(0, 102, 102));
+        tfLink.setCaretColor(new java.awt.Color(0, 102, 102));
+        tfLink.setDisabledTextColor(new java.awt.Color(0, 102, 102));
+        tfLink.setMargin(new java.awt.Insets(4, 6, 4, 6));
+        tfLink.setSelectedTextColor(new java.awt.Color(0, 102, 102));
+        tfLink.setSelectionColor(new java.awt.Color(0, 102, 102));
+
+        javax.swing.GroupLayout panelPostDetailsFormLayout = new javax.swing.GroupLayout(panelPostDetailsForm);
+        panelPostDetailsForm.setLayout(panelPostDetailsFormLayout);
+
+        panelPostDetailsFormLayout.setHorizontalGroup(
+                panelPostDetailsFormLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(panelPostDetailsFormLayout.createSequentialGroup()
+                                .addGap(263, 263, 263)
+                                .addComponent(btnThoat)
+                                .addContainerGap(278, Short.MAX_VALUE))
+                        .addGroup(panelPostDetailsFormLayout.createSequentialGroup()
+                                .addContainerGap()
+                                .addGroup(panelPostDetailsFormLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addComponent(lbHeader, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                        .addGroup(panelPostDetailsFormLayout.createSequentialGroup()
+                                                .addGap(52, 52, 52)
+                                                .addGroup(panelPostDetailsFormLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                        .addGroup(panelPostDetailsFormLayout.createSequentialGroup()
+                                                                .addGroup(panelPostDetailsFormLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                                        .addComponent(getlbTitle())
+                                                                        .addComponent(getlbLink()))
+                                                                .addGap(59, 59, 59)
+                                                                .addGroup(panelPostDetailsFormLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                                        .addComponent(getTfLink())
+                                                                        .addComponent(getTfTitle()))
+                                                        ).addGroup(horizontalOptionalGroup(panelPostDetailsFormLayout))
+                                                )
+                                                .addGap(64, 64, 64)))
+                                .addContainerGap())
+        );
+        panelPostDetailsFormLayout.setVerticalGroup(
+                panelPostDetailsFormLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(panelPostDetailsFormLayout.createSequentialGroup().addGroup(panelPostDetailsFormLayout.createSequentialGroup()
+                                        .addGap(30, 30, 30)
+                                        .addComponent(lbHeader)
+                                        .addGap(33, 33, 33)
+                                        .addGroup(panelPostDetailsFormLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                                .addComponent(lbLink)
+                                                .addComponent(tfLink, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        )
+                                        .addGap(18, 18, 18)
+                                        .addGroup(panelPostDetailsFormLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                                .addComponent(lbTitle)
+                                                .addComponent(tfTitle, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        )
+                                ).addGroup(verticalOptionalGroup(panelPostDetailsFormLayout))
+                                .addGroup(panelPostDetailsFormLayout.createSequentialGroup()
+                                        .addGap(41, 41, 41)
+                                        .addComponent(btnThoat)
+                                        .addContainerGap(26, Short.MAX_VALUE)
+                                ))
+
+        );
+
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
+        getContentPane().setLayout(layout);
+        layout.setHorizontalGroup(
+                layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addComponent(panelPostDetailsForm, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
+        layout.setVerticalGroup(
+                layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addComponent(panelPostDetailsForm, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+        );
+
+        pack();
+    };// </editor-fold>//GEN-END:initComponents
+
+    // Method to init optional components
+    public abstract void initOptionalComponent();
+
+    // Group for optional component
+    public abstract GroupLayout.SequentialGroup horizontalOptionalGroup(
+            GroupLayout panelPostDetailsFormLayout);
+
+    // Group for optional component
+    public abstract GroupLayout.SequentialGroup verticalOptionalGroup(
+            GroupLayout panelPostDetailsFormLayout);
 
     private void btnThoatActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnThoatActionPerformed
         // TODO add your handling code here:
@@ -60,8 +191,6 @@ public abstract class PostDetailsForm extends javax.swing.JFrame {
     };
 
     // Getter and Setter
-
-
     public String getTitlePost() {
         return titlePost;
     }
@@ -86,60 +215,36 @@ public abstract class PostDetailsForm extends javax.swing.JFrame {
         this.btnThoat = btnThoat;
     }
 
-    public JLabel getjLabel10() {
-        return jLabel10;
+    public JLabel getlbHeader() {
+        return lbHeader;
     }
 
-    public void setjLabel10(JLabel jLabel10) {
-        this.jLabel10 = jLabel10;
+    public void setlbHeader(JLabel lbHeader) {
+        this.lbHeader = lbHeader;
     }
 
-    public JLabel getjLabel6() {
-        return jLabel6;
+    public JLabel getlbLink() {
+        return lbLink;
     }
 
-    public void setjLabel6(JLabel jLabel6) {
-        this.jLabel6 = jLabel6;
+    public void setlbLink(JLabel lbLink) {
+        this.lbLink = lbLink;
     }
 
-    public JLabel getjLabel7() {
-        return jLabel7;
+    public JLabel getlbTitle() {
+        return lbTitle;
     }
 
-    public void setjLabel7(JLabel jLabel7) {
-        this.jLabel7 = jLabel7;
+    public void setlbTitle(JLabel lbTitle) {
+        this.lbTitle = lbTitle;
     }
 
-    public JLabel getjLabel8() {
-        return jLabel8;
+    public JPanel getPanelPostDetailsForm() {
+        return panelPostDetailsForm;
     }
 
-    public void setjLabel8(JLabel jLabel8) {
-        this.jLabel8 = jLabel8;
-    }
-
-    public JLabel getjLabel9() {
-        return jLabel9;
-    }
-
-    public void setjLabel9(JLabel jLabel9) {
-        this.jLabel9 = jLabel9;
-    }
-
-    public JPanel getjPanel2() {
-        return jPanel2;
-    }
-
-    public void setjPanel2(JPanel jPanel2) {
-        this.jPanel2 = jPanel2;
-    }
-
-    public JScrollPane getjScrollPane1() {
-        return jScrollPane1;
-    }
-
-    public void setjScrollPane1(JScrollPane jScrollPane1) {
-        this.jScrollPane1 = jScrollPane1;
+    public void setPanelPostDetailsForm(JPanel panelPostDetailsForm) {
+        this.panelPostDetailsForm = panelPostDetailsForm;
     }
 
     public JTextField getTfLink() {
@@ -158,15 +263,20 @@ public abstract class PostDetailsForm extends javax.swing.JFrame {
         this.tfTitle = tfTitle;
     }
 
+    public String getHeader() {
+        return header;
+    }
+
+    public void setHeader(String header) {
+        this.header = header;
+    }
+
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnThoat;
-    private javax.swing.JLabel jLabel10;
-    private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
-    private javax.swing.JLabel jLabel9;
-    private javax.swing.JPanel jPanel2;
-    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JLabel lbHeader;
+    private javax.swing.JLabel lbLink;
+    private javax.swing.JLabel lbTitle;
+    private javax.swing.JPanel panelPostDetailsForm;
     private javax.swing.JTextField tfLink;
     private javax.swing.JTextField tfTitle;
     // End of variables declaration//GEN-END:variables
