@@ -6,21 +6,8 @@ package views;
 
 //import com.sun.jdi.connect.spi.Connection;
 
-import org.checkerframework.checker.units.qual.C;
 import views.CollectionBoardScreen.CollectionScreen;
 import views.KeyWordBoardScreen.KeyWordScreen;
-
-import java.awt.Desktop;
-import java.io.File;
-import java.io.FileOutputStream;
-import java.sql.*;
-import java.util.List;
-import javax.swing.JFileChooser;
-import javax.swing.JOptionPane;
-import javax.swing.table.DefaultTableModel;
-
-
-
 
 /**
  *
@@ -44,7 +31,7 @@ public class Home extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        nhanKhauPanel = new javax.swing.JPanel();
+        homePanel = new javax.swing.JPanel();
         jPanel2 = new javax.swing.JPanel();
         lbCollection = new javax.swing.JLabel();
         lbTrangChu = new javax.swing.JLabel();
@@ -57,7 +44,7 @@ public class Home extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        nhanKhauPanel.setBackground(new java.awt.Color(255, 255, 255));
+        homePanel.setBackground(new java.awt.Color(255, 255, 255));
 
         jPanel2.setBackground(new java.awt.Color(0, 102, 102));
 
@@ -179,22 +166,22 @@ public class Home extends javax.swing.JFrame {
             .addComponent(jLabel7, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 41, Short.MAX_VALUE)
         );
 
-        javax.swing.GroupLayout nhanKhauPanelLayout = new javax.swing.GroupLayout(nhanKhauPanel);
-        nhanKhauPanel.setLayout(nhanKhauPanelLayout);
-        nhanKhauPanelLayout.setHorizontalGroup(
-            nhanKhauPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(nhanKhauPanelLayout.createSequentialGroup()
+        javax.swing.GroupLayout homePanelLayout = new javax.swing.GroupLayout(homePanel);
+        homePanel.setLayout(homePanelLayout);
+        homePanelLayout.setHorizontalGroup(
+            homePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(homePanelLayout.createSequentialGroup()
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(nhanKhauPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(homePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jPanel3, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap())
         );
-        nhanKhauPanelLayout.setVerticalGroup(
-            nhanKhauPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        homePanelLayout.setVerticalGroup(
+            homePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addGroup(nhanKhauPanelLayout.createSequentialGroup()
+            .addGroup(homePanelLayout.createSequentialGroup()
                 .addGap(115, 115, 115)
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
@@ -206,11 +193,11 @@ public class Home extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(nhanKhauPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(homePanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(nhanKhauPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(homePanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         pack();
@@ -289,6 +276,6 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JLabel lbKeyWord;
     private javax.swing.JLabel lbThoat;
     private javax.swing.JLabel lbTrangChu;
-    private javax.swing.JPanel nhanKhauPanel;
+    private javax.swing.JPanel homePanel;
     // End of variables declaration//GEN-END:variables
 }
