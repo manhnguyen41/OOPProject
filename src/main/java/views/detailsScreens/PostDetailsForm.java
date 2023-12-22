@@ -12,7 +12,6 @@ import javax.swing.*;
  * @author Nam
  */
 public abstract class PostDetailsForm extends javax.swing.JFrame {
-    private String titlePost;
     private String link;
     private String header;
     /**
@@ -182,7 +181,6 @@ public abstract class PostDetailsForm extends javax.swing.JFrame {
 
     // ----------------- start to code --------------------
 
-
     /**
      * @param args the command line arguments
      */
@@ -190,14 +188,8 @@ public abstract class PostDetailsForm extends javax.swing.JFrame {
 
     };
 
-    // Getter and Setter
-    public String getTitlePost() {
-        return titlePost;
-    }
+    // ------------ Getter and Setter ---------------
 
-    public void setTitlePost(String titlePost) {
-        this.titlePost = titlePost;
-    }
 
     public String getLink() {
         return link;
@@ -207,64 +199,20 @@ public abstract class PostDetailsForm extends javax.swing.JFrame {
         this.link = link;
     }
 
-    public JButton getBtnThoat() {
-        return btnThoat;
-    }
-
-    public void setBtnThoat(JButton btnThoat) {
-        this.btnThoat = btnThoat;
-    }
-
-    public JLabel getlbHeader() {
-        return lbHeader;
-    }
-
-    public void setlbHeader(JLabel lbHeader) {
-        this.lbHeader = lbHeader;
-    }
-
     public JLabel getlbLink() {
         return lbLink;
-    }
-
-    public void setlbLink(JLabel lbLink) {
-        this.lbLink = lbLink;
     }
 
     public JLabel getlbTitle() {
         return lbTitle;
     }
 
-    public void setlbTitle(JLabel lbTitle) {
-        this.lbTitle = lbTitle;
-    }
-
-    public JPanel getPanelPostDetailsForm() {
-        return panelPostDetailsForm;
-    }
-
-    public void setPanelPostDetailsForm(JPanel panelPostDetailsForm) {
-        this.panelPostDetailsForm = panelPostDetailsForm;
-    }
-
     public JTextField getTfLink() {
         return tfLink;
     }
 
-    public void setTfLink(JTextField tfLink) {
-        this.tfLink = tfLink;
-    }
-
     public JTextField getTfTitle() {
         return tfTitle;
-    }
-
-    public void setTfTitle(JTextField tfTitle) {
-        this.tfTitle = tfTitle;
-    }
-
-    public String getHeader() {
-        return header;
     }
 
     public void setHeader(String header) {

@@ -205,7 +205,6 @@ public abstract class Screen extends javax.swing.JFrame {
 
     // ------------ START TO CODE HERE -----------------
 
-    // ------------- DISPLAY PEOPLE ---------------------
 
     /**
      * @param args the command line arguments
@@ -213,7 +212,6 @@ public abstract class Screen extends javax.swing.JFrame {
     public static void main(String[] args) {
 
     }
-
 
     // Variables declaration - do not modify
     private javax.swing.JLabel lbHeader;
@@ -227,9 +225,6 @@ public abstract class Screen extends javax.swing.JFrame {
     // End of variables declaration
 
 
-    public String getHeader() {
-        return header;
-    }
 
     public void setHeader(String header) {
         this.header = header;

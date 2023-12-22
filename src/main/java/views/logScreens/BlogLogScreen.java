@@ -31,7 +31,6 @@ public class BlogLogScreen extends LogScreen {
 
     public BlogLogScreen(Collection collection) {
         super();
-        this.collection = collection;
         this.blogListByCollection.setBlogList(collection.getBlogByCollection(blogList.getBlogList()));
         getTfTitle().setText(collection.getName());
         display();
@@ -83,27 +82,16 @@ public class BlogLogScreen extends LogScreen {
         DefaultTableModel model = (DefaultTableModel)tBlog.getModel();
         int indexRow = tBlog.getSelectedRow();
         key = String.valueOf(model.getValueAt(indexRow, 0).toString());
-        String description = String.valueOf(model.getValueAt(indexRow, 1).toString());
-        String link = String.valueOf(model.getValueAt(indexRow, 2).toString());
 
-//        System.out.println(this.key);
         BlogDetailsForm newDetailsForm = new BlogDetailsForm(key);
         newDetailsForm.setVisible(true);
-    }//GEN-LAST:event_tBlogMouseClicked
+    }
 
 
     private void btnThoatMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnThoatMouseClicked
         // TODO add your handling code here:
         this.dispose();
-    }//GEN-LAST:event_btnThoatMouseClicked
-
-    private void btnThoatActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnThoatActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnThoatActionPerformed
-
-    private void blogLogPanelMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_blogLogPanelMouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_blogLogPanelMouseClicked
+    }
 
     // ------------ Start to code -------------
     private void display() {
@@ -119,7 +107,6 @@ public class BlogLogScreen extends LogScreen {
         }
     }
 
-    private Collection collection = null;
     private  final ListOfBlogs blogList = new ListOfBlogs();
     private ListOfBlogs blogListByCollection = new ListOfBlogs();
     private ListOfBlogs currentBlogListByCollection;
@@ -144,29 +131,6 @@ public class BlogLogScreen extends LogScreen {
      * @param args the command line arguments
      */
     public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html
-         */
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ClassNotFoundException ex) {
-            Logger.getLogger(BlogLogScreen.class.getName()).log(Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            Logger.getLogger(BlogLogScreen.class.getName()).log(Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            Logger.getLogger(BlogLogScreen.class.getName()).log(Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            Logger.getLogger(BlogLogScreen.class.getName()).log(Level.SEVERE, null, ex);
-        }
-        //</editor-fold>
-
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {

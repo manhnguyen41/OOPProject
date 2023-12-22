@@ -8,7 +8,6 @@ public abstract class LogScreen extends JFrame{
     private String header;
     private String titleLabelText;
     private String titleTFText;
-    String key = "";
 
     /**
      * Creates new form Form
@@ -217,35 +216,15 @@ public abstract class LogScreen extends JFrame{
     private JTable table;
     // End of variables declaration//GEN-END:variables
 
-    public String getHeader() {
-        return header;
-    }
-
     public void setHeader(String header) {
         this.header = header;
-    }
-
-    public String getTitleLabelText() {
-        return titleLabelText;
     }
 
     public void setTitleLabelText(String titleLabelText) {
         this.titleLabelText = titleLabelText;
     }
 
-    public String getTitleTFText() {
-        return titleTFText;
-    }
-
-    public void setTitleTFText(String titleTFText) {
-        this.titleTFText = titleTFText;
-    }
-
     public JTextField getTfTitle() {
         return tfTitle;
-    }
-
-    public void setTfTitle(JTextField tfTitle) {
-        this.tfTitle = tfTitle;
     }
 }

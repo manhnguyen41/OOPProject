@@ -1,58 +1,58 @@
 
 f
-java:S1192@"IDefine a constant instead of duplicating this literal "Segoe UI" 6 times.(·×¾8¹úšÇÇ1
+java:S11923"IDefine a constant instead of duplicating this literal "Segoe UI" 6 times.(·×¾8ÔÜ¡¨È1
 K
-java:S1604“"(Make this anonymous inner class a lambda(¨í¡§úÿÿÿÿ8¹úšÇÇ1
-]	java:S125"<This block of commented-out lines of code should be removed.(œĞ­Õşÿÿÿÿ8ğúšÇÇ1
-y
-java:S1450›"VRemove the "jLabel6" field and declare it as a local variable in the relevant methods.(¸ôÂøÿÿÿÿ8ôúšÇÇ1
-t
-java:S1450œ"VRemove the "jLabel7" field and declare it as a local variable in the relevant methods.(×ê˜Ÿ8õúšÇÇ1
-y
-java:S1450"VRemove the "jPanel1" field and declare it as a local variable in the relevant methods.(´œ½ÿÿÿÿÿ8õúšÇÇ1
-y
-java:S1450"VRemove the "jPanel2" field and declare it as a local variable in the relevant methods.(õ òçüÿÿÿÿ8öúšÇÇ1
-t
-java:S1450Ÿ"VRemove the "jPanel3" field and declare it as a local variable in the relevant methods.(Œ³èÈ8öúšÇÇ1
-y
-java:S1450 "[Remove the "lbCollection" field and declare it as a local variable in the relevant methods.(¾„÷¨8÷úšÇÇ1
-{
-java:S1450¡"XRemove the "lbKeyWord" field and declare it as a local variable in the relevant methods.(€¦Ş¸ùÿÿÿÿ8÷úšÇÇ1
-t
-java:S1450¢"VRemove the "lbThoat" field and declare it as a local variable in the relevant methods.(º‰ÑÙ8÷úšÇÇ1
+java:S1604†"(Make this anonymous inner class a lambda(¨í¡§úÿÿÿÿ8ÕÜ¡¨È1
+]	java:S125"<This block of commented-out lines of code should be removed.(œĞ­Õşÿÿÿÿ8¨ÿ¨È1
 v
-java:S1450£"YRemove the "lbTrangChu" field and declare it as a local variable in the relevant methods.(ÜÓÍ`8÷úšÇÇ1
-z
-java:S1450¤"\Remove the "nhanKhauPanel" field and declare it as a local variable in the relevant methods.(½¨ÜÅ8÷úšÇÇ1
+java:S1450—"XRemove the "homePanel" field and declare it as a local variable in the relevant methods.(éÑ©Œ8ôÜ¡¨È1
+y
+java:S1450"VRemove the "jLabel6" field and declare it as a local variable in the relevant methods.(¸ôÂøÿÿÿÿ8ôÜ¡¨È1
+t
+java:S1450"VRemove the "jLabel7" field and declare it as a local variable in the relevant methods.(×ê˜Ÿ8õÜ¡¨È1
+y
+java:S1450"VRemove the "jPanel1" field and declare it as a local variable in the relevant methods.(´œ½ÿÿÿÿÿ8õÜ¡¨È1
+y
+java:S1450‘"VRemove the "jPanel2" field and declare it as a local variable in the relevant methods.(õ òçüÿÿÿÿ8õÜ¡¨È1
+t
+java:S1450’"VRemove the "jPanel3" field and declare it as a local variable in the relevant methods.(Œ³èÈ8õÜ¡¨È1
+y
+java:S1450“"[Remove the "lbCollection" field and declare it as a local variable in the relevant methods.(¾„÷¨8öÜ¡¨È1
+{
+java:S1450”"XRemove the "lbKeyWord" field and declare it as a local variable in the relevant methods.(€¦Ş¸ùÿÿÿÿ8öÜ¡¨È1
+t
+java:S1450•"VRemove the "lbThoat" field and declare it as a local variable in the relevant methods.(º‰ÑÙ8öÜ¡¨È1
+v
+java:S1450–"YRemove the "lbTrangChu" field and declare it as a local variable in the relevant methods.(ÜÓÍ`8öÜ¡¨È1
 W
-java:S1161D":Add the "@Override" annotation above this method signature(†ŒË³8şúšÇÇ1
+java:S11617":Add the "@Override" annotation above this method signature(†ŒË³8‚İ¡¨È1
 W
-java:S1161O":Add the "@Override" annotation above this method signature(†ŒË³8ÿúšÇÇ1
+java:S1161B":Add the "@Override" annotation above this method signature(†ŒË³8ƒİ¡¨È1
 W
-java:S1161X":Add the "@Override" annotation above this method signature(†ŒË³8€ûšÇÇ1
+java:S1161K":Add the "@Override" annotation above this method signature(†ŒË³8éİ¡¨È1
 W
-java:S1161b":Add the "@Override" annotation above this method signature(†ŒË³8ûšÇÇ1
+java:S1161U":Add the "@Override" annotation above this method signature(†ŒË³8êİ¡¨È1
 H
-java:S1172Ü"*Remove this unused method parameter "evt".(×àêò8ˆûšÇÇ1
+java:S1172Ï"*Remove this unused method parameter "evt".(×àêò8öİ¡¨È1
 U
-java:S1135İ"2Complete the task associated to this TODO comment.(ÜÀ†áûÿÿÿÿ8ˆûšÇÇ1
+java:S1135Ğ"2Complete the task associated to this TODO comment.(ÜÀ†áûÿÿÿÿ8÷İ¡¨È1
 H
-java:S1172â"*Remove this unused method parameter "evt".(ıò³ö8ˆûšÇÇ1
+java:S1172Õ"*Remove this unused method parameter "evt".(ıò³ö8÷İ¡¨È1
 U
-java:S1135ã"2Complete the task associated to this TODO comment.(ÜÀ†áûÿÿÿÿ8‰ûšÇÇ1
+java:S1135Ö"2Complete the task associated to this TODO comment.(ÜÀ†áûÿÿÿÿ8÷İ¡¨È1
 H
-java:S1172ç"*Remove this unused method parameter "evt".(¬ã¯‚8‰ûšÇÇ1
+java:S1172Ú"*Remove this unused method parameter "evt".(¬ã¯‚8øİ¡¨È1
 U
-java:S1135è"2Complete the task associated to this TODO comment.(ÜÀ†áûÿÿÿÿ8‰ûšÇÇ1
+java:S1135Û"2Complete the task associated to this TODO comment.(ÜÀ†áûÿÿÿÿ8øİ¡¨È1
 H
-java:S1172î"*Remove this unused method parameter "evt".(Ã´¢»8‹ûšÇÇ1
+java:S1172á"*Remove this unused method parameter "evt".(Ã´¢»8ùİ¡¨È1
 U
-java:S1135ï"2Complete the task associated to this TODO comment.(ÜÀ†áûÿÿÿÿ8‹ûšÇÇ1
+java:S1135â"2Complete the task associated to this TODO comment.(ÜÀ†áûÿÿÿÿ8ùİ¡¨È1
 M
-java:S1197ú"*Move the array designators [] to the type.(¡şÏÖøÿÿÿÿ8ŒûšÇÇ1
+java:S1197í"*Move the array designators [] to the type.(¡şÏÖøÿÿÿÿ8üİ¡¨È1
 c
-java:S2147‰"ECombine this catch with the one at line 263, which has the same body.(¨¦Š½8ûšÇÇ1
+java:S2147ü"ECombine this catch with the one at line 250, which has the same body.(¨¦Š½8üİ¡¨È1
 c
-java:S2147‹"ECombine this catch with the one at line 265, which has the same body.(ã€ 8ûšÇÇ1
+java:S2147ş"ECombine this catch with the one at line 252, which has the same body.(ã€ 8ıİ¡¨È1
 b
-java:S2147"ECombine this catch with the one at line 267, which has the same body.(ñÎ¯%8ûšÇÇ1
+java:S2147€"ECombine this catch with the one at line 254, which has the same body.(ñÎ¯%8ıİ¡¨È1

@@ -4,11 +4,8 @@
  */
 package views.screens;
 
-//import com.sun.jdi.connect.spi.Connection;
-
 import models.ListOfCollections;
 import models.Collection;
-import views.Home;
 import views.logScreens.BlogLogScreen;
 
 import javax.swing.*;
@@ -22,9 +19,6 @@ import java.util.List;
  */
 public class CollectionScreen extends Screen {
 
-    /**
-     * Creates new form NhanKhauMainPage
-     */
     public CollectionScreen() {
         super();
         this.currentCollectionList = this.collectionList;
@@ -116,15 +110,6 @@ public class CollectionScreen extends Screen {
         cbTheo.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Theo 1 giờ", "Theo 6 giờ", "Theo 1 ngày", "Theo 7 ngày", "Theo 1 tháng", "Tất cả", " ", " ", " " }));
     }
 
-    private void btnTrinhBanGhiActionPerformed(java.awt.event.ActionEvent evt) {
-        // TODO add your handling code here:
-    }
-
-    private void btnTrinhBanGhiMouseClicked(java.awt.event.MouseEvent evt) {
-        // TODO add your handling code here:
-        display();
-    }
-
     private void tCollectionMouseClicked(java.awt.event.MouseEvent evt) {
         DefaultTableModel model = (DefaultTableModel)tCollection.getModel();
         int indexRow = tCollection.getSelectedRow();
@@ -161,23 +146,6 @@ public class CollectionScreen extends Screen {
         this.dispose();
     }
 
-    private void lbTrangChuMouseClicked(java.awt.event.MouseEvent evt) {
-        // TODO add your handling code here:
-        Home newScreen = new Home();
-        newScreen.setVisible(true);
-        this.dispose();
-    }
-
-    private void lbCollectionMouseClicked(java.awt.event.MouseEvent evt) {
-        // TODO add your handling code here:
-    }
-
-    private void lbKeyWordMouseClicked(java.awt.event.MouseEvent evt) {
-        // TODO add your handling code here:
-        KeyWordScreen keyWordScreen = new KeyWordScreen();
-        keyWordScreen.setVisible(true);
-        this.dispose();
-    }
 
     private void btnSapXepMouseClicked(java.awt.event.MouseEvent evt) {
         // TODO add your handling code here:
@@ -188,7 +156,6 @@ public class CollectionScreen extends Screen {
         // TODO add your handling code here:
 
     }
-
 
     // ------------ START TO CODE HERE -----------------
 

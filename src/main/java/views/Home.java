@@ -208,12 +208,12 @@ public class Home extends javax.swing.JFrame {
         // TODO add your handling code here:
         
         this.dispose();
-    }//GEN-LAST:event_lbThoatMouseClicked
+    }
 
     private void lbTrangChuMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lbTrangChuMouseClicked
         // TODO add your handling code here:
         
-    }//GEN-LAST:event_lbTrangChuMouseClicked
+    }
 
     private void lbCollectionMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lbCollectionMouseClicked
         // TODO add your handling code here:
@@ -228,7 +228,7 @@ public class Home extends javax.swing.JFrame {
         newScreen.setVisible(true);
         this.dispose();
 
-    }//GEN-LAST:event_lbKeyWordMouseClicked
+    }
 
 
     /**

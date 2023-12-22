@@ -107,29 +107,16 @@ public class RedditPostLogScreen extends LogScreen {
 //        System.out.println(this.key);
         RedditPostDetailsForm newDetailsForm = new RedditPostDetailsForm(key);
         newDetailsForm.setVisible(true);
-    }//GEN-LAST:event_tRedditPostMouseClicked
+    }
 
     private void btnSapXepActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSapXepActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_btnSapXepActionPerformed
+    }
 
     
     private void btnSapXepMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnSapXepMouseClicked
         display();
-    }//GEN-LAST:event_btnSapXepMouseClicked
-
-    private void btnThoatMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnThoatMouseClicked
-        // TODO add your handling code here:
-        this.dispose();
-    }//GEN-LAST:event_btnThoatMouseClicked
-
-    private void btnThoatActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnThoatActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnThoatActionPerformed
-
-    private void redditPostLogPanelMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_redditPostLogPanelMouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_redditPostLogPanelMouseClicked
+    }
 
     // ---------------------- START TO CODE HERE ---------------------
     private KeyWord keyWord = null;

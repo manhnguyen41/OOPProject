@@ -89,11 +89,8 @@ public class RedditPostDetailsForm extends PostDetailsForm {
         setHeader("THÔNG TIN VỀ REDDIT BLOG");
         lbUps = new javax.swing.JLabel();
         tfUps = new javax.swing.JTextField();
-//        btnThoat = new javax.swing.JButton();
         lbAuthor = new javax.swing.JLabel();
         tfAuthor = new javax.swing.JTextField();
-//        tfLink = new javax.swing.JTextField();
-//        lbLink = new javax.swing.JLabel();
         lbContent = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
         taContent = new javax.swing.JTextArea();
@@ -283,22 +280,13 @@ public class RedditPostDetailsForm extends PostDetailsForm {
                 .addGap(10, 10, 10);
     }
 
-    private void btnThoatActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnThoatActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnThoatActionPerformed
-
     private void tfUpsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tfUpsActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_tfUpsActionPerformed
-
-    private void btnThoatMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnThoatMouseClicked
-        // TODO add your handling code here:
-        this.dispose();
-    }//GEN-LAST:event_btnThoatMouseClicked
+    }
 
     private void tfDownsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tfDownsActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_tfDownsActionPerformed
+    }
 
     // ---------- START TO CODE HERE -----------
     
@@ -306,9 +294,6 @@ public class RedditPostDetailsForm extends PostDetailsForm {
      * @param args the command line arguments
      */
     public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-
-        /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 new RedditPostDetailsForm().setVisible(true);

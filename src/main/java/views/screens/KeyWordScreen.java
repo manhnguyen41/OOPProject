@@ -21,9 +21,6 @@ import java.util.List;
 import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
 
-
-
-
 /**
  *
  * @author Nam
@@ -31,7 +28,6 @@ import javax.swing.table.DefaultTableModel;
 public class KeyWordScreen extends Screen {
 
     /**
-     * Creates new form NhanKhauMainPage
      */
     public KeyWordScreen() {
         super();
@@ -175,21 +171,11 @@ public class KeyWordScreen extends Screen {
         cbReactBy.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Reacts theo ngày", "Reacts theo tháng", "Reacts theo năm" }));
     }// </editor-fold>
 
-    private void btnTrinhBanGhiActionPerformed(java.awt.event.ActionEvent evt) {
-        // TODO add your handling code here:
-    }
-
-    private void btnTrinhBanGhiMouseClicked(java.awt.event.MouseEvent evt) {
-        // TODO add your handling code here:
-        display();
-    }
-
     private void tKeyWordMouseClicked(java.awt.event.MouseEvent evt) {
         DefaultTableModel model = (DefaultTableModel)tKeyWord.getModel();
         int indexRow = tKeyWord.getSelectedRow();
         key = String.valueOf(model.getValueAt(indexRow, 0).toString());
         KeyWord keyWord = keyWordList.search(key).get(0);
-//        System.out.println(this.key);
         RedditPostLogScreen newLogScreen = new RedditPostLogScreen(keyWord);
         newLogScreen.setVisible(true);
     }
