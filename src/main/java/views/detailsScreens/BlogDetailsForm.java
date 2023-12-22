@@ -2,12 +2,10 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
-package views.CollectionBoardScreen;
+package views.detailsScreens;
 
 import models.ListOfBlogs;
 import models.Blog;
-import models.ListOfKeyWords;
-import views.PostDetailsForm;
 
 import javax.swing.*;
 

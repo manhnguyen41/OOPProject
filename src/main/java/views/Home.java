@@ -6,8 +6,8 @@ package views;
 
 //import com.sun.jdi.connect.spi.Connection;
 
-import views.CollectionBoardScreen.CollectionScreen;
-import views.KeyWordBoardScreen.KeyWordScreen;
+import views.screens.CollectionScreen;
+import views.screens.KeyWordScreen;
 
 /**
  *

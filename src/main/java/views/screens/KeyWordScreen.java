@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
-package views.KeyWordBoardScreen;
+package views.screens;
 
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
@@ -14,10 +14,11 @@ import models.ListOfKeyWords;
 import models.ListOfRedditPosts;
 import models.KeyWord;
 import models.RedditPost;
-import views.CollectionBoardScreen.CollectionScreen;
+import views.logScreens.RedditPostLogScreen;
 import views.Home;
 
 import java.util.List;
+import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
 
 
@@ -27,13 +28,13 @@ import javax.swing.table.DefaultTableModel;
  *
  * @author Nam
  */
-public class KeyWordScreen extends javax.swing.JFrame {
+public class KeyWordScreen extends Screen {
 
     /**
      * Creates new form NhanKhauMainPage
      */
     public KeyWordScreen() {
-        initComponents();
+        super();
         display();
     }
 
@@ -44,17 +45,16 @@ public class KeyWordScreen extends javax.swing.JFrame {
      */
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">
-    private void initComponents() {
-
-        keyWordPanel = new javax.swing.JPanel();
-        panel = new javax.swing.JPanel();
+    @Override
+    public void initOptionalComponent() {
+        setHeader("KEYWORD");
         lbCollection = new javax.swing.JLabel();
         lbTrangChu = new javax.swing.JLabel();
         lbKeyWord = new javax.swing.JLabel();
         lbThoat = new javax.swing.JLabel();
         lbHeader = new javax.swing.JLabel();
         btnTim = new javax.swing.JButton();
-        jScrollPane = new javax.swing.JScrollPane();
+        tablePane = new javax.swing.JScrollPane();
         tKeyWord = new javax.swing.JTable();
         tfTim = new javax.swing.JTextField();
         btnSapXep = new javax.swing.JButton();
@@ -62,10 +62,6 @@ public class KeyWordScreen extends javax.swing.JFrame {
         cbReactBy = new javax.swing.JComboBox<>();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-
-        keyWordPanel.setBackground(new java.awt.Color(255, 255, 255));
-
-        panel.setBackground(new java.awt.Color(0, 102, 102));
 
         lbCollection.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         lbCollection.setForeground(new java.awt.Color(255, 255, 255));
@@ -105,38 +101,6 @@ public class KeyWordScreen extends javax.swing.JFrame {
                 lbThoatMouseClicked(evt);
             }
         });
-
-        javax.swing.GroupLayout panelLayout = new javax.swing.GroupLayout(panel);
-        panel.setLayout(panelLayout);
-        panelLayout.setHorizontalGroup(
-                panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(panelLayout.createSequentialGroup()
-                                .addGroup(panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addGroup(panelLayout.createSequentialGroup()
-                                                .addContainerGap()
-                                                .addComponent(lbThoat, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                                        .addComponent(lbTrangChu, javax.swing.GroupLayout.DEFAULT_SIZE, 143, Short.MAX_VALUE))
-                                .addContainerGap())
-                        .addGroup(panelLayout.createSequentialGroup()
-                                .addGap(17, 17, 17)
-                                .addGroup(panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addComponent(lbKeyWord)
-                                        .addComponent(lbCollection))
-                                .addContainerGap(66, Short.MAX_VALUE))
-        );
-        panelLayout.setVerticalGroup(
-                panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(panelLayout.createSequentialGroup()
-                                .addGap(62, 62, 62)
-                                .addComponent(lbTrangChu)
-                                .addGap(46, 46, 46)
-                                .addComponent(lbCollection)
-                                .addGap(18, 18, 18)
-                                .addComponent(lbKeyWord)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(lbThoat)
-                                .addGap(33, 33, 33))
-        );
 
         lbHeader.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
         lbHeader.setForeground(new java.awt.Color(0, 102, 102));
@@ -185,7 +149,7 @@ public class KeyWordScreen extends javax.swing.JFrame {
                 tKeyWordMouseClicked(evt);
             }
         });
-        jScrollPane.setViewportView(tKeyWord);
+        tablePane.setViewportView(tKeyWord);
 
         tfTim.setForeground(new java.awt.Color(0, 102, 102));
         tfTim.setText("Nhập thông tin");
@@ -209,63 +173,6 @@ public class KeyWordScreen extends javax.swing.JFrame {
         cbTangDan.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Tăng dần theo ngày", "Giảm dần theo ngày", "Tăng dần theo tháng", "Giảm dần theo tháng", "Tăng dần theo năm", "Giảm dần theo năm" }));
 
         cbReactBy.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Reacts theo ngày", "Reacts theo tháng", "Reacts theo năm" }));
-
-        javax.swing.GroupLayout keyWordPanelLayout = new javax.swing.GroupLayout(keyWordPanel);
-        keyWordPanel.setLayout(keyWordPanelLayout);
-        keyWordPanelLayout.setHorizontalGroup(
-                keyWordPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(keyWordPanelLayout.createSequentialGroup()
-                                .addComponent(panel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addGroup(keyWordPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addGroup(keyWordPanelLayout.createSequentialGroup()
-                                                .addComponent(lbHeader, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                                .addContainerGap())
-                                        .addComponent(jScrollPane)
-                                        .addGroup(keyWordPanelLayout.createSequentialGroup()
-                                                .addGap(30, 30, 30)
-                                                .addComponent(btnSapXep, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                .addGap(18, 18, 18)
-                                                .addComponent(cbReactBy, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                .addGap(18, 18, 18)
-                                                .addComponent(cbTangDan, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 217, Short.MAX_VALUE)
-                                                .addComponent(btnTim, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                .addGap(18, 18, 18)
-                                                .addComponent(tfTim, javax.swing.GroupLayout.PREFERRED_SIZE, 165, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                .addGap(44, 44, 44))))
-        );
-        keyWordPanelLayout.setVerticalGroup(
-                keyWordPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(panel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addGroup(keyWordPanelLayout.createSequentialGroup()
-                                .addGap(20, 20, 20)
-                                .addComponent(lbHeader)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 43, Short.MAX_VALUE)
-                                .addGroup(keyWordPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                        .addComponent(tfTim, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addComponent(btnTim)
-                                        .addGroup(keyWordPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                                .addComponent(btnSapXep)
-                                                .addComponent(cbTangDan, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                        .addComponent(cbReactBy, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGap(18, 18, 18)
-                                .addComponent(jScrollPane, javax.swing.GroupLayout.PREFERRED_SIZE, 488, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addContainerGap())
-        );
-
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-                layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(keyWordPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-        );
-        layout.setVerticalGroup(
-                layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(keyWordPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-        );
-
-        pack();
     }// </editor-fold>
 
     private void btnTrinhBanGhiActionPerformed(java.awt.event.ActionEvent evt) {
@@ -393,6 +300,40 @@ public class KeyWordScreen extends javax.swing.JFrame {
     private final ListOfRedditPosts redditPostList = new ListOfRedditPosts();
     private final ListOfKeyWords keyWordList = new ListOfKeyWords(redditPostList);
     private ListOfKeyWords currentKeyWordList;
+
+    // Pane table
+    public JScrollPane tablePane() {
+        return tablePane;
+    };
+
+    // Group for optional component
+    public GroupLayout.SequentialGroup horizontalOptionalGroup(
+            GroupLayout mainPanelLayout) {
+        return mainPanelLayout.createSequentialGroup()
+                .addGap(30, 30, 30)
+                .addComponent(btnSapXep, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(cbReactBy, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(cbTangDan, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 217, Short.MAX_VALUE)
+                .addComponent(btnTim, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(tfTim, javax.swing.GroupLayout.PREFERRED_SIZE, 165, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(44, 44, 44);
+    };
+
+    // Group for optional component
+    public GroupLayout.ParallelGroup verticalOptionalGroup(
+            GroupLayout mainPanelLayout) {
+        return mainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addComponent(tfTim, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(btnTim)
+                .addGroup(mainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(btnSapXep)
+                        .addComponent(cbTangDan, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(cbReactBy, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE);
+    };
     String key = "";
     /**
      * @param args the command line arguments
@@ -434,13 +375,11 @@ public class KeyWordScreen extends javax.swing.JFrame {
     private javax.swing.JComboBox<String> cbReactBy;
     private javax.swing.JComboBox<String> cbTangDan;
     private javax.swing.JLabel lbHeader;
-    private javax.swing.JPanel panel;
-    private javax.swing.JScrollPane jScrollPane;
+    private javax.swing.JScrollPane tablePane;
     private javax.swing.JLabel lbCollection;
     private javax.swing.JLabel lbKeyWord;
     private javax.swing.JLabel lbThoat;
     private javax.swing.JLabel lbTrangChu;
-    private javax.swing.JPanel keyWordPanel;
     private javax.swing.JTable tKeyWord;
     private javax.swing.JTextField tfTim;
     // End of variables declaration

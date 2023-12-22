@@ -2,11 +2,10 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
-package views.KeyWordBoardScreen;
+package views.detailsScreens;
 
 import models.ListOfRedditPosts;
 import models.RedditPost;
-import views.PostDetailsForm;
 
 import javax.swing.*;
 
