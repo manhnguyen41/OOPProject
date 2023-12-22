@@ -2,13 +2,13 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
-package views.CollectionBoardScreen;
+package views;
 
 //import com.sun.jdi.connect.spi.Connection;
 
-import models.ListOfCollections;
 import models.Collection;
-import views.Home;
+import models.ListOfCollections;
+import views.CollectionBoardScreen.BlogLogScreen;
 import views.KeyWordBoardScreen.KeyWordScreen;
 
 import javax.swing.table.DefaultTableModel;
@@ -19,12 +19,13 @@ import java.util.List;
  *
  * @author Nam
  */
-public class CollectionScreen extends javax.swing.JFrame {
+public class CollectionScreen1 extends Screen {
 
     /**
      * Creates new form NhanKhauMainPage
      */
-    public CollectionScreen() {
+    public CollectionScreen1() {
+        super();
         initComponents();
         this.currentCollectionList = this.collectionList;
         display();
@@ -37,9 +38,10 @@ public class CollectionScreen extends javax.swing.JFrame {
      */
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">
-    private void initComponents() {
+    @Override
+    public void initComponents() {
 
-        nhanKhauPanel = new javax.swing.JPanel();
+        screenPanel = new javax.swing.JPanel();
         jPanel2 = new javax.swing.JPanel();
         lbCollection = new javax.swing.JLabel();
         lbTrangChu = new javax.swing.JLabel();
@@ -56,7 +58,7 @@ public class CollectionScreen extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        nhanKhauPanel.setBackground(new java.awt.Color(255, 255, 255));
+        screenPanel.setBackground(new java.awt.Color(255, 255, 255));
 
         jPanel2.setBackground(new java.awt.Color(0, 102, 102));
 
@@ -152,7 +154,7 @@ public class CollectionScreen extends javax.swing.JFrame {
         });
 
         tCollection.setForeground(new java.awt.Color(0, 102, 102));
-        tCollection.setModel(new javax.swing.table.DefaultTableModel(
+        tCollection.setModel(new DefaultTableModel(
                 new Object [][] {
 
                 },
@@ -203,19 +205,19 @@ public class CollectionScreen extends javax.swing.JFrame {
 
         cbTheo.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Theo 1 giờ", "Theo 6 giờ", "Theo 1 ngày", "Theo 7 ngày", "Theo 1 tháng", "Tất cả", " ", " ", " " }));
 
-        javax.swing.GroupLayout nhanKhauPanelLayout = new javax.swing.GroupLayout(nhanKhauPanel);
-        nhanKhauPanel.setLayout(nhanKhauPanelLayout);
-        nhanKhauPanelLayout.setHorizontalGroup(
-                nhanKhauPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(nhanKhauPanelLayout.createSequentialGroup()
+        javax.swing.GroupLayout screenPanelLayout = new javax.swing.GroupLayout(screenPanel);
+        screenPanel.setLayout(screenPanelLayout);
+        screenPanelLayout.setHorizontalGroup(
+                screenPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(screenPanelLayout.createSequentialGroup()
                                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addGroup(nhanKhauPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addGroup(nhanKhauPanelLayout.createSequentialGroup()
+                                .addGroup(screenPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addGroup(screenPanelLayout.createSequentialGroup()
                                                 .addComponent(jLabel6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                                 .addContainerGap())
                                         .addComponent(jScrollPane1)
-                                        .addGroup(nhanKhauPanelLayout.createSequentialGroup()
+                                        .addGroup(screenPanelLayout.createSequentialGroup()
                                                 .addGap(30, 30, 30)
                                                 .addComponent(btnSapXep, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
                                                 .addGap(18, 18, 18)
@@ -228,18 +230,18 @@ public class CollectionScreen extends javax.swing.JFrame {
                                                 .addComponent(tfTim, javax.swing.GroupLayout.PREFERRED_SIZE, 165, javax.swing.GroupLayout.PREFERRED_SIZE)
                                                 .addGap(44, 44, 44))))
         );
-        nhanKhauPanelLayout.setVerticalGroup(
-                nhanKhauPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        screenPanelLayout.setVerticalGroup(
+                screenPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                         .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addGroup(nhanKhauPanelLayout.createSequentialGroup()
+                        .addGroup(screenPanelLayout.createSequentialGroup()
                                 .addGap(20, 20, 20)
                                 .addComponent(jLabel6)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 43, Short.MAX_VALUE)
-                                .addGroup(nhanKhauPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addGroup(nhanKhauPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                .addGroup(screenPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addGroup(screenPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                                                 .addComponent(btnSapXep)
                                                 .addComponent(cbAscendingDescending, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                        .addGroup(nhanKhauPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                        .addGroup(screenPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                                                 .addComponent(tfTim, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                                 .addComponent(btnTim)
                                                 .addComponent(cbTheo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
@@ -252,11 +254,11 @@ public class CollectionScreen extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
                 layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(nhanKhauPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(screenPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
                 layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(nhanKhauPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(screenPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         pack();
@@ -339,7 +341,8 @@ public class CollectionScreen extends javax.swing.JFrame {
     // ------------ START TO CODE HERE -----------------
 
     // ------------- DISPLAY PEOPLE ---------------------
-    private void display(){
+    @Override
+    public void display(){
         String firstItem = cbTheo.getSelectedItem().toString();
         String secondItem = cbAscendingDescending.getSelectedItem().toString();
         System.out.println(secondItem);
@@ -395,6 +398,7 @@ public class CollectionScreen extends javax.swing.JFrame {
     /**
      * @param args the command line arguments
      */
+
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
@@ -409,20 +413,20 @@ public class CollectionScreen extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(CollectionScreen.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(CollectionScreen1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(CollectionScreen.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(CollectionScreen1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(CollectionScreen.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(CollectionScreen1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(CollectionScreen.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(CollectionScreen1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new CollectionScreen().setVisible(true);
+                new CollectionScreen1().setVisible(true);
             }
         });
     }
@@ -439,7 +443,7 @@ public class CollectionScreen extends javax.swing.JFrame {
     private javax.swing.JLabel lbKeyWord;
     private javax.swing.JLabel lbThoat;
     private javax.swing.JLabel lbTrangChu;
-    private javax.swing.JPanel nhanKhauPanel;
+    private javax.swing.JPanel screenPanel;
     private javax.swing.JTable tCollection;
     private javax.swing.JTextField tfTim;
     // End of variables declaration

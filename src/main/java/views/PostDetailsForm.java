@@ -125,9 +125,9 @@ public abstract class PostDetailsForm extends javax.swing.JFrame {
         panelPostDetailsFormLayout.setVerticalGroup(
                 panelPostDetailsFormLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                         .addGroup(panelPostDetailsFormLayout.createSequentialGroup().addGroup(panelPostDetailsFormLayout.createSequentialGroup()
-                                        .addGap(30, 30, 30)
+                                        .addGap(20, 20, 20)
                                         .addComponent(lbHeader)
-                                        .addGap(33, 33, 33)
+                                        .addGap(23, 23, 23)
                                         .addGroup(panelPostDetailsFormLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                                                 .addComponent(lbLink)
                                                 .addComponent(tfLink, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)

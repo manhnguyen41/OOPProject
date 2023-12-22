@@ -47,14 +47,14 @@ public class KeyWordScreen extends javax.swing.JFrame {
     private void initComponents() {
 
         keyWordPanel = new javax.swing.JPanel();
-        jPanel2 = new javax.swing.JPanel();
+        panel = new javax.swing.JPanel();
         lbCollection = new javax.swing.JLabel();
         lbTrangChu = new javax.swing.JLabel();
         lbKeyWord = new javax.swing.JLabel();
         lbThoat = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
+        lbHeader = new javax.swing.JLabel();
         btnTim = new javax.swing.JButton();
-        jScrollPane1 = new javax.swing.JScrollPane();
+        jScrollPane = new javax.swing.JScrollPane();
         tKeyWord = new javax.swing.JTable();
         tfTim = new javax.swing.JTextField();
         btnSapXep = new javax.swing.JButton();
@@ -65,7 +65,7 @@ public class KeyWordScreen extends javax.swing.JFrame {
 
         keyWordPanel.setBackground(new java.awt.Color(255, 255, 255));
 
-        jPanel2.setBackground(new java.awt.Color(0, 102, 102));
+        panel.setBackground(new java.awt.Color(0, 102, 102));
 
         lbCollection.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         lbCollection.setForeground(new java.awt.Color(255, 255, 255));
@@ -106,27 +106,27 @@ public class KeyWordScreen extends javax.swing.JFrame {
             }
         });
 
-        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
-        jPanel2.setLayout(jPanel2Layout);
-        jPanel2Layout.setHorizontalGroup(
-                jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(jPanel2Layout.createSequentialGroup()
-                                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addGroup(jPanel2Layout.createSequentialGroup()
+        javax.swing.GroupLayout panelLayout = new javax.swing.GroupLayout(panel);
+        panel.setLayout(panelLayout);
+        panelLayout.setHorizontalGroup(
+                panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(panelLayout.createSequentialGroup()
+                                .addGroup(panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addGroup(panelLayout.createSequentialGroup()
                                                 .addContainerGap()
                                                 .addComponent(lbThoat, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                                         .addComponent(lbTrangChu, javax.swing.GroupLayout.DEFAULT_SIZE, 143, Short.MAX_VALUE))
                                 .addContainerGap())
-                        .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addGroup(panelLayout.createSequentialGroup()
                                 .addGap(17, 17, 17)
-                                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addGroup(panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                         .addComponent(lbKeyWord)
                                         .addComponent(lbCollection))
                                 .addContainerGap(66, Short.MAX_VALUE))
         );
-        jPanel2Layout.setVerticalGroup(
-                jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(jPanel2Layout.createSequentialGroup()
+        panelLayout.setVerticalGroup(
+                panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(panelLayout.createSequentialGroup()
                                 .addGap(62, 62, 62)
                                 .addComponent(lbTrangChu)
                                 .addGap(46, 46, 46)
@@ -138,11 +138,11 @@ public class KeyWordScreen extends javax.swing.JFrame {
                                 .addGap(33, 33, 33))
         );
 
-        jLabel6.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
-        jLabel6.setForeground(new java.awt.Color(0, 102, 102));
-        jLabel6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel6.setText("KEY WORDS");
-        jLabel6.setHorizontalTextPosition(javax.swing.SwingConstants.LEADING);
+        lbHeader.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
+        lbHeader.setForeground(new java.awt.Color(0, 102, 102));
+        lbHeader.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lbHeader.setText("KEY WORDS");
+        lbHeader.setHorizontalTextPosition(javax.swing.SwingConstants.LEADING);
 
         btnTim.setBackground(new java.awt.Color(0, 51, 51));
         btnTim.setForeground(new java.awt.Color(255, 255, 255));
@@ -185,7 +185,7 @@ public class KeyWordScreen extends javax.swing.JFrame {
                 tKeyWordMouseClicked(evt);
             }
         });
-        jScrollPane1.setViewportView(tKeyWord);
+        jScrollPane.setViewportView(tKeyWord);
 
         tfTim.setForeground(new java.awt.Color(0, 102, 102));
         tfTim.setText("Nhập thông tin");
@@ -215,13 +215,13 @@ public class KeyWordScreen extends javax.swing.JFrame {
         keyWordPanelLayout.setHorizontalGroup(
                 keyWordPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                         .addGroup(keyWordPanelLayout.createSequentialGroup()
-                                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(panel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addGroup(keyWordPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                         .addGroup(keyWordPanelLayout.createSequentialGroup()
-                                                .addComponent(jLabel6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                                .addComponent(lbHeader, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                                 .addContainerGap())
-                                        .addComponent(jScrollPane1)
+                                        .addComponent(jScrollPane)
                                         .addGroup(keyWordPanelLayout.createSequentialGroup()
                                                 .addGap(30, 30, 30)
                                                 .addComponent(btnSapXep, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -237,10 +237,10 @@ public class KeyWordScreen extends javax.swing.JFrame {
         );
         keyWordPanelLayout.setVerticalGroup(
                 keyWordPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(panel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addGroup(keyWordPanelLayout.createSequentialGroup()
                                 .addGap(20, 20, 20)
-                                .addComponent(jLabel6)
+                                .addComponent(lbHeader)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 43, Short.MAX_VALUE)
                                 .addGroup(keyWordPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                                         .addComponent(tfTim, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -250,7 +250,7 @@ public class KeyWordScreen extends javax.swing.JFrame {
                                                 .addComponent(cbTangDan, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                                         .addComponent(cbReactBy, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addGap(18, 18, 18)
-                                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 488, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(jScrollPane, javax.swing.GroupLayout.PREFERRED_SIZE, 488, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addContainerGap())
         );
 
@@ -431,12 +431,11 @@ public class KeyWordScreen extends javax.swing.JFrame {
     // Variables declaration - do not modify
     private javax.swing.JButton btnSapXep;
     private javax.swing.JButton btnTim;
-    private javax.swing.JButton btnTrinhBanGhi;
     private javax.swing.JComboBox<String> cbReactBy;
     private javax.swing.JComboBox<String> cbTangDan;
-    private javax.swing.JLabel jLabel6;
-    private javax.swing.JPanel jPanel2;
-    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JLabel lbHeader;
+    private javax.swing.JPanel panel;
+    private javax.swing.JScrollPane jScrollPane;
     private javax.swing.JLabel lbCollection;
     private javax.swing.JLabel lbKeyWord;
     private javax.swing.JLabel lbThoat;
