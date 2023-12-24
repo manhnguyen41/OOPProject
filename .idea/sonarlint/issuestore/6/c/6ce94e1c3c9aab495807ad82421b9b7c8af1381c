@@ -1,0 +1,113 @@
+
+m
+java:S1192«"QDefine a constant instead of duplicating this literal "Reacts theo nÄƒm" 3 times.(Ã”ÄÑùÿÿÿÿ
+_
+java:S1192>"IDefine a constant instead of duplicating this literal "Segoe UI" 5 times.(·×¾
+n
+java:S1192«"RDefine a constant instead of duplicating this literal "Reacts theo ngÃ y" 3 times.(Ã”ÄÑùÿÿÿÿ
+o
+java:S1192«"SDefine a constant instead of duplicating this literal "Reacts theo thÃ¡ng" 3 times.(Ã”ÄÑùÿÿÿÿ
+>
+java:S1604s"(Make this anonymous inner class a lambda(ö³ü«
+?
+java:S1604£"(Make this anonymous inner class a lambda(òû¬Ú
+D
+java:S1604ß"(Make this anonymous inner class a lambda(¨í¡§úÿÿÿÿ
+}
+java:S1450 "aRemove the "currentKeyWordList" field and declare it as a local variable in the relevant methods.(Çº şÿÿÿÿ
+r
+java:S1450í"[Remove the "lbCollection" field and declare it as a local variable in the relevant methods.(¾„÷¨
+s
+java:S1450ë"WRemove the "lbHeader" field and declare it as a local variable in the relevant methods.(í¬Õşÿÿÿÿ
+t
+java:S1450î"XRemove the "lbKeyWord" field and declare it as a local variable in the relevant methods.(€¦Ş¸ùÿÿÿÿ
+m
+java:S1450ï"VRemove the "lbThoat" field and declare it as a local variable in the relevant methods.(º‰ÑÙ
+o
+java:S1450ğ"YRemove the "lbTrangChu" field and declare it as a local variable in the relevant methods.(ÜÓÍ`
+L
+java:S1948"0Make "redditPostList" transient or serializable.(”ÿûÿÿÿÿ
+I
+java:S1948Ÿ"-Make "keyWordList" transient or serializable.(”ÑŒíıÿÿÿÿ
+P
+java:S1948 "4Make "currentKeyWordList" transient or serializable.(Çº şÿÿÿÿ
+P
+java:S1161B":Add the "@Override" annotation above this method signature(†ŒË³
+P
+java:S1161M":Add the "@Override" annotation above this method signature(†ŒË³
+P
+java:S1161V":Add the "@Override" annotation above this method signature(†ŒË³
+P
+java:S1161`":Add the "@Override" annotation above this method signature(†ŒË³
+P
+java:S1161o":Add the "@Override" annotation above this method signature(†ŒË³
+Q
+java:S1161†":Add the "@Override" annotation above this method signature(®¸ù
+Q
+java:S1161":Add the "@Override" annotation above this method signature(†ŒË³
+Q
+java:S1161Ÿ":Add the "@Override" annotation above this method signature(†ŒË³
+A
+java:S1172®"*Remove this unused method parameter "evt".(¯ã¥è
+A
+java:S1172·"*Remove this unused method parameter "evt".(Ìûëê
+N
+java:S1135¸"2Complete the task associated to this TODO comment.(ÜÀ†áûÿÿÿÿ
+Y
+java:S1854À"=Remove this useless assignment to local variable "firstItem".(‚ëĞÀøÿÿÿÿ
+A
+java:S1172¼"*Remove this unused method parameter "evt".(ü¾Åå
+N
+java:S1135½"2Complete the task associated to this TODO comment.(ÜÀ†áûÿÿÿÿ
+J
+java:S1481À".Remove this unused "firstItem" local variable.(‚ëĞÀøÿÿÿÿ
+F
+java:S1197Ï"*Move the array designators [] to the type.(÷şÅùÿÿÿÿ
+s
+java:S2177Ö"WRename this method; there is a "private" method in the parent class with the same name.(áëÖ’şÿÿÿÿ
+F
+java:S1172Ö"*Remove this unused method parameter "evt".(áëÖ’şÿÿÿÿ
+N
+java:S1135×"2Complete the task associated to this TODO comment.(ÜÀ†áûÿÿÿÿ
+n
+java:S2177Ü"WRename this method; there is a "private" method in the parent class with the same name.(úÔŒÚ
+A
+java:S1172Ü"*Remove this unused method parameter "evt".(úÔŒÚ
+N
+java:S1135İ"2Complete the task associated to this TODO comment.(ÜÀ†áûÿÿÿÿ
+s
+java:S2177ã"WRename this method; there is a "private" method in the parent class with the same name.(¯—õüÿÿÿÿ
+F
+java:S1172ã"*Remove this unused method parameter "evt".(¯—õüÿÿÿÿ
+N
+java:S1135ä"2Complete the task associated to this TODO comment.(ÜÀ†áûÿÿÿÿ
+n
+java:S2177ê"WRename this method; there is a "private" method in the parent class with the same name.(š Å†
+A
+java:S1172ê"*Remove this unused method parameter "evt".(š Å†
+N
+java:S1135ë"2Complete the task associated to this TODO comment.(ÜÀ†áûÿÿÿÿ
+H
+java:S1172ï"*Remove this unused method parameter "evt".(¤¸ğÔ8÷ö ’É1
+U
+java:S1135ğ"2Complete the task associated to this TODO comment.(ÜÀ†áûÿÿÿÿ8÷ö ’É1
+H
+java:S1172ô"*Remove this unused method parameter "evt".(ÙÄ¬ò8øö ’É1
+U
+java:S1135õ"2Complete the task associated to this TODO comment.(ÜÀ†áûÿÿÿÿ8øö ’É1
+F
+java:S1197˜"*Move the array designators [] to the type.(÷şÅùÿÿÿÿ
+8
+java:S1116¥"Remove this empty statement.(ôŸìúÿÿÿÿ
+8
+java:S1116¶"Remove this empty statement.(ôŸìúÿÿÿÿ
+8
+java:S1116Â"Remove this empty statement.(ôŸìúÿÿÿÿ
+F
+java:S1197Ç"*Move the array designators [] to the type.(¡şÏÖøÿÿÿÿ
+\
+java:S2147Ö"ECombine this catch with the one at line 340, which has the same body.(¨¦Š½
+\
+java:S2147Ø"ECombine this catch with the one at line 342, which has the same body.(ã€ 
+[
+java:S2147Ú"ECombine this catch with the one at line 344, which has the same body.(ñÎ¯%

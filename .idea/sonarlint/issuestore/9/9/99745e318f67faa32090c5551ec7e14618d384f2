@@ -1,0 +1,43 @@
+
+_
+java:S1192,"IDefine a constant instead of duplicating this literal "Segoe UI" 5 times.(·×¾
+r
+java:S1450Ú"[Remove the "lbCollection" field and declare it as a local variable in the relevant methods.(¾„÷¨
+s
+java:S1450Ù"WRemove the "lbHeader" field and declare it as a local variable in the relevant methods.(í¬Õşÿÿÿÿ
+t
+java:S1450Û"XRemove the "lbKeyWord" field and declare it as a local variable in the relevant methods.(€¦Ş¸ùÿÿÿÿ
+m
+java:S1450Ü"VRemove the "lbThoat" field and declare it as a local variable in the relevant methods.(º‰ÑÙ
+o
+java:S1450İ"YRemove the "lbTrangChu" field and declare it as a local variable in the relevant methods.(ÜÓÍ`
+n
+java:S1450ß"XRemove the "mainPanel" field and declare it as a local variable in the relevant methods.(šÈŞ}
+q
+java:S1450Ş"ZRemove the "screenPanel" field and declare it as a local variable in the relevant methods.(íöƒ™
+T
+java:S5993"9Change the visibility of this constructor to "protected".(ñõÆÊşÿÿÿÿ
+P
+java:S11610":Add the "@Override" annotation above this method signature(†ŒË³
+P
+java:S1161;":Add the "@Override" annotation above this method signature(†ŒË³
+P
+java:S1161D":Add the "@Override" annotation above this method signature(†ŒË³
+P
+java:S1161N":Add the "@Override" annotation above this method signature(†ŒË³
+F
+java:S1172´"*Remove this unused method parameter "evt".(áëÖ’şÿÿÿÿ
+N
+java:S1135µ"2Complete the task associated to this TODO comment.(ÜÀ†áûÿÿÿÿ
+A
+java:S1172¹"*Remove this unused method parameter "evt".(úÔŒÚ
+N
+java:S1135º"2Complete the task associated to this TODO comment.(ÜÀ†áûÿÿÿÿ
+F
+java:S1172À"*Remove this unused method parameter "evt".(¯—õüÿÿÿÿ
+N
+java:S1135Á"2Complete the task associated to this TODO comment.(ÜÀ†áûÿÿÿÿ
+A
+java:S1172Ç"*Remove this unused method parameter "evt".(š Å†
+N
+java:S1135È"2Complete the task associated to this TODO comment.(ÜÀ†áûÿÿÿÿ

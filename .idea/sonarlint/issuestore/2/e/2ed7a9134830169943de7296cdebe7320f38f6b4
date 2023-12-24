@@ -1,0 +1,14 @@
+
+D
+java:S1604€"(Make this anonymous inner class a lambda(¨í¡§úÿÿÿÿ
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(çï•
+7
+java:S1116g"Remove this empty statement.(ôŸìúÿÿÿÿ
+E
+java:S1197l"*Move the array designators [] to the type.(¡şÏÖøÿÿÿÿ
+[
+java:S2147w"ECombine this catch with the one at line 117, which has the same body.(¨¦Š½
+[
+java:S2147y"ECombine this catch with the one at line 119, which has the same body.(ã€ 
+Z
+java:S2147{"ECombine this catch with the one at line 121, which has the same body.(ñÎ¯%

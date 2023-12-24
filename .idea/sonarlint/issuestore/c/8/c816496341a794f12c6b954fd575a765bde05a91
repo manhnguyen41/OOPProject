@@ -1,0 +1,49 @@
+
+_
+java:S1192-"IDefine a constant instead of duplicating this literal "Segoe UI" 3 times.(é÷û®
+>
+java:S1604L"(Make this anonymous inner class a lambda(©Ú£Ó
+D
+java:S1604Ê"(Make this anonymous inner class a lambda(¨í¡§úÿÿÿÿ
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(İâÕ¾ùÿÿÿÿ
+n
+java:S1450Ó"WRemove the "btnThoat" field and declare it as a local variable in the relevant methods.(İÇõ£
+s
+java:S1450Ô"WRemove the "lbHeader" field and declare it as a local variable in the relevant methods.(í¬Õşÿÿÿÿ
+m
+java:S1450Õ"VRemove the "lbTitle" field and declare it as a local variable in the relevant methods.(ß¥¨Ş
+s
+java:S1450Ò"WRemove the "logPanel" field and declare it as a local variable in the relevant methods.(„şú‘ùÿÿÿÿ
+p
+java:S1450Ø"TRemove the "table" field and declare it as a local variable in the relevant methods.(ÑÂÿÿÿÿÿ
+t
+java:S1450Ö"XRemove the "tablePane" field and declare it as a local variable in the relevant methods.(¬ÑïÄùÿÿÿÿ
+T
+java:S5993"9Change the visibility of this constructor to "protected".(²ÈğØùÿÿÿÿ
+P
+java:S1161(":Add the "@Override" annotation above this method signature(†ŒË³
+P
+java:S1161H":Add the "@Override" annotation above this method signature(†ŒË³
+A
+java:S1172"*Remove this unused method parameter "evt".(ô×ñ¦
+N
+java:S1135‘"2Complete the task associated to this TODO comment.(ÜÀ†áûÿÿÿÿ
+F
+java:S1172•"*Remove this unused method parameter "evt".(´šŞ÷ıÿÿÿÿ
+N
+java:S1135–"2Complete the task associated to this TODO comment.(ÜÀ†áûÿÿÿÿ
+A
+java:S1172™"*Remove this unused method parameter "evt".(ùàï
+N
+java:S1135š"2Complete the task associated to this TODO comment.(ÜÀ†áûÿÿÿÿ
+F
+java:S1197±"*Move the array designators [] to the type.(¡şÏÖøÿÿÿÿ
+\
+java:S2147À"ECombine this catch with the one at line 190, which has the same body.(¨¦Š½
+\
+java:S2147Â"ECombine this catch with the one at line 192, which has the same body.(ã€ 
+[
+java:S2147Ä"ECombine this catch with the one at line 194, which has the same body.(ñÎ¯%
+L
+java:S1068
+"/Remove this unused "titleTFText" private field.(ì×ŒÌ8•†œ’É1

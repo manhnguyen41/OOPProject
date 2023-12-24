@@ -6,7 +6,7 @@ package views.screens;
 
 import models.ListOfCollections;
 import models.Collection;
-import views.logScreens.BlogLogScreen;
+import views.logscreens.BlogLogScreen;
 
 import javax.swing.*;
 import javax.swing.table.DefaultTableModel;

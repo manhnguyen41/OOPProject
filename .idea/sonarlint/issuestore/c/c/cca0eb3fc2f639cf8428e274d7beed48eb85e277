@@ -1,0 +1,46 @@
+
+>
+java:S1604^"(Make this anonymous inner class a lambda(òû¬Ú
+D
+java:S1604¯"(Make this anonymous inner class a lambda(¨í¡§úÿÿÿÿ
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(İâÕ¾ùÿÿÿÿ
+B
+java:S2387","key" is the name of a field in "LogScreen".(¸’€î
+ƒ
+java:S1450}"mRemove the "currentRedditPostListByKeyWord" field and declare it as a local variable in the relevant methods.(üÄÆ’
+D
+java:S1948z")Make "keyWord" transient or serializable.(Ïü¬Äûÿÿÿÿ
+K
+java:S1948{"0Make "redditPostList" transient or serializable.(”ÿûÿÿÿÿ
+T
+java:S1948|"9Make "redditPostListByKeyWord" transient or serializable.(ú£ªµùÿÿÿÿ
+V
+java:S1948}"@Make "currentRedditPostListByKeyWord" transient or serializable.(üÄÆ’
+E	java:S106""+Replace this use of System.out by a logger.(‚‰ğ­ıÿÿÿÿ
+E	java:S106#"+Replace this use of System.out by a logger.(ÙìÎ÷øÿÿÿÿ
+P
+java:S1161F":Add the "@Override" annotation above this method signature(®¸ù
+P
+java:S1161P":Add the "@Override" annotation above this method signature(†ŒË³
+P
+java:S1161Z":Add the "@Override" annotation above this method signature(†ŒË³
+@
+java:S1172g"*Remove this unused method parameter "evt".(„ÏŸ»
+V	java:S125k"<This block of commented-out lines of code should be removed.(Ä•€ôıÿÿÿÿ
+E
+java:S1172p"*Remove this unused method parameter "evt".(ÿï§øıÿÿÿÿ
+M
+java:S1135q"2Complete the task associated to this TODO comment.(ÜÀ†áûÿÿÿÿ
+E
+java:S1172u"*Remove this unused method parameter "evt".(·Ìë¬ûÿÿÿÿ
+R	java:S125†"<This block of commented-out lines of code should be removed.(ÍÒĞ
+A
+java:S1197‹"*Move the array designators [] to the type.(öüì—
+8
+java:S1116”"Remove this empty statement.(ôŸìúÿÿÿÿ
+8
+java:S1116"Remove this empty statement.(ôŸìúÿÿÿÿ
+8
+java:S1116¦"Remove this empty statement.(ôŸìúÿÿÿÿ
+F
+java:S1197«"*Move the array designators [] to the type.(¡şÏÖøÿÿÿÿ

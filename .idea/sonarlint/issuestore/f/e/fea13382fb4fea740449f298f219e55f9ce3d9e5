@@ -1,0 +1,74 @@
+
+>
+java:S16046"(Make this anonymous inner class a lambda(ö³ü«
+>
+java:S1604f"(Make this anonymous inner class a lambda(òû¬Ú
+K
+java:S1604˜"(Make this anonymous inner class a lambda(¨í¡§úÿÿÿÿ8†–Ÿ’É1
+O
+java:S1948Ó",Make "collection" transient or serializable.(İ œşÿÿÿÿ8è¬Ÿ’É1
+N
+java:S1948Ô"0Make "collectionList" transient or serializable.(÷ÅŒ8—˜Ÿ’É1
+X
+java:S1948Õ"5Make "collectionListArray" transient or serializable.(çÚÖÖşÿÿÿÿ8™˜Ÿ’É1
+U
+java:S1948Ö"7Make "currentCollectionList" transient or serializable.(ç™Œ®8š˜Ÿ’É1
+P
+java:S11612":Add the "@Override" annotation above this method signature(†ŒË³
+P
+java:S1161I":Add the "@Override" annotation above this method signature(®¸ù
+P
+java:S1161S":Add the "@Override" annotation above this method signature(†ŒË³
+P
+java:S1161b":Add the "@Override" annotation above this method signature(†ŒË³
+E
+java:S1172q"*Remove this unused method parameter "evt".(³ø¿ùÿÿÿÿ
+@
+java:S1172z"*Remove this unused method parameter "evt".(Ìûëê
+M
+java:S1135{"2Complete the task associated to this TODO comment.(ÜÀ†áûÿÿÿÿ
+@
+java:S1172~"*Remove this unused method parameter "evt".(ü¾Åå
+M
+java:S1135"2Complete the task associated to this TODO comment.(ÜÀ†áûÿÿÿÿ
+[
+java:S1117‰"?Rename "collection" which hides the field declared at line 211.(³Ë¹­ıÿÿÿÿ
+F
+java:S1197Š"*Move the array designators [] to the type.(ƒ¼ƒ¨øÿÿÿÿ
+s
+java:S2177"WRename this method; there is a "private" method in the parent class with the same name.(áëÖ’şÿÿÿÿ
+F
+java:S1172"*Remove this unused method parameter "evt".(áëÖ’şÿÿÿÿ
+N
+java:S1135‘"2Complete the task associated to this TODO comment.(ÜÀ†áûÿÿÿÿ
+H
+java:S1172–"*Remove this unused method parameter "evt".(¤¸ğÔ8Ú˜Ÿ’É1
+N
+java:S1135—"2Complete the task associated to this TODO comment.(ÜÀ†áûÿÿÿÿ
+A
+java:S1172›"*Remove this unused method parameter "evt".(ÙÄ¬ò
+U
+java:S1135œ"2Complete the task associated to this TODO comment.(ÜÀ†áûÿÿÿÿ8Ü˜Ÿ’É1
+H	java:S106¦"+Replace this use of System.out by a logger.(â†Ş8ƒ­Ÿ’É1
+b
+java:S1117Î"?Rename "collection" which hides the field declared at line 211.(¡üÉ‰şÿÿÿÿ8†­Ÿ’É1
+M
+java:S1197Ï"*Move the array designators [] to the type.(ƒ¼ƒ¨øÿÿÿÿ8†­Ÿ’É1
+?
+java:S1116Û"Remove this empty statement.(ôŸìúÿÿÿÿ8ˆ­Ÿ’É1
+?
+java:S1116ì"Remove this empty statement.(ôŸìúÿÿÿÿ8‰­Ÿ’É1
+?
+java:S1116ù"Remove this empty statement.(ôŸìúÿÿÿÿ8Š­Ÿ’É1
+M
+java:S1197ÿ"*Move the array designators [] to the type.(¡şÏÖøÿÿÿÿ8Œ­Ÿ’É1
+c
+java:S2147"ECombine this catch with the one at line 268, which has the same body.(¨¦Š½8Œ­Ÿ’É1
+c
+java:S2147"ECombine this catch with the one at line 270, which has the same body.(ã€ 8Œ­Ÿ’É1
+b
+java:S2147’"ECombine this catch with the one at line 272, which has the same body.(ñÎ¯%8Œ­Ÿ’É1
+Q
+java:S1068Ó".Remove this unused "collection" private field.(İ œşÿÿÿÿ8‘­Ÿ’É1
+T
+java:S1144"8Remove this unused private "lbThoatMouseClicked" method.(áëÖ’şÿÿÿÿ

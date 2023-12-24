@@ -14,7 +14,7 @@ import models.ListOfKeyWords;
 import models.ListOfRedditPosts;
 import models.KeyWord;
 import models.RedditPost;
-import views.logScreens.RedditPostLogScreen;
+import views.logscreens.RedditPostLogScreen;
 import views.Home;
 
 import java.util.List;

@@ -1,4 +1,4 @@
-package views.logScreens;
+package views.logscreens;
 
 import javax.swing.*;
 import java.util.logging.Level;

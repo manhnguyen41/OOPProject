@@ -2,17 +2,15 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
-package views.logScreens;
+package views.logscreens;
 
 import models.ListOfBlogs;
 import models.Blog;
 import models.Collection;
-import views.detailsScreens.BlogDetailsForm;
+import views.detailsscreens.BlogDetailsForm;
 
 import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 
 
 /**
