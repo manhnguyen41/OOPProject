@@ -1,7 +1,7 @@
 package views;
 
-import controllers.listController.ListOfKeyWords;
-import controllers.listController.ListOfRedditPosts;
+import controllers.listcontroller.ListOfKeyWords;
+import controllers.listcontroller.ListOfRedditPosts;
 import models.KeyWord;
 
 public class Main {

@@ -1,4 +1,4 @@
-package controllers.listController;
+package controllers.listcontroller;
 
 import java.util.List;
 

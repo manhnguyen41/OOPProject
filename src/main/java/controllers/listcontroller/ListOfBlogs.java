@@ -1,4 +1,4 @@
-package controllers.listController;
+package controllers.listcontroller;
 
 import connectors.BlogConnector;
 import models.Blog;

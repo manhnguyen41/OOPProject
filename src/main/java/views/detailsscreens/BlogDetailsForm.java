@@ -4,7 +4,7 @@
  */
 package views.detailsscreens;
 
-import controllers.listController.ListOfBlogs;
+import controllers.listcontroller.ListOfBlogs;
 import models.Blog;
 
 import javax.swing.*;

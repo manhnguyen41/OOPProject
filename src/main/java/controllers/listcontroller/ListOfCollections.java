@@ -1,4 +1,4 @@
-package controllers.listController;
+package controllers.listcontroller;
 
 import connectors.CollectionConnector;
 import controllers.comparatorcontroller.collectioncomparator.CollectionComparatorByChange;

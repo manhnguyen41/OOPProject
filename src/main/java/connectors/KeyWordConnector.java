@@ -1,6 +1,6 @@
 package connectors;
 
-import controllers.listController.ListOfRedditPosts;
+import controllers.listcontroller.ListOfRedditPosts;
 import models.KeyWord;
 import models.RedditPost;
 
