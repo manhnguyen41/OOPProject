@@ -1,11 +1,11 @@
-package controller.comparatorController.redditPostComparator;
+package controllers.comparatorController.redditPostComparator;
 
-import controller.comparatorController.GeneralComparator;
+import controllers.comparatorController.GeneralComparator;
 import models.RedditPost;
 
-public class RedditPostComparator extends GeneralComparator<RedditPost> {
+public class RedditPostComparatorByReact extends GeneralComparator<RedditPost> {
     // Constructor
-    public RedditPostComparator(boolean isASC) {
+    public RedditPostComparatorByReact(boolean isASC) {
         super(isASC);
     }
 

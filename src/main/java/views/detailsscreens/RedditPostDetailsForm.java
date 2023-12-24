@@ -4,7 +4,7 @@
  */
 package views.detailsscreens;
 
-import models.ListOfRedditPosts;
+import controllers.listController.ListOfRedditPosts;
 import models.RedditPost;
 
 import javax.swing.*;

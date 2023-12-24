@@ -10,8 +10,8 @@ package views.screens;
  */
 
 
-import models.ListOfKeyWords;
-import models.ListOfRedditPosts;
+import controllers.listController.ListOfKeyWords;
+import controllers.listController.ListOfRedditPosts;
 import models.KeyWord;
 import models.RedditPost;
 import views.logscreens.RedditPostLogScreen;

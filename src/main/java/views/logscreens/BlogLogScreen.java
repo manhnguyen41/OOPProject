@@ -4,7 +4,7 @@
  */
 package views.logscreens;
 
-import models.ListOfBlogs;
+import controllers.listController.ListOfBlogs;
 import models.Blog;
 import models.Collection;
 import views.detailsscreens.BlogDetailsForm;

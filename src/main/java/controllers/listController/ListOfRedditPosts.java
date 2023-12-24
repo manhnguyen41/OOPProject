@@ -1,7 +1,8 @@
-package models;
+package controllers.listController;
 
-import connector.RedditPostConnector;
-import controller.comparatorController.redditPostComparator.RedditPostComparator;
+import connectors.RedditPostConnector;
+import controllers.comparatorController.redditPostComparator.RedditPostComparatorByReact;
+import models.RedditPost;
 
 import java.util.ArrayList;
 import java.util.Comparator;
@@ -11,9 +12,9 @@ public class ListOfRedditPosts implements Searchable<RedditPost> {
     // Attribute
     private List<RedditPost> redditPostList;
     public static final Comparator<RedditPost> COMPARE_REDDIT_POST_BY_REACT_ASC =
-            new RedditPostComparator(true);
+            new RedditPostComparatorByReact(true);
     public static final Comparator<RedditPost> COMPARE_REDDIT_POST_BY_REACT_DES =
-            new RedditPostComparator(false);
+            new RedditPostComparatorByReact(false);
 
     // Constructor
     public ListOfRedditPosts() {

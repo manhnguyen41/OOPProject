@@ -1,6 +1,6 @@
 package crawlers;
 
-import connector.CollectionConnector;
+import connectors.CollectionConnector;
 import models.Blog;
 import models.Collection;
 import org.openqa.selenium.By;
