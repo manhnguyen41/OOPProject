@@ -1,4 +1,4 @@
-package controllers.comparatorController;
+package controllers.comparatorcontroller;
 
 import java.util.Comparator;
 

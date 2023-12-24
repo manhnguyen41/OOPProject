@@ -1,6 +1,6 @@
-package controllers.comparatorController.collectionComparator;
+package controllers.comparatorcontroller.collectioncomparator;
 
-import controllers.comparatorController.GeneralComparator;
+import controllers.comparatorcontroller.GeneralComparator;
 import models.Collection;
 
 //Sort by change

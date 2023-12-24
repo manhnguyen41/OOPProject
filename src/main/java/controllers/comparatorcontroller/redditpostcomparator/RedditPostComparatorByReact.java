@@ -1,6 +1,6 @@
-package controllers.comparatorController.redditPostComparator;
+package controllers.comparatorcontroller.redditpostcomparator;
 
-import controllers.comparatorController.GeneralComparator;
+import controllers.comparatorcontroller.GeneralComparator;
 import models.RedditPost;
 
 public class RedditPostComparatorByReact extends GeneralComparator<RedditPost> {

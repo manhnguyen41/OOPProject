@@ -1,6 +1,6 @@
-package controllers.comparatorController.keyWordComparator;
+package controllers.comparatorcontroller.keywordcomparator;
 
-import controllers.comparatorController.GeneralComparator;
+import controllers.comparatorcontroller.GeneralComparator;
 import models.KeyWord;
 
 public class KeyWordComparatorByReact extends GeneralComparator<KeyWord> {

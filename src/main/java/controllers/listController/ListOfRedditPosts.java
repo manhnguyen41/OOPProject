@@ -1,7 +1,7 @@
 package controllers.listController;
 
 import connectors.RedditPostConnector;
-import controllers.comparatorController.redditPostComparator.RedditPostComparatorByReact;
+import controllers.comparatorcontroller.redditpostcomparator.RedditPostComparatorByReact;
 import models.RedditPost;
 
 import java.util.ArrayList;

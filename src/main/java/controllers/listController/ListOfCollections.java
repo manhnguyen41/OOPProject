@@ -1,9 +1,9 @@
 package controllers.listController;
 
 import connectors.CollectionConnector;
-import controllers.comparatorController.collectionComparator.CollectionComparatorByChange;
-import controllers.comparatorController.collectionComparator.CollectionComparatorByFloorPrice;
-import controllers.comparatorController.collectionComparator.CollectionComparatorByVolume;
+import controllers.comparatorcontroller.collectioncomparator.CollectionComparatorByChange;
+import controllers.comparatorcontroller.collectioncomparator.CollectionComparatorByFloorPrice;
+import controllers.comparatorcontroller.collectioncomparator.CollectionComparatorByVolume;
 import models.Collection;
 
 import java.util.ArrayList;
