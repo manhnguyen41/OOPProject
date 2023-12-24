@@ -86,7 +86,7 @@ public class RedditPostDetailsForm extends PostDetailsForm {
 
     @Override
     public void initOptionalComponent() {
-        setHeader("THÔNG TIN VỀ REDDIT BLOG");
+        setHeader("THÔNG TIN VỀ REDDIT POST");
         lbUps = new javax.swing.JLabel();
         tfUps = new javax.swing.JTextField();
         lbAuthor = new javax.swing.JLabel();
