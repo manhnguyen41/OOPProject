@@ -1,4 +1,4 @@
-package connector;
+package connectors;
 
 import com.google.gson.reflect.TypeToken;
 import models.RedditPost;

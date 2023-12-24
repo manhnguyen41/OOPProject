@@ -1,11 +1,12 @@
-package models;
+package controllers.listController;
 
-import connector.BlogConnector;
+import connectors.BlogConnector;
+import models.Blog;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class ListOfBlogs implements Searchable<Blog>{
+public class ListOfBlogs implements Searchable<Blog> {
     // Attribute
     private List<Blog> blogList;
 

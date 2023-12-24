@@ -4,7 +4,7 @@
  */
 package views.screens;
 
-import models.ListOfCollections;
+import controllers.listController.ListOfCollections;
 import models.Collection;
 import views.logScreens.BlogLogScreen;
 

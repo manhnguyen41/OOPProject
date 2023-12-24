@@ -4,15 +4,13 @@
  */
 package views.logScreens;
 
-import models.ListOfBlogs;
+import controllers.listController.ListOfBlogs;
 import models.Blog;
 import models.Collection;
 import views.detailsScreens.BlogDetailsForm;
 
 import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 
 
 /**

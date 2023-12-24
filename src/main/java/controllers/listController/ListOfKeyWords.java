@@ -1,7 +1,8 @@
-package models;
+package controllers.listController;
 
-import connector.KeyWordConnector;
-import controller.comparatorController.keyWordComparator.KeyWordComparatorByReact;
+import connectors.KeyWordConnector;
+import controllers.comparatorController.keyWordComparator.KeyWordComparatorByReact;
+import models.KeyWord;
 
 import java.util.ArrayList;
 import java.util.Comparator;

@@ -4,7 +4,7 @@
  */
 package views.logScreens;
 
-import models.ListOfRedditPosts;
+import controllers.listController.ListOfRedditPosts;
 import models.KeyWord;
 import models.RedditPost;
 import views.detailsScreens.RedditPostDetailsForm;

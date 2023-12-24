@@ -1,5 +1,7 @@
 package models;
 
+import controllers.listController.ListOfRedditPosts;
+
 import java.util.List;
 
 public class KeyWord {
